@@ -28,21 +28,21 @@ OP,"like the roses dancing all around me, whirling free.",1,1
 OP,But if the two of us should get split up,1,1
 OP,"by whatever means, ",1,1
 OP,"I swear to you, I will change the world. ",1,1
-voice,Once upon a time... ,1,1
-voice,...there was a princess grieving over the deaths of her mother and father.,1,1
-voice,Before this princess appeared a prince traveling upon a white horse.,1,1
-voice,"His appearance gallant, and his smile gentle, the prince enveloped the princess",1,1
-voice,"in the scent of roses, and wiped away her tears.",1,1
-voice,"""Little one bearing up alone under grief, ",1,1
-voice,"please lose not thy strength and nobility when thou growest up.""",1,1
-voice,"""As a token of this day, please retain this.""",1,1
-voice,"""Pray, shall we meet once more?"" ",1,1
-voice,"""This ring should guide thee to me."" ",1,1
-voice,Was the ring from the prince meant as an engagement ring?,1,1
-voice,"That part was good, ",1,1
-voice,"but because of the strength of her admiration for the prince,",1,1
-voice,the princess made up her mind to become a prince herself!,1,1
-voice,But is that really good for her? ,1,1
+Narration,Once upon a time... ,1,1
+Narration,...there was a princess grieving over the deaths of her mother and father.,1,1
+Narration,Before this princess appeared a prince traveling upon a white horse.,1,1
+Narration,"His appearance gallant, and his smile gentle, the prince enveloped the princess",1,1
+Narration,"in the scent of roses, and wiped away her tears.",1,1
+Narration,"""Little one bearing up alone under grief, ",1,1
+Narration,"please lose not thy strength and nobility when thou growest up.""",1,1
+Narration,"""As a token of this day, please retain this.""",1,1
+Narration,"""Pray, shall we meet once more?"" ",1,1
+Narration,"""This ring should guide thee to me."" ",1,1
+Narration,Was the ring from the prince meant as an engagement ring?,1,1
+Narration,"That part was good, ",1,1
+Narration,"but because of the strength of her admiration for the prince,",1,1
+Narration,the princess made up her mind to become a prince herself!,1,1
+Narration,But is that really good for her? ,1,1
 Title,The Rose Bride ,1,1
 Wakaba,It's late... ,1,1
 Wakaba,"Man, how much longer should I have to wait?",1,1
@@ -182,14 +182,14 @@ Utena,What do you mean by that? ,1,1
 Saionji,"All right, then. ",1,1
 Saionji,I'll meet you after classes at the Duel Arena in the forest at the rear of the school.,1,1
 Utena,Forest? The one that's off-limits? ,1,1
-A-ko,"I wonder, I wonder... do you know what I wonder?",1,1
-B-ko,I hear there's going to be another duel out back in the forest today!,1,1
-A-ko,"Oh, brave warrior, you're going to fight for your friend, meddlesome brave warrior!",1,1
-B-ko,"But beware, brave warrior... ",1,1
-A-ko,"They fight by a Code, there in the forest. ",1,1
-B-ko,"Do you know that, I wonder? ",1,1
-A-ko,"I wonder, I wonder... ",1,1
-both,Do you know what I wonder? ,1,1
+Shadow,"I wonder, I wonder... do you know what I wonder?",1,1
+Shadow,I hear there's going to be another duel out back in the forest today!,1,1
+Shadow,"Oh, brave warrior, you're going to fight for your friend, meddlesome brave warrior!",1,1
+Shadow,"But beware, brave warrior... ",1,1
+Shadow,"They fight by a Code, there in the forest. ",1,1
+Shadow,"Do you know that, I wonder? ",1,1
+Shadow,"I wonder, I wonder... ",1,1
+Shadow,Do you know what I wonder? ,1,1
 Utena,"What the... Now how am I supposed to get into this place, anyway?",1,1
 Utena,"And of course, it's locked. ",1,1
 Utena,Hey! That's cold! ,1,1
@@ -272,9 +272,9 @@ Saionji,"Go ahead then, risk your life and face me... if you have the courage!",
 WWWW,of the stillborn flesh. ,1,1
 Saionji,"You, a prince on a white horse, out to save a princess?",1,1
 WWWW,"And I, a holy actor, cast eternally",1,1
-voice,"""Little one bearing up alone under grief, ",1,1
+Narration,"""Little one bearing up alone under grief, ",1,1
 WWWW," as a dark shining Margineaux, cast into Hell.",1,1
-voice,"please lose not thy strength and nobility when thou growest up.""",1,1
+Narration,"please lose not thy strength and nobility when thou growest up.""",1,1
 WWWW,Glow! ,1,1
 Saionji,What? ,1,1
 WWWW,Burn! ,1,1
@@ -367,11 +367,12 @@ Utena,"Uh, listen, Wakaba... ",2,1
 Utena,"Would you do me a favor and stop saying things like ""I'm yours?""",2,1
 Wakaba,How come? ,2,1
 Anthy,Good morning. ,2,1
-touga,"If the egg's shell does not break, the chick will die without being born.",2,1
-touga,We are the chick; the egg is the world. ,2,1
-touga,"If the world's shell does not break, we will die without being born.",2,1
-touga,Break the world's shell! ,2,1
-"touga,juri",For the sake of revolutionizing the world!,2,1
+Touga,"If the egg's shell does not break, the chick will die without being born.",2,1
+Touga,We are the chick; the egg is the world. ,2,1
+Touga,"If the world's shell does not break, we will die without being born.",2,1
+Touga,Break the world's shell! ,2,1
+Touga,For the sake of revolutionizing the world!,2,1
+Juri,For the sake of revolutionizing the world!,2,1
 Touga,"Have you received your new letters from the Ends of the World, Councilors?",2,1
 Juri,"Yes, we have. ",2,1
 Touga,We have all been meeting and carrying out the letters' instructions.,2,1
@@ -513,16 +514,16 @@ Utena,"What could I do? If I didn't accept the Duel, I'd be kicked out of the Ac
 Utena,I'll just throw the Duel. ,2,1
 Utena,"After that, no problem, right? ",2,1
 Anthy,"Well, whatever you like. ",2,1
-A-ko,"I wonder, I wonder... do you know what I wonder?",2,1
-B-ko,There's going to be another duel out back in the forest today.,2,1
-A-ko,The time has come to settle things once and for all.,2,1
-A-ko,I'm done for... ,2,1
-A-ko,"But it's okay, 'cause I lost on purpose! ",2,1
-B-ko,"But beware, brave warrior, ",2,1
-A-ko,do you know how difficult it is... ,2,1
-B-ko,...to lose on purpose? ,2,1
-A-ko,"I wonder, I wonder... ",2,1
-A-ko&B-ko,Do you know what I wonder? ,2,1
+Shadow,"I wonder, I wonder... do you know what I wonder?",2,1
+Shadow,There's going to be another duel out back in the forest today.,2,1
+Shadow,The time has come to settle things once and for all.,2,1
+Shadow,I'm done for... ,2,1
+Shadow,"But it's okay, 'cause I lost on purpose! ",2,1
+Shadow,"But beware, brave warrior, ",2,1
+Shadow,do you know how difficult it is... ,2,1
+Shadow,...to lose on purpose? ,2,1
+Shadow,"I wonder, I wonder... ",2,1
+Shadow,Do you know what I wonder? ,2,1
 ZUM,Absolute Destiny Apocalypse ,2,1
 ZUM,Absolute Destiny Apocalypse ,2,1
 ZUM,Birth records ,2,1
@@ -659,21 +660,21 @@ OP,"like the roses dancing all around me, whirling free.",3,1
 OP,But if the two of us should get split up,3,1
 OP,"by whatever means, ",3,1
 OP,"I swear to you, I will change the world. ",3,1
-Narrator,Once upon a time... ,3,1
-Narrator,...there was a princess grieving over the deaths of her mother and father.,3,1
-Narrator,Before this princess appeared a prince traveling upon a white horse.,3,1
-Narrator,"His appearance gallant and his smile gentle,",3,1
-Narrator,the prince enveloped the princess in the scent of roses and wiped away her tears.,3,1
-Prince,"""Little lass bearing up alone under grief,",3,1
-Prince,"please lose not thy strength and nobility when thou growest up.""",3,1
-Prince,"""As a token of this day, please retain this.""",3,1
-Princess,"""Pray, shall we meet once more?"" ",3,1
-Prince,"""This ring will guide thee to me."" ",3,1
-Narrator,Was the ring from the prince meant as an engagement ring?,3,1
-Narrator,"That part was good, ",3,1
-Narrator,"but because of the strength of her adoration for the prince,",3,1
-Narrator,the princess made up her mind to become a prince herself!,3,1
-Narrator,But is that really good for her? ,3,1
+Narration,Once upon a time... ,3,1
+Narration,...there was a princess grieving over the deaths of her mother and father.,3,1
+Narration,Before this princess appeared a prince traveling upon a white horse.,3,1
+Narration,"His appearance gallant and his smile gentle,",3,1
+Narration,the prince enveloped the princess in the scent of roses and wiped away her tears.,3,1
+Narration,"""Little lass bearing up alone under grief,",3,1
+Narration,"please lose not thy strength and nobility when thou growest up.""",3,1
+Narration,"""As a token of this day, please retain this.""",3,1
+Narration,"""Pray, shall we meet once more?"" ",3,1
+Narration,"""This ring will guide thee to me."" ",3,1
+Narration,Was the ring from the prince meant as an engagement ring?,3,1
+Narration,"That part was good, ",3,1
+Narration,"but because of the strength of her adoration for the prince,",3,1
+Narration,the princess made up her mind to become a prince herself!,3,1
+Narration,But is that really good for her? ,3,1
 Title,On the Night of the Ball ,3,1
 Utena,And I still have this ring here. ,3,1
 Utena,So that encounter was real. ,3,1
@@ -725,11 +726,12 @@ Touga,"Just so I could meet you, of course. ",3,1
 Utena,He couldn't be...? ,3,1
 Touga,I'd like us to be really good friends. ,3,1
 Utena,He couldn't be...? ,3,1
-touga,"If the egg's shell does not break, the chick will die without being born.",3,1
-touga,We are the chick; the egg is the world. ,3,1
-touga,"If the world's shell does not break, we will die without being born.",3,1
-touga,Break the world's shell! ,3,1
-"touga,juri",For the sake of revolutionizing the world!,3,1
+Touga,"If the egg's shell does not break, the chick will die without being born.",3,1
+Touga,We are the chick; the egg is the world. ,3,1
+Touga,"If the world's shell does not break, we will die without being born.",3,1
+Touga,Break the world's shell! ,3,1
+Touga,For the sake of revolutionizing the world!,3,1
+Juri,For the sake of revolutionizing the world!,3,1
 Touga,"Yesterday, Saionji fought Tenjou Utena for the second time, and was defeated.",3,1
 Miki,I've heard he's locked himself in his room since yesterday and hasn't come to school.,3,1
 Juri,I could care less about him. ,3,1
@@ -806,12 +808,12 @@ Utena,"Well, you count, but... You should make a lot more friends!",3,1
 Anthy,"If you insist, Utena-sama. ",3,1
 card,On the night of the Ball --- Kiryuu Touga ,3,1
 Utena,What in the world is he thinking anyway? ,3,1
-A-ko,"I wonder, I wonder... do you know what I wonder?",3,1
-B-ko:," Ma'am, did you know... ",3,1
-B-ko,...the whole town is talking about the upcoming ball?,3,1
-A-ko,"Calling it a ""ball"" sounds nice enough, but it's really just a place for hunting boys.",3,1
-B-ko,Young ladies today are so low. ,3,1
-A-ko&B-ko,How shameless! ,3,1
+Shadow,"I wonder, I wonder... do you know what I wonder?",3,1
+Shadow," Ma'am, did you know... ",3,1
+Shadow,...the whole town is talking about the upcoming ball?,3,1
+Shadow,"Calling it a ""ball"" sounds nice enough, but it's really just a place for hunting boys.",3,1
+Shadow,Young ladies today are so low. ,3,1
+Shadow,How shameless! ,3,1
 Nanami,Guess who? ,3,1
 Touga,"Stop it, Nanami. ",3,1
 Nanami,"It's such a lovely evening, isn't it? Onii-sama...",3,1
@@ -1049,19 +1051,19 @@ Miki,I might finally be able to recover something I'd lost long ago.,4,1
 Touga,I envy you. ,4,1
 Touga,"When you recover it, be sure to let me know.",4,1
 Nanami,"What's this ""glow?"" ",4,1
-A-ko,"I wonder, I wonder... Do you know what I wonder?",4,1
-B-ko,"In elementary school, my first boyfriend was the best math student in class.",4,1
-A-ko,"Oh, I never knew. Even then you had a boyfriend?",4,1
-B-ko,But... ,4,1
-B-ko,when he found out that pro wrestling ,4,1
-B-ko,and super sized garlic ramen ,4,1
-B-ko,were my favorites... ,4,1
-A-ko,"""Now I know what kind of girl you are,""",4,1
-B-ko,"he said, and with that it was over. ",4,1
-A-ko,"Oh, women in love, you young people dreaming of love...",4,1
-B-ko,Are you aware of... ,4,1
-A-ko,...love's true colors? ,4,1
-A-ko&B-ko,"I wonder, I wonder... Do you know what I wonder?",4,1
+Shadow,"I wonder, I wonder... Do you know what I wonder?",4,1
+Shadow,"In elementary school, my first boyfriend was the best math student in class.",4,1
+Shadow,"Oh, I never knew. Even then you had a boyfriend?",4,1
+Shadow,But... ,4,1
+Shadow,when he found out that pro wrestling ,4,1
+Shadow,and super sized garlic ramen ,4,1
+Shadow,were my favorites... ,4,1
+Shadow,"""Now I know what kind of girl you are,""",4,1
+Shadow,"he said, and with that it was over. ",4,1
+Shadow,"Oh, women in love, you young people dreaming of love...",4,1
+Shadow,Are you aware of... ,4,1
+Shadow,...love's true colors? ,4,1
+Shadow,"I wonder, I wonder... Do you know what I wonder?",4,1
 Utena,Coming! ,4,1
 Miki,Sorry I'm late. ,4,1
 Utena,"Hi, we've been waiting for you. ",4,1
@@ -1344,11 +1346,12 @@ Utena,Now look! ,5,1
 Utena,It's not like I agreed that you're my bride!,5,1
 Utena,It's crazy to make a girl a bride of the winner of a duel.,5,1
 Utena,I won't stand for a system that ignores a person's personality!,5,1
-touga,"If the egg's shell does not break, the chick will die without being born.",5,1
-touga,We are the chick; the egg is the world. ,5,1
-touga,"If the world's shell does not break, we will die without being born.",5,1
-touga,Break the world's shell! ,5,1
-"touga,juri",For the sake of revolutionizing the world!,5,1
+Touga,"If the egg's shell does not break, the chick will die without being born.",5,1
+Touga,We are the chick; the egg is the world. ,5,1
+Touga,"If the world's shell does not break, we will die without being born.",5,1
+Touga,Break the world's shell! ,5,1
+Touga,For the sake of revolutionizing the world!,5,1
+Juri,For the sake of revolutionizing the world!,5,1
 Juri,What is today's meeting for? ,5,1
 Juri,"A letter from the Ends of the World hasn't arrived yet, has it?",5,1
 Touga,Well... ,5,1
@@ -1384,10 +1387,10 @@ Touga,"Morning, Kaoru Miki-kun. ",5,1
 Touga,Your sister is as pretty as you are. ,5,1
 Touga,And just as agreeable... ,5,1
 Anthy,Good morning. ,5,1
-Touja,"If something is really important to you, seize it and protect it with your own hands,",5,1
-Touja,"lest someone should steal it, Micky. ",5,1
-Touja,"Even if the Student Council were dissolved, there'd still be Duelists after the Rose Bride.",5,1
-Touja,Only the one who is engaged to her can do as he pleases with her.,5,1
+Touga,"If something is really important to you, seize it and protect it with your own hands,",5,1
+Touga,"lest someone should steal it, Micky. ",5,1
+Touga,"Even if the Student Council were dissolved, there'd still be Duelists after the Rose Bride.",5,1
+Touga,Only the one who is engaged to her can do as he pleases with her.,5,1
 Miki,"""Do as he pleases..."" ",5,1
 Miki,"""Do as he pleases..."" ",5,1
 Miki,"Himemiya-san, when did you start playing the piano?",5,1
@@ -1430,18 +1433,18 @@ Wakaba,"So, your tutor is... ",5,1
 Utena,Yep. ,5,1
 Miki,"Today after school, I'll be waiting for you at the arena.",5,1
 Miki,I'll be waiting for you. ,5,1
-Boss,Behold this vast expanse of ocean! ,5,1
-Boss,"Bringing a hundred men with me, I have set sail on the seven seas!",5,1
-Boss,I am a pirate. ,5,1
-Boss,All the world's riches are now in my hands.,5,1
-Henchman,"I wonder, I wonder, but Boss? ",5,1
-Henchman,Why's your treasure chest missing ONLY what you want?,5,1
-Boss,What I really want? ,5,1
-Henchman,"Cos... That's why ya can't quit being a pirate boss, ain't it?",5,1
-boss,What I really want... ,5,1
-Henchman,"Boss, what you really want... what you really want is...",5,1
-Boss,What I really want is.... ,5,1
-Henchman,"Oops! Boss, we've sprung a leak. ",5,1
+Shadow,Behold this vast expanse of ocean! ,5,1
+Shadow,"Bringing a hundred men with me, I have set sail on the seven seas!",5,1
+Shadow,I am a pirate. ,5,1
+Shadow,All the world's riches are now in my hands.,5,1
+Shadow,"I wonder, I wonder, but Boss? ",5,1
+Shadow,Why's your treasure chest missing ONLY what you want?,5,1
+Shadow,What I really want? ,5,1
+Shadow,"Cos... That's why ya can't quit being a pirate boss, ain't it?",5,1
+Shadow,What I really want... ,5,1
+Shadow,"Boss, what you really want... what you really want is...",5,1
+Shadow,What I really want is.... ,5,1
+Shadow,"Oops! Boss, we've sprung a leak. ",5,1
 ZUM,Absolute Destiny Apocalypse ,5,1
 ZUM,Absolute Destiny Apocalypse ,5,1
 ZUM,Birth records ,5,1
@@ -1632,7 +1635,8 @@ Nanami,Don't listen to them! ,6,1
 Miki,Sorry. ,6,1
 Nanami,"You believe this isn't any of your concern,",6,1
 Nanami,but someone might be trying to take my life this very moment!,6,1
-Aiko&Keiko,Nanami-sama! ,6,1
+Keiko,Nanami-sama! ,6,1
+Aiko,Nanami-sama! ,6,1
 Utena,"Sorry, sorry! We didn't think it'd go this far.",6,1
 Utena,Let's see... Where's the ball? Did you guys see the ball?,6,1
 Nanami,"So, you're the one. ",6,1
@@ -1649,7 +1653,7 @@ Nanami,I can only wish. ,6,1
 Nanami,"At the very least, I know you're trying to seduce my brother.",6,1
 Utena,HE is making passes at me! ,6,1
 Nanami,"My, what a self-conscious woman! ",6,1
-Miki:,"Hey, there's someone in the greenhouse. ",6,1
+Miki,"Hey, there's someone in the greenhouse. ",6,1
 Nanami,"But, there's a ""No Entry"" sign on the door.",6,1
 Sign,"Sign: ""NO ENTRY"" ",6,1
 Nanami,Onii-sama... ,6,1
@@ -1721,16 +1725,16 @@ Tsuwabuki,Yes? ,6,1
 Utena,Is that little boy the one she owes her life to?,6,1
 Nanami,Here. Thank you. ,6,1
 Nanami,"Please, Tsuwabuki-kun, be my boyfriend. ",6,1
-Ako,It's a camp! ,6,1
-Ako&Bko,It's a camp! It's a camp! How fun! ,6,1
-Bko,The real pleasure of camp is making curry and rice in a messtin.,6,1
-Ako&Bko,Let's eat! ,6,1
-Ako,This rice is pretty hard in the center. ,6,1
-Bko,And the bottom is scorched. ,6,1
-Ako,"Besides, the curry is too runny without enough powder.",6,1
-Ako,Do you really like it? ,6,1
-Bko,"Oh, c'mon! This fresh air has a better taste than any food!",6,1
-Ako&Bko,Thanks for the food! ,6,1
+Shadow,It's a camp! ,6,1
+Shadow,It's a camp! It's a camp! How fun! ,6,1
+Shadow,The real pleasure of camp is making curry and rice in a messtin.,6,1
+Shadow,Let's eat! ,6,1
+Shadow,This rice is pretty hard in the center. ,6,1
+Shadow,And the bottom is scorched. ,6,1
+Shadow,"Besides, the curry is too runny without enough powder.",6,1
+Shadow,Do you really like it? ,6,1
+Shadow,"Oh, c'mon! This fresh air has a better taste than any food!",6,1
+Shadow,Thanks for the food! ,6,1
 Miki,It is rather good. ,6,1
 Utena,I'm not talking about the meal! About Nanami!,6,1
 Utena,Asking a grade schooler to be her boyfriend... ,6,1
@@ -1917,103 +1921,104 @@ OP,"like the roses dancing all around me, whirling free.",7,1
 OP,But if the two of us should get split up ,7,1
 OP,"by whatever means, ",7,1
 OP,"I swear to you, I will change the world. ",7,1
-juri,"See, I have no choice but to give up. ",7,1
-juri,"After all, there are no such things in this world as miracles.",7,1
-juri,Next! ,7,1
-juri,Next! ,7,1
-juri,Next! ,7,1
-miki,It was amazing of you to beat that many people in a row.,7,1
-miki,"No one's a match for you anymore, Juri-san. ",7,1
-juri,So what would I possibly gain? ,7,1
-juri,Would I break the world's shell? ,7,1
+Juri,"See, I have no choice but to give up. ",7,1
+Juri,"After all, there are no such things in this world as miracles.",7,1
+Juri,Next! ,7,1
+Juri,Next! ,7,1
+Juri,Next! ,7,1
+Miki,It was amazing of you to beat that many people in a row.,7,1
+Miki,"No one's a match for you anymore, Juri-san. ",7,1
+Juri,So what would I possibly gain? ,7,1
+Juri,Would I break the world's shell? ,7,1
 Title,Juri's Unfulfillment ,7,1
 otoko,"Arisugawa-kun, ",7,1
 otoko,I appreciate you Student Council members moderating last week's area study meeting.,7,1
 otoko,"All the other teachers were impressed, saying it was better than recent years.",7,1
 otoko,All of your Student Council activities will remain as our academy's tradition.,7,1
-juri,"Thank you, sir. ",7,1
+Juri,"Thank you, sir. ",7,1
 otoko,"Say, why don't we talk about the Student Council's future activities over lunch?",7,1
-juri,"Yes, sir. ",7,1
+Juri,"Yes, sir. ",7,1
 otoko,Wait here for a moment. ,7,1
 onnna,You really don't follow the Academy Regulations. ,7,1
 onnna,Where is it written in the regulations that you could bring pets to school?!,7,1
-utena,"I didn't bring him, he just brought my lunch box for me.",7,1
-utena,Is that against the regulations? ,7,1
+Utena,"I didn't bring him, he just brought my lunch box for me.",7,1
+Utena,Is that against the regulations? ,7,1
 onnna,Having a monkey bring what you've forgot... ,7,1
 onnna,is too stupid a problem to be in the regulations!,7,1
 onnna,"Do you understand, Tenjou Utena-san!? ",7,1
-utena,When you put it that way... ,7,1
+Utena,When you put it that way... ,7,1
 onnna,What's this rebellious attitude? ,7,1
 onnna,Now I won't forgive y... ,7,1
 onnna,Hey! Hold it! ,7,1
-utena,"Oh, well... ",7,1
-juri,Hi there. ,7,1
+Utena,"Oh, well... ",7,1
+Juri,Hi there. ,7,1
 onnna,"I said, hold it! ",7,1
-juri,Are you Tenjou Utena? ,7,1
-utena,"You're a member of the Student Council, aren't you?",7,1
+Juri,Are you Tenjou Utena? ,7,1
+Utena,"You're a member of the Student Council, aren't you?",7,1
 onnna,Hold it! ,7,1
-juri,I'd like to talk to you a little bit. ,7,1
+Juri,I'd like to talk to you a little bit. ,7,1
 onnna,"Utena-san, you help too! ",7,1
 onnna,Hold it! ,7,1
-utena,"Sorry, I can't spare the time just now... ",7,1
+Utena,"Sorry, I can't spare the time just now... ",7,1
 onnna,"All right, a dead end. Utena-san, shut the door.",7,1
-utena,"Y- Yes, ma'am. ",7,1
+Utena,"Y- Yes, ma'am. ",7,1
 otoko,Sorry to keep you waiting. Shall we go? ,7,1
-juri,Vice-Principal... ,7,1
-juri,That lady teacher you've been looking for,7,1
-juri,just went in that consulting room over there.,7,1
+Juri,Vice-Principal... ,7,1
+Juri,That lady teacher you've been looking for,7,1
+Juri,just went in that consulting room over there.,7,1
 otoko,Lady teacher? ,7,1
-juri,"Oh, come on. You've just told me... ",7,1
-juri,...that you have to talk with her about student guidance over lunch.,7,1
+Juri,"Oh, come on. You've just told me... ",7,1
+Juri,...that you have to talk with her about student guidance over lunch.,7,1
 otoko,"Arisugawa-kun, what are you talking about? ",7,1
 otoko,You and I are going for lunch... ,7,1
-juri,I do not repeat myself. That is all. ,7,1
+Juri,I do not repeat myself. That is all. ,7,1
 onnna,"Really? I'm so honored, asked by Vice-Principal. ",7,1
 otoko,"Understood, so hurry up! ",7,1
 onnna,"Oh, just a minute. I've got to fix my make-up.",7,1
 otoko,I couldn't care less! Just hurry up! ,7,1
 onnna,"Tenjou-san, I'll be right back, so stay here!",7,1
-juri,"Well, it looks like you have a little time now.",7,1
-utena,"Whew, what a relief. That's what I'd call a miracle.",7,1
-utena,"I've often heard rumors about you, even in junior high.",7,1
-utena,"You're the captain of the Fencing Club, ",7,1
-utena,and a brilliant Student Council member that even the teachers defer to...,7,1
-utena,"But the truth is that you're extremely wicked,",7,1
-utena,and anyone who knows your true colors keeps at least ten meters away.,7,1
-juri,As if I'm a wild animal... ,7,1
-utena,"I don't know if this is true or not, ",7,1
-utena,"but even teachers are kicked out of the academy, once they get on your blacklist.",7,1
-juri,Heh... ,7,1
-juri,Looks like one shouldn't underestimate the intelligence networks of the underclassmen.,7,1
+Juri,"Well, it looks like you have a little time now.",7,1
+Utena,"Whew, what a relief. That's what I'd call a miracle.",7,1
+Utena,"I've often heard rumors about you, even in junior high.",7,1
+Utena,"You're the captain of the Fencing Club, ",7,1
+Utena,and a brilliant Student Council member that even the teachers defer to...,7,1
+Utena,"But the truth is that you're extremely wicked,",7,1
+Utena,and anyone who knows your true colors keeps at least ten meters away.,7,1
+Juri,As if I'm a wild animal... ,7,1
+Utena,"I don't know if this is true or not, ",7,1
+Utena,"but even teachers are kicked out of the academy, once they get on your blacklist.",7,1
+Juri,Heh... ,7,1
+Juri,Looks like one shouldn't underestimate the intelligence networks of the underclassmen.,7,1
 Utena,"So, the rumors about you are true? ",7,1
-juri,Who knows? ,7,1
-juri,I've often heard rumors that you are quite skillful with the sword.,7,1
-utena,"Oh no, not really. I don't really like swordfighting, myself.",7,1
-utena,"Speaking of which, since you're a Student Council member,",7,1
-utena,"then you're after the Rose Bride, too, aren't you?",7,1
-juri,Do you know the reason why they're after the Rose Bride?,7,1
-juri,It seems that whoever is engaged to the Rose Bride...,7,1
-juri,"...will obtain the power of miracles, the power to revolutionize the world.",7,1
-utena,That's pretty cool. ,7,1
-utena,"Then, since I'm engaged to her right now, the miracle power belongs to me.",7,1
-utena,That'll be convenient for finals. ,7,1
-utena,I could ace all my tests without even studying!,7,1
-utena,Are you all really serious about... ,7,1
-utena,...doing stupid things like fighting Duels over Himemiya?,7,1
-juri,You're right. Fighting over the Rose Bride is stupid.,7,1
-shiori,"Believe in a miracle, that your wish come true.",7,1
-juri,"No, there can be no miracles. ",7,1
-utena,We seem to be on the same wavelength. ,7,1
+Juri,Who knows? ,7,1
+Juri,I've often heard rumors that you are quite skillful with the sword.,7,1
+Utena,"Oh no, not really. I don't really like swordfighting, myself.",7,1
+Utena,"Speaking of which, since you're a Student Council member,",7,1
+Utena,"then you're after the Rose Bride, too, aren't you?",7,1
+Juri,Do you know the reason why they're after the Rose Bride?,7,1
+Juri,It seems that whoever is engaged to the Rose Bride...,7,1
+Juri,"...will obtain the power of miracles, the power to revolutionize the world.",7,1
+Utena,That's pretty cool. ,7,1
+Utena,"Then, since I'm engaged to her right now, the miracle power belongs to me.",7,1
+Utena,That'll be convenient for finals. ,7,1
+Utena,I could ace all my tests without even studying!,7,1
+Utena,Are you all really serious about... ,7,1
+Utena,...doing stupid things like fighting Duels over Himemiya?,7,1
+Juri,You're right. Fighting over the Rose Bride is stupid.,7,1
+Shiori,"Believe in a miracle, that your wish come true.",7,1
+Juri,"No, there can be no miracles. ",7,1
+Utena,We seem to be on the same wavelength. ,7,1
 anaunnsu,"Tenjou Utena-san, report immediately to the student consulting room. Repeat...",7,1
-utena,Good grief... that teacher won't give up.,7,1
-utena,"Anyway, I'm glad there's someone in the Student Council who understands me .",7,1
+Utena,Good grief... that teacher won't give up.,7,1
+Utena,"Anyway, I'm glad there's someone in the Student Council who understands me .",7,1
 annshi-,Uhm... Would you mind if I gave you this?,7,1
-juri,Don't be conceited. ,7,1
-touga,"If the egg's shell does not break, the chick will die without being born.",7,1
-touga,We are the chick; the egg is the world. ,7,1
-touga,"If the world's shell does not break, we will die without being born.",7,1
-touga,Break the world's shell! ,7,1
-touga&juri,For the sake of revolutionizing the world!,7,1
+Juri,Don't be conceited. ,7,1
+Touga,"If the egg's shell does not break, the chick will die without being born.",7,1
+Touga,We are the chick; the egg is the world. ,7,1
+Touga,"If the world's shell does not break, we will die without being born.",7,1
+Touga,Break the world's shell! ,7,1
+Touga,For the sake of revolutionizing the world!,7,1
+Juri,For the sake of revolutionizing the world!,7,1
 chart,The man fighting for love ,7,1
 chart,Saionji Kyouichi ,7,1
 chart,Tenjou Utena ,7,1
@@ -2021,7 +2026,7 @@ chart,Who's she? ,7,1
 chart,BATTLE ,7,1
 chart,Tenjou Utena ,7,1
 chart,She's pretty good ,7,1
-miki,A new letter from the Ends of the World has arrived.,7,1
+Miki,A new letter from the Ends of the World has arrived.,7,1
 chart,A guy who doesn't know when to quit ,7,1
 chart,Saionji Kyouichi ,7,1
 chart,Tenjou Utena ,7,1
@@ -2030,7 +2035,7 @@ chart,BATTLE ,7,1
 chart,Tenjou Utena ,7,1
 chart,2 win streak ,7,1
 chart,on the road to loserdom ,7,1
-miki,The next Duel must be held by the end of the week.,7,1
+Miki,The next Duel must be held by the end of the week.,7,1
 chart,Now it's my turn ,7,1
 chart,Kaoru Miki ,7,1
 chart,Tenjou Utena ,7,1
@@ -2038,108 +2043,108 @@ chart,2 win streak ,7,1
 chart,BATTLE ,7,1
 chart,Tenjou Utena ,7,1
 chart,No way! 3 win streak ,7,1
-touga,"Going in turn, Juri or I should be next. ",7,1
-miki,What? Including Juri-san? ,7,1
-touga,Of course. She also has a seat here to fight Duels.,7,1
-miki,"Well, sure she's eligible, and skilled, too.",7,1
-miki,"But she doesn't have a motive for fighting, does she?",7,1
-touga,Sure she does. ,7,1
-touga,"She wants to disprove the power of the Rose Bride, the power of miracles.",7,1
-miki,What? Is that true? ,7,1
-juri,Who knows? But at the least I've got to study for finals on my own.,7,1
-miki,Huh? What's that mean? ,7,1
-touga,But are you sure you want to disprove the miracle power?,7,1
-touga,If the power to revolutionize the world ,7,1
-touga,is the one that will fulfill your unrequited feeling...,7,1
-touga,if you don't have to give up on your romance yet...,7,1
-touga,then do you still want to disprove the power of the Rose Bride?,7,1
-miki,"Are you in love with someone, Juri-san? ",7,1
-miki,An unrequited feeling is hard to bear. ,7,1
-juri,"Yes, I was in love. ",7,1
+Touga,"Going in turn, Juri or I should be next. ",7,1
+Miki,What? Including Juri-san? ,7,1
+Touga,Of course. She also has a seat here to fight Duels.,7,1
+Miki,"Well, sure she's eligible, and skilled, too.",7,1
+Miki,"But she doesn't have a motive for fighting, does she?",7,1
+Touga,Sure she does. ,7,1
+Touga,"She wants to disprove the power of the Rose Bride, the power of miracles.",7,1
+Miki,What? Is that true? ,7,1
+Juri,Who knows? But at the least I've got to study for finals on my own.,7,1
+Miki,Huh? What's that mean? ,7,1
+Touga,But are you sure you want to disprove the miracle power?,7,1
+Touga,If the power to revolutionize the world ,7,1
+Touga,is the one that will fulfill your unrequited feeling...,7,1
+Touga,if you don't have to give up on your romance yet...,7,1
+Touga,then do you still want to disprove the power of the Rose Bride?,7,1
+Miki,"Are you in love with someone, Juri-san? ",7,1
+Miki,An unrequited feeling is hard to bear. ,7,1
+Juri,"Yes, I was in love. ",7,1
 shounenn,You've got me. ,7,1
 shounenn,I give up. I'm beaten completely. ,7,1
 shounenn,"You'd be a good match for even high school guys, Juri.",7,1
-juri,Thank you. ,7,1
-shiori,"Believe in a miracle, that your wish come true.",7,1
-juri,But I knew... that this romance would never be fulfilled.,7,1
-juri,"""Believe in a miracle, that your wish come true.""",7,1
-juri,That was her favorite phrase. ,7,1
-shiori,"He doesn't say it, but he seems to be thinking of you the most, Juri-san.",7,1
-shiori,But I couldn't help but steal him from you.,7,1
-shiori,"Even though I'm no match for you at anything,",7,1
-shiori,at least my feeling for him is... ,7,1
-shiori,Did you know? ,7,1
-shiori,Juri-san is in love with someone. ,7,1
-shiori,But... ,7,1
-shiori,...it isn't you. ,7,1
-shiori,"So, I don't regret stealing him from you...",7,1
-shiori,...because that's what I hoped for from my heart.,7,1
-shiori,"Believe in a miracle, that your wish come true.",7,1
-shiori,You must hate me for being like this. ,7,1
-juri,Thank you for your letter. I'm more than happy to know you're doing fine.,7,1
-juri,"As I read each word of your letter, ",7,1
-juri,I can't help but realize how the days have passed.,7,1
-juri,"Back then, the three of us did everything together.",7,1
-juri,It was really fun. ,7,1
-juri,"But now, when I look at the two of you, beaming with happiness,",7,1
-juri,I feel nostalgic and envious... ,7,1
-utena,"There, there... ",7,1
-utena,"What a pain, crying at this hour... ",7,1
-utena,"Oh, there, there... ",7,1
-utena,"Chuchu, please, go to sleep already. I'm really sleepy myself.",7,1
-utena,Huh? Arisugawa-sempai? ,7,1
-utena,I thought so. ,7,1
-juri,"Oh, it's you. ",7,1
-utena,"Since you're not wearing your usual uniform, I almost didn't recognize you.",7,1
-juri,Really? ,7,1
-utena,You really look like a supermodel. ,7,1
-utena,"You look gallant in your uniform, ",7,1
-utena,but everyone would be surprised if they saw you this ladylike.,7,1
-utena,"So, why are you here by yourself this late?",7,1
-juri,"You even wear that at night, huh? ",7,1
-utena,Yeah... ,7,1
-juri,Why are you always dressed like a boy? ,7,1
-utena,"Well, how should I put it... ",7,1
-utena,"To tell the truth, I'm influenced by my prince.",7,1
-juri,Prince? ,7,1
-utena,"When I was a little kid, I met a prince. ",7,1
-utena,"And he said ""I want that you should never lose your strength and nobility.""",7,1
-utena,"And then, as a reminder of our encounter, he gave me this.",7,1
-utena,"""It will lead you to where I'll be,"" he said.",7,1
-utena,He looked so cool to me. ,7,1
-utena,I want to see him again. ,7,1
-utena,"I mean, I want to become as close to him as I can.",7,1
-utena,"And so, I wear this. ",7,1
-utena,"Oh, sorry for telling you strange stories like this...",7,1
-utena,"However, I don't believe the Student Council",7,1
-utena,"about the Rose Bride or the power of miracles, but...",7,1
-utena,How should I put it... I can believe in the fate between him and me.,7,1
-utena,"If you call it a miracle, maybe it is one, but...",7,1
-utena,Sempai...? ,7,1
-juri,"Your Rose Signet, throw this ring away! ",7,1
-juri,It's disgusting! Your so-called nobility is to copycat as someone you love told you!,7,1
-juri,"Yes, fighting over the Rose Bride ",7,1
-juri,is just as stupid as your sentiment to your prince!,7,1
-juri,"However, to be qualified for that, you must be truly noble!",7,1
-juri,The Rose Signet doesn't suit a girl the likes of you!,7,1
-utena,No! ,7,1
-utena,"This is my one and only tie with him. I won't lose it, no matter what!",7,1
-juri,"Then show me what you call a ""miracle!"" My sword will show its true nature!",7,1
+Juri,Thank you. ,7,1
+Shiori,"Believe in a miracle, that your wish come true.",7,1
+Juri,But I knew... that this romance would never be fulfilled.,7,1
+Juri,"""Believe in a miracle, that your wish come true.""",7,1
+Juri,That was her favorite phrase. ,7,1
+Shiori,"He doesn't say it, but he seems to be thinking of you the most, Juri-san.",7,1
+Shiori,But I couldn't help but steal him from you.,7,1
+Shiori,"Even though I'm no match for you at anything,",7,1
+Shiori,at least my feeling for him is... ,7,1
+Shiori,Did you know? ,7,1
+Shiori,Juri-san is in love with someone. ,7,1
+Shiori,But... ,7,1
+Shiori,...it isn't you. ,7,1
+Shiori,"So, I don't regret stealing him from you...",7,1
+Shiori,...because that's what I hoped for from my heart.,7,1
+Shiori,"Believe in a miracle, that your wish come true.",7,1
+Shiori,You must hate me for being like this. ,7,1
+Juri,Thank you for your letter. I'm more than happy to know you're doing fine.,7,1
+Juri,"As I read each word of your letter, ",7,1
+Juri,I can't help but realize how the days have passed.,7,1
+Juri,"Back then, the three of us did everything together.",7,1
+Juri,It was really fun. ,7,1
+Juri,"But now, when I look at the two of you, beaming with happiness,",7,1
+Juri,I feel nostalgic and envious... ,7,1
+Utena,"There, there... ",7,1
+Utena,"What a pain, crying at this hour... ",7,1
+Utena,"Oh, there, there... ",7,1
+Utena,"Chuchu, please, go to sleep already. I'm really sleepy myself.",7,1
+Utena,Huh? Arisugawa-sempai? ,7,1
+Utena,I thought so. ,7,1
+Juri,"Oh, it's you. ",7,1
+Utena,"Since you're not wearing your usual uniform, I almost didn't recognize you.",7,1
+Juri,Really? ,7,1
+Utena,You really look like a supermodel. ,7,1
+Utena,"You look gallant in your uniform, ",7,1
+Utena,but everyone would be surprised if they saw you this ladylike.,7,1
+Utena,"So, why are you here by yourself this late?",7,1
+Juri,"You even wear that at night, huh? ",7,1
+Utena,Yeah... ,7,1
+Juri,Why are you always dressed like a boy? ,7,1
+Utena,"Well, how should I put it... ",7,1
+Utena,"To tell the truth, I'm influenced by my prince.",7,1
+Juri,Prince? ,7,1
+Utena,"When I was a little kid, I met a prince. ",7,1
+Utena,"And he said ""I want that you should never lose your strength and nobility.""",7,1
+Utena,"And then, as a reminder of our encounter, he gave me this.",7,1
+Utena,"""It will lead you to where I'll be,"" he said.",7,1
+Utena,He looked so cool to me. ,7,1
+Utena,I want to see him again. ,7,1
+Utena,"I mean, I want to become as close to him as I can.",7,1
+Utena,"And so, I wear this. ",7,1
+Utena,"Oh, sorry for telling you strange stories like this...",7,1
+Utena,"However, I don't believe the Student Council",7,1
+Utena,"about the Rose Bride or the power of miracles, but...",7,1
+Utena,How should I put it... I can believe in the fate between him and me.,7,1
+Utena,"If you call it a miracle, maybe it is one, but...",7,1
+Utena,Sempai...? ,7,1
+Juri,"Your Rose Signet, throw this ring away! ",7,1
+Juri,It's disgusting! Your so-called nobility is to copycat as someone you love told you!,7,1
+Juri,"Yes, fighting over the Rose Bride ",7,1
+Juri,is just as stupid as your sentiment to your prince!,7,1
+Juri,"However, to be qualified for that, you must be truly noble!",7,1
+Juri,The Rose Signet doesn't suit a girl the likes of you!,7,1
+Utena,No! ,7,1
+Utena,"This is my one and only tie with him. I won't lose it, no matter what!",7,1
+Juri,"Then show me what you call a ""miracle!"" My sword will show its true nature!",7,1
 annshi-,"Tara-tara-tara-ta, rabbits' dance. ",7,1
 annshi-,"Tara-tara-tara-ta, rabbits, rabbits, rabbits of rabbits,",7,1
 annshi-,tata-tara-tara-tara-tara... ,7,1
-Bko,Good thing I've caught a cold. I was thinkin' an outing's a drag.,7,1
-Bko,Why should someone my age have to go to a zoo?,7,1
-Bko,"Besides, the animals don't seem willing. ",7,1
-Bko,"To begin with, that zoo doesn't have great animals, ya know...",7,1
-Bko,"Doves, ",7,1
-Bko,"wolves, ",7,1
-Bko,"deer, ",7,1
-Bko,"ostriches, ",7,1
-Bko,giraffes... ,7,1
-Bko,They've got to be kiddin'! ,7,1
-Bko,Can't they show any stuff like pandas? ,7,1
-Ako,"So, you wanted to go that badly. ",7,1
+Shadow,Good thing I've caught a cold. I was thinkin' an outing's a drag.,7,1
+Shadow,Why should someone my age have to go to a zoo?,7,1
+Shadow,"Besides, the animals don't seem willing. ",7,1
+Shadow,"To begin with, that zoo doesn't have great animals, ya know...",7,1
+Shadow,"Doves, ",7,1
+Shadow,"wolves, ",7,1
+Shadow,"deer, ",7,1
+Shadow,"ostriches, ",7,1
+Shadow,giraffes... ,7,1
+Shadow,They've got to be kiddin'! ,7,1
+Shadow,Can't they show any stuff like pandas? ,7,1
+Shadow,"So, you wanted to go that badly. ",7,1
 ZUM,The Absolute Destiny: Apocalypse ,7,1
 ZUM,The Absolute Destiny: Apocalypse ,7,1
 ZUM,Birth records ,7,1
@@ -2162,13 +2167,13 @@ ZUM,The Absolute Destiny: Apocalypse ,7,1
 ZUM,The Absolute Destiny: Apocalyptic Darkness; Apocalypse,7,1
 ZUM,mokushi kushimo shimoku kumoshi moshiku shikumo,7,1
 ZUM,mokushi kushimo shimoku kumoshi moshiku shikumo,7,1
-juri,It's just as I said yesterday. ,7,1
-juri,"If you beat me with the power of miracles, you're entitled to your conceit.",7,1
-utena,"I won't be beaten by you, power of miracles or not.",7,1
+Juri,It's just as I said yesterday. ,7,1
+Juri,"If you beat me with the power of miracles, you're entitled to your conceit.",7,1
+Utena,"I won't be beaten by you, power of miracles or not.",7,1
 annshi-,"O roses of the noble castle, ",7,1
 annshi-,"O Power of Dios that slumbers within me,",7,1
 annshi-,Harken unto thy master and reveal to us...,7,1
-utena,...the power to revolutionize the world! ,7,1
+Utena,...the power to revolutionize the world! ,7,1
 DS,Nature's light ,7,1
 DS,Mosaic light ,7,1
 DS,Child of daybreak; the angel Lucifer,7,1
@@ -2177,7 +2182,7 @@ DS,Michael's light ,7,1
 DS,Child of darkness; androgynous ,7,1
 DS,Fire's light ,7,1
 DS,Heavenly light ,7,1
-juri,"Are you all right, prince? We've just started.",7,1
+Juri,"Are you all right, prince? We've just started.",7,1
 DS,Hierarchia of the heavens ,7,1
 DS,Illusory light ,7,1
 DS,Eternal light ,7,1
@@ -2185,43 +2190,43 @@ DS,Phantasmic deception; capricious birth,7,1
 DS,Nyx ,7,1
 DS,Erebus ,7,1
 DS,Uranus ,7,1
-juri,Why don't you try to step aside at least? ,7,1
+Juri,Why don't you try to step aside at least? ,7,1
 DS,Thanatos ,7,1
 DS,"Shining bodies, all of them spherical, gynous",7,1
 DS,"just as if born with every miracle, gynous.",7,1
 DS,"The pleasure principle, the Nirvana principle",7,1
 DS,"Death's inevitability, dubbed ""the light""",7,1
-juri,Pathetic. You're already exhausted. But I'll have no mercy.,7,1
+Juri,Pathetic. You're already exhausted. But I'll have no mercy.,7,1
 DS,"Without having to have lived, ",7,1
 DS,Phenomenon of mobile life ,7,1
-juri,"Isn't a miracle going to happen yet, prince? ",7,1
+Juri,"Isn't a miracle going to happen yet, prince? ",7,1
 DS,In the cerebral universe ,7,1
 DS,Shape of floating life ,7,1
-juri,That's quick! ,7,1
-shiori,But I don't regret stealing him from you.,7,1
+Juri,That's quick! ,7,1
+Shiori,But I don't regret stealing him from you.,7,1
 DS,"Glory, ephemery, hope for eternity!",7,1
-shiori,You must hate me for being like this. ,7,1
+Shiori,You must hate me for being like this. ,7,1
 DS,Incomplete returning to the primitive beginnings.,7,1
-juri,"""Believe in a miracle"" was your favorite phrase... But all the same,",7,1
+Juri,"""Believe in a miracle"" was your favorite phrase... But all the same,",7,1
 DS,"Male/female, positive/negative are the two of me.",7,1
 DS,"Up/down, left/right are the two of me.",7,1
-juri,THERE ARE NO MIRACLES! ,7,1
+Juri,THERE ARE NO MIRACLES! ,7,1
 DS,"Front/back, Heaven/Earth are the two of me.",7,1
 DS,Angel and devil are the two of me.,7,1
 DS,The center is hollow hollow hollow hollow...,7,1
-juri,This is it. ,7,1
-juri,No! This is just a coincidence... ,7,1
-juri,It has nothing to do with miracles. ,7,1
-utena,Impossible... ,7,1
+Juri,This is it. ,7,1
+Juri,No! This is just a coincidence... ,7,1
+Juri,It has nothing to do with miracles. ,7,1
+Utena,Impossible... ,7,1
 annshi-,May your wish come true someday. ,7,1
-juri,Mind your own business. ,7,1
-touga,"So, do you admit the existence of miracles? ",7,1
-juri,Who knows? ,7,1
-juri,"But if she really does have the power to revolutionize the world,",7,1
-juri,I'll wrest it from her with my own hands. ,7,1
-touga,So your secret wish will be granted? ,7,1
-shiori,You must hate me for being like this... ,7,1
-juri,"Yes, I do. Because you're not even aware of my wish.",7,1
+Juri,Mind your own business. ,7,1
+Touga,"So, do you admit the existence of miracles? ",7,1
+Juri,Who knows? ,7,1
+Juri,"But if she really does have the power to revolutionize the world,",7,1
+Juri,I'll wrest it from her with my own hands. ,7,1
+Touga,So your secret wish will be granted? ,7,1
+Shiori,You must hate me for being like this... ,7,1
+Juri,"Yes, I do. Because you're not even aware of my wish.",7,1
 ED,Missing truth and forever ,7,1
 ED,Kissing love and true your heart ,7,1
 ED,Embrace me with your true arms ,7,1
@@ -2267,21 +2272,21 @@ OP,"like the roses dancing all around me, whirling free.",8,1
 OP,But if the two of us should get split up,8,1
 OP,"by whatever means, ",8,1
 OP,"I swear to you, I will change the world. ",8,1
-voice,Once upon a time... ,8,1
-voice,...there was a princess grieving over the deaths of her mother and father.,8,1
-voice,Before this princess there appeared a prince traveling upon a white horse.,8,1
-voice,"His appearance gallant, and his smile gentle, the prince enveloped the princess",8,1
-voice,"in the scent of roses, and wiped away her tears.",8,1
-voice,"""Little one bearing up alone under grief, ",8,1
-voice,"please lose not thy strength and nobility when thou growest up.""",8,1
-voice,"""As a token of this day, please retain this.""",8,1
-voice,"""Pray, shall we meet once more?"" ",8,1
-voice,"""This ring should guide thee to me."" ",8,1
-voice,Was the ring from the prince meant as an engagement ring?,8,1
-voice,"That part was good, ",8,1
-voice,"but because of the strength of her admiration for the prince,",8,1
-voice,the princess made up her mind to become a prince herself!,8,1
-voice,But is that really good for her? ,8,1
+Narration,Once upon a time... ,8,1
+Narration,...there was a princess grieving over the deaths of her mother and father.,8,1
+Narration,Before this princess there appeared a prince traveling upon a white horse.,8,1
+Narration,"His appearance gallant, and his smile gentle, the prince enveloped the princess",8,1
+Narration,"in the scent of roses, and wiped away her tears.",8,1
+Narration,"""Little one bearing up alone under grief, ",8,1
+Narration,"please lose not thy strength and nobility when thou growest up.""",8,1
+Narration,"""As a token of this day, please retain this.""",8,1
+Narration,"""Pray, shall we meet once more?"" ",8,1
+Narration,"""This ring should guide thee to me."" ",8,1
+Narration,Was the ring from the prince meant as an engagement ring?,8,1
+Narration,"That part was good, ",8,1
+Narration,"but because of the strength of her admiration for the prince,",8,1
+Narration,the princess made up her mind to become a prince herself!,8,1
+Narration,But is that really good for her? ,8,1
 Title,The Great Curry High-Trip ,8,1
 Keiko,"Nanami-sama, ",8,1
 Keiko,"8th Grade, Class A, has started cooking practice, as scheduled.",8,1
@@ -2306,7 +2311,8 @@ Touga,"If the egg's shell does not break, the chick will die without being born.
 Touga,We are the chick; the egg is the world. ,8,1
 Touga,"If the world's shell does not break, we will die without being born.",8,1
 Touga,Break the world's shell. ,8,1
-Touga&Juri,For the sake of revolutionizing the world!,8,1
+Touga,For the sake of revolutionizing the world!,8,1
+Juri,For the sake of revolutionizing the world!,8,1
 Touga,"Councilors, this is the greatest disaster for the Rose Signet Code.",8,1
 Touga,The Rose Bride and the one she is engaged to have fallen.,8,1
 Touga,"This was an unforseen turn of events, even for the Ends of the World.",8,1
@@ -2363,7 +2369,8 @@ Miki,My goodness! ,8,1
 Miki,"This, this can't be Himemiya-san! ",8,1
 Miki,"But, now that I've bought them, I can't stand myself.",8,1
 Yuuko,"Okay, you wanted 20, right? ",8,1
-Keiko&Aiko,Thank you. ,8,1
+Keiko,Thank you. ,8,1
+Aiko,Thank you. ,8,1
 Nanami,"Really, I don't see what's so great about her.",8,1
 Touga,"I see, so that's how it is. ",8,1
 Nanami,Onii-sama! ,8,1
@@ -2393,16 +2400,18 @@ Touga,Okay. You may not return until you once more have the phantom spice.,8,1
 Nanami,"I understand. Thank you, Onii-sama. ",8,1
 Keiko,"She said it but, I wonder where is the phantom spice?",8,1
 Yuuko,"Well, it came from India, didn't it? ",8,1
-Keiko&Aiko,India?! ,8,1
+Keiko,India?! ,8,1
+Aiko,India?! ,8,1
 Nanami,"Wait for me, Onii-sama! I shall return! ",8,1
-Keiko&Aiko,"You mean we're supposed to go with her, too?",8,1
-Ako,A lesson on the idioms of love and youth. ,8,1
-Ako,"Today's phrase is ""You reap what you sow."" ",8,1
-Bko,"""You reap what you sow."" ",8,1
-Ako,"It means that if you do bad things, then misfortune will befall you.",8,1
-Bko,Give me your money! ,8,1
-Bko,What the hell? ,8,1
-Ako,"If you're going to do bad things, you must be prepared for that.",8,1
+Keiko,"You mean we're supposed to go with her, too?",8,1
+Aiko,"You mean we're supposed to go with her, too?",8,1
+Shadow,A lesson on the idioms of love and youth. ,8,1
+Shadow,"Today's phrase is ""You reap what you sow."" ",8,1
+Shadow,"""You reap what you sow."" ",8,1
+Shadow,"It means that if you do bad things, then misfortune will befall you.",8,1
+Shadow,Give me your money! ,8,1
+Shadow,What the hell? ,8,1
+Shadow,"If you're going to do bad things, you must be prepared for that.",8,1
 Anthy,"Utena-sama, that's wonderful. ",8,1
 Utena,"Well, it feels weird being praised by my own body.",8,1
 Anthy,"You see, I'm not very good at sports, ",8,1
@@ -2508,8 +2517,8 @@ Touga,"Nanami, the replacement? ",8,1
 Nanami,That was the last one. ,8,1
 Nanami,They said it will take another 200 years to refine it to 900 Billion X spice.,8,1
 Utena,200 years? ,8,1
-Ako,"Could this be a case of ""Reaping what you sow?""",8,1
-Bko,Could it be? ,8,1
+Shadow,"Could this be a case of ""Reaping what you sow?""",8,1
+Shadow,Could it be? ,8,1
 Nanami,"The spice, the rare phantom spice I took all that trouble to obtain...",8,1
 Utena,We'll be like this forever? ,8,1
 Anthy,"Now, now, everyone please don't get depressed. ",8,1
@@ -2526,7 +2535,8 @@ Aiko,Unopened... ,8,1
 Keiko,It looks like it was never used in that curry.,8,1
 Utena,So that means that explosion... ,8,1
 Nanami,wasn't caused by the spice... ,8,1
-Utena&Nana,It was from Anthy's cooking skills? ,8,1
+Utena,It was from Anthy's cooking skills? ,8,1
+Nanami,It was from Anthy's cooking skills? ,8,1
 Miki,"That's incredible, Himemiya-san! ",8,1
 Miki,"This is a new invention, curry that explodes and causes a personality switch when eaten.",8,1
 Anthy,"Oh, you're embarrassing me. ",8,1
@@ -2721,7 +2731,7 @@ Saionji,In that castle is eternity. ,9,1
 Saionji,I'm going there with her. ,9,1
 Saionji,I won't lose to Touga! ,9,1
 Juri,"By the way, Tenjou Utena said she had met a prince when she was very young.",9,1
-Micky,A prince? ,9,1
+Miki,A prince? ,9,1
 Juri,Yes. ,9,1
 Juri,She said she came to the academy to see a prince she met when she was very young.,9,1
 Touga,She's quite the romantic. ,9,1
@@ -2746,28 +2756,28 @@ Utena,Stop it! ,9,1
 Utena,Quit jerking me around. ,9,1
 Utena,This ain't no joke. ,9,1
 Saionji,From the Ends of the World? ,9,1
-A-Ko,Oh! A UFO! ,9,1
-B-Ko,"Where, where, where, where... where? ",9,1
-B-Ko,"Oh, for crying out loud... it's just a shooting star.",9,1
-A-Ko,"No, no, NO! It's a UFO! ",9,1
-A-Ko,"It flew across the sky all jittery, uh, I mean, zigzaggy.",9,1
-B-Ko,"In that case, it's a shooting star flying zigzaggy.",9,1
-B-Ko,There's no way UFOs could exist! ,9,1
-A-Ko,It was when I was in kindergarten... ,9,1
-B-Ko,What was? ,9,1
-A-Ko,...that they said Santa Claus didn't exist.,9,1
-B-Ko,Oh gawd... ,9,1
-A-Ko,It's OK though. I understand. ,9,1
-B-Ko,Understand what? ,9,1
-A-Ko,"Wizards, ",9,1
-A-Ko,"fairies, ",9,1
-A-Ko,"princes on white horses, ",9,1
-A-Ko,and kind-hearted friends... ,9,1
-A-Ko,...are only found in fantasy. ,9,1
-Both,"It's okay, though. I understand. ",9,1
-A-Ko,"And so, at least I still have UFOs... ",9,1
-B-Ko,"That's kinda tricky, ain't it? ",9,1
-A-Ko,"Oops, they're broken. ",9,1
+Shadow,Oh! A UFO! ,9,1
+Shadow,"Where, where, where, where... where? ",9,1
+Shadow,"Oh, for crying out loud... it's just a shooting star.",9,1
+Shadow,"No, no, NO! It's a UFO! ",9,1
+Shadow,"It flew across the sky all jittery, uh, I mean, zigzaggy.",9,1
+Shadow,"In that case, it's a shooting star flying zigzaggy.",9,1
+Shadow,There's no way UFOs could exist! ,9,1
+Shadow,It was when I was in kindergarten... ,9,1
+Shadow,What was? ,9,1
+Shadow,...that they said Santa Claus didn't exist.,9,1
+Shadow,Oh gawd... ,9,1
+Shadow,It's OK though. I understand. ,9,1
+Shadow,Understand what? ,9,1
+Shadow,"Wizards, ",9,1
+Shadow,"fairies, ",9,1
+Shadow,"princes on white horses, ",9,1
+Shadow,and kind-hearted friends... ,9,1
+Shadow,...are only found in fantasy. ,9,1
+Shadow,"It's okay, though. I understand. ",9,1
+Shadow,"And so, at least I still have UFOs... ",9,1
+Shadow,"That's kinda tricky, ain't it? ",9,1
+Shadow,"Oops, they're broken. ",9,1
 Utena,"Hey, Himemiya. ",9,1
 Utena,It's supper time. ,9,1
 Utena,"Chuchu, where's your owner? ",9,1
@@ -2816,8 +2826,8 @@ Saionji,Impossible... ,9,1
 Utena,"Hey, wait! ",9,1
 Utena,What the... ,9,1
 Saionji,This... ,9,1
-voice,Please don't open it. ,9,1
-voice,"Eternity couldn't possibly exist, could it?",9,1
+Narration,Please don't open it. ,9,1
+Narration,"Eternity couldn't possibly exist, could it?",9,1
 Utena,Himemiya... ,9,1
 Saionji,Anthy! ,9,1
 Saionji,What? ,9,1
@@ -2917,7 +2927,7 @@ Miki,"I thought he might do that eventually, ",10,1
 Miki,"but now that he has, does it really seem true to character?",10,1
 Juri,So he turned out to be the laughingstock of the Student Council.,10,1
 Touga,I'll do everything in my power to have your expulsion overturned as quickly as possible.,10,1
-Saioinji,Sorry to further burden you... ,10,1
+Saionji,Sorry to further burden you... ,10,1
 Touga,Your's and Himemiya's exchange diary? ,10,1
 Touga,I see. ,10,1
 Touga,I'll take responsibility for delivering it to her.,10,1
@@ -2928,7 +2938,10 @@ Touga,"If the egg's shell does not break, the chick will die without being born.
 Touga,We are the chick; the egg is the world. ,10,1
 Touga,"If the world's shell does not break, we will die without being born.",10,1
 Touga,Break the world's shell! ,10,1
-All,For the sake of revolutionizing the world! ,10,1
+Juri,For the sake of revolutionizing the world! ,10,1
+Miki,For the sake of revolutionizing the world! ,10,1
+Saionji,For the sake of revolutionizing the world! ,10,1
+Touga,For the sake of revolutionizing the world! ,10,1
 Touga,We've received a new letter from the Ends of the World.,10,1
 Touga,Another Duel will be soon upon us. ,10,1
 Juri,"Taking turns, Touga should be next, but... ",10,1
@@ -3100,20 +3113,20 @@ Touga,The Rose Signet is the only piece of authentication that allows you fight 
 Touga,"Now show me your power, as a chosen one of the ""Ends of the World.""",10,1
 Miki,"You mean, Nanami-kun is also a Duelist? ",10,1
 Touga,"Tomorrow night, at the Arena, you will fight this next Duel.",10,1
-A-ko,"Look, look, I've found a kitten. ",10,1
-A-ko,I wonder what I should name it. ,10,1
-B-ko,"How about ""Jewel?"" ",10,1
-A-ko,That's too ordinary. Aren't there any more unusual names?,10,1
-B-ko,"""Unusual Jewel"" ",10,1
-A-ko,"Umm, no, not quite. Isn't there a name which is more tasteful?",10,1
-B-ko,"""Tasteful Unusual Jewel"" ",10,1
-A-ko,"No, that's not it... ",10,1
-A-ko,"Isn't there some name that's cute-sounding, dignified, and easy to remember?",10,1
-B-ko,"""Cute-sounding Dignified Easy to Remember Tasteful Unusual Jewel""",10,1
-A-ko,"Oh, all right, already! ",10,1
-A-ko,"If ""Jewel"" is really that good, than ""Jewel"" it is.",10,1
-B-ko,"Come here, Juliano. ",10,1
-A-ko,"Hey, I said enough with the cute names! ",10,1
+Shadow,"Look, look, I've found a kitten. ",10,1
+Shadow,I wonder what I should name it. ,10,1
+Shadow,"How about ""Jewel?"" ",10,1
+Shadow,That's too ordinary. Aren't there any more unusual names?,10,1
+Shadow,"""Unusual Jewel"" ",10,1
+Shadow,"Umm, no, not quite. Isn't there a name which is more tasteful?",10,1
+Shadow,"""Tasteful Unusual Jewel"" ",10,1
+Shadow,"No, that's not it... ",10,1
+Shadow,"Isn't there some name that's cute-sounding, dignified, and easy to remember?",10,1
+Shadow,"""Cute-sounding Dignified Easy to Remember Tasteful Unusual Jewel""",10,1
+Shadow,"Oh, all right, already! ",10,1
+Shadow,"If ""Jewel"" is really that good, than ""Jewel"" it is.",10,1
+Shadow,"Come here, Juliano. ",10,1
+Shadow,"Hey, I said enough with the cute names! ",10,1
 ZUM,The Absolute Destiny: Apocalypse ,10,1
 ZUM,The Absolute Destiny: Apocalypse ,10,1
 ZUM,Birth records ,10,1
@@ -3301,7 +3314,8 @@ Touga,"If the egg's shell does not break, the chick will die without being born.
 Touga,We are the chick; the egg is the world. ,11,1
 Touga,"If the world's shell does not break, we will die without being born.",11,1
 Touga,Break the world's shell! ,11,1
-"Touga,Juri",For the sake of revolutionizing the world!,11,1
+Touga,For the sake of revolutionizing the world!,11,1
+Juri,For the sake of revolutionizing the world!,11,1
 Touga,"As you may already know, ",11,1
 Touga,Nanami lost the Duel to Tenjou Utena. ,11,1
 Touga,"I'm ashamed to say, the difference in their abilities was made clear.",11,1
@@ -3413,20 +3427,20 @@ Utena,"That's right, I've got to protect Himemiya. ",11,1
 Utena,"If anyone can return her to being a normal girl, it's me.",11,1
 Utena,I can't let anyone else have her. ,11,1
 Utena,Not even my own prince. ,11,1
-A-ko,"Now, my son, stand with this apple on your head!",11,1
-B-ko,"Yes, Pop, but... ",11,1
-B-ko,"Well done, Pop! ",11,1
-B-ko,But it was the 37919th already. ,11,1
-B-ko,How long do we have to do this for? ,11,1
-A-ko,"Until the doctor stops us, I suppose... ",11,1
-A-ko,"Hold your tongue, my son, and stand with this apple on your head!",11,1
-B-ko,"Yes, Pop! ",11,1
-B-ko,But why wouldn't the lord release us after we succeeded once?,11,1
-A-ko,Don't make me think! ,11,1
-B-ko,"Misery! O Misery! What fate is in store for the Tells, as he has become a shooting machine?",11,1
-A-ko,"I wonder, I wonder... do you know what I wonder?",11,1
-B-ko,"Aim a bit higher, Pop... ",11,1
-A-ko,Oops. ,11,1
+Shadow,"Now, my son, stand with this apple on your head!",11,1
+Shadow,"Yes, Pop, but... ",11,1
+Shadow,"Well done, Pop! ",11,1
+Shadow,But it was the 37919th already. ,11,1
+Shadow,How long do we have to do this for? ,11,1
+Shadow,"Until the doctor stops us, I suppose... ",11,1
+Shadow,"Hold your tongue, my son, and stand with this apple on your head!",11,1
+Shadow,"Yes, Pop! ",11,1
+Shadow,But why wouldn't the lord release us after we succeeded once?,11,1
+Shadow,Don't make me think! ,11,1
+Shadow,"Misery! O Misery! What fate is in store for the Tells, as he has become a shooting machine?",11,1
+Shadow,"I wonder, I wonder... do you know what I wonder?",11,1
+Shadow,"Aim a bit higher, Pop... ",11,1
+Shadow,Oops. ,11,1
 ZUM,The Absolute Destiny: Apocalypse ,11,1
 ZUM,The Absolute Destiny: Apocalypse ,11,1
 ZUM,Birth records ,11,1
@@ -3614,7 +3628,8 @@ Touga,"If the egg's shell does not break, the chick will die without being born.
 Touga,We are the chick; the egg is the world. ,12,1
 Touga,"If the world's shell does not break, we will die without being born.",12,1
 Touga,Break the world's shell. ,12,1
-Touga&Juri,For the sake of revolutionizing the world!,12,1
+Touga,For the sake of revolutionizing the world!,12,1
+Juri,For the sake of revolutionizing the world!,12,1
 Touga,"And so, the Rose Bride and I are engaged. ",12,1
 Touga,Any questions? ,12,1
 Miki,None. ,12,1
@@ -3712,13 +3727,13 @@ Touga,"So, will you have dinner with me this Sunday?",12,1
 Utena,Right now. ,12,1
 Touga,You don't want to wait? ,12,1
 Utena,At the duel forest! ,12,1
-A-ko,"I wonder, I wonder, do you know what I wonder?",12,1
-B-Ko,"To study normally, to get a normal job, ",12,1
-B-Ko,"to fall in love normally, to get married normally,",12,1
-B-Ko,to make a normal family... that kind of normal doesn't concern us.,12,1
-A-ko,"Up until now, we've done a lot and we're tired.",12,1
-A-ko&B-Ko,"So then, shall we return to our normal selves?",12,1
-A-ko&B-Ko,"I wonder, I wonder, do you know what I wonder?",12,1
+Shadow,"I wonder, I wonder, do you know what I wonder?",12,1
+Shadow,"To study normally, to get a normal job, ",12,1
+Shadow,"to fall in love normally, to get married normally,",12,1
+Shadow,to make a normal family... that kind of normal doesn't concern us.,12,1
+Shadow,"Up until now, we've done a lot and we're tired.",12,1
+Shadow,"So then, shall we return to our normal selves?",12,1
+Shadow,"I wonder, I wonder, do you know what I wonder?",12,1
 Juri,Use this. ,12,1
 Juri,You'll need it for the decoration of the last scene.,12,1
 Touga,Why have you decided to challenge me again?,12,1
@@ -3837,30 +3852,30 @@ OP,"like the roses dancing all around me, whirling free.",13,1
 OP,But if the two of us should get split up ,13,1
 OP,"by whatever means, ",13,1
 OP,"I swear to you, I will change the world.",13,1
-Narrator,Once upon a time...,13,1
-Narrator,...there was a princess grieving over the deaths of her mother and father.,13,1
-Narrator,Before this princess appeared a prince traveling upon a white horse.,13,1
-Narrator,"His appearance gallant, and his smile gentle, the prince enveloped the princess",13,1
-Narrator,in the scent of roses and wiped away her tears.,13,1
-Prince,"""Little one bearing up alone under grief, ",13,1
-Prince,"please lose not thy strength and nobility when thou growest up.""",13,1
-Prince,"""As a token of this day, please retain this.""",13,1
-Princess,"""Pray, shall we meet once more?"" ",13,1
-Prince,"""This ring should guide thee to me."" ",13,1
-Narrator,Was the ring from the prince meant as an engagement ring?,13,1
-Narrator,"That part was good, ",13,1
-Narrator,"but because of the strength of her admiration for the prince,",13,1
-Narrator,the princess made up her mind to become a prince herself!,13,1
-Narrator,But is that really good for her? ,13,1
+Narration,Once upon a time...,13,1
+Narration,...there was a princess grieving over the deaths of her mother and father.,13,1
+Narration,Before this princess appeared a prince traveling upon a white horse.,13,1
+Narration,"His appearance gallant, and his smile gentle, the prince enveloped the princess",13,1
+Narration,in the scent of roses and wiped away her tears.,13,1
+Narration,"""Little one bearing up alone under grief, ",13,1
+Narration,"please lose not thy strength and nobility when thou growest up.""",13,1
+Narration,"""As a token of this day, please retain this.""",13,1
+Narration,"""Pray, shall we meet once more?"" ",13,1
+Narration,"""This ring should guide thee to me."" ",13,1
+Narration,Was the ring from the prince meant as an engagement ring?,13,1
+Narration,"That part was good, ",13,1
+Narration,"but because of the strength of her admiration for the prince,",13,1
+Narration,the princess made up her mind to become a prince herself!,13,1
+Narration,But is that really good for her? ,13,1
 title,Plotting a Locus ,13,1
-A-ko,"I wonder, I wonder... do you know what I wonder?",13,1
-B-ko,I heard that meddlesome brave warrior won yet another duel.,13,1
-A-ko,Might is right! ,13,1
-B-ko,And losers are bottomfeeders. ,13,1
-A-ko&B-ko,"...and when she walks, she is as the lily.",13,1
-A-ko,But dear brave warrior... ,13,1
-B-ko,"Hey, you, no more sidetracking! ",13,1
-A-ko&B-ko,"I wonder, I wonder... Do you know what I wonder?",13,1
+Shadow,"I wonder, I wonder... do you know what I wonder?",13,1
+Shadow,I heard that meddlesome brave warrior won yet another duel.,13,1
+Shadow,Might is right! ,13,1
+Shadow,And losers are bottomfeeders. ,13,1
+Shadow,"...and when she walks, she is as the lily.",13,1
+Shadow,But dear brave warrior... ,13,1
+Shadow,"Hey, you, no more sidetracking! ",13,1
+Shadow,"I wonder, I wonder... Do you know what I wonder?",13,1
 Touga,"If the world's shell does not break, we will die without being born.",13,1
 Touga,"If the world's shell does not break, we will die without being born.",13,1
 Touga,"If the world's shell does not break, we will die without being born.",13,1
@@ -3899,9 +3914,9 @@ WWWW,of the stillborn flesh. ,13,1
 Saionji,You don't know about the Sword of Dios? Who are you?,13,1
 Saionji,"You, a prince on a white horse out to save a princess?",13,1
 WWWW,"And I, a holy actor, cast eternally",13,1
-Prince,"""Little one bearing up alone under grief, ",13,1
+Narration,"""Little one bearing up alone under grief, ",13,1
 WWWW,"as a dark shining Margineaux, cast into Hell.",13,1
-Prince,"please lose not thy strength and nobility when thou growest up.""",13,1
+Narration,"please lose not thy strength and nobility when thou growest up.""",13,1
 WWWW,Glow! ,13,1
 Saionji,What!? ,13,1
 WWWW,Burn! ,13,1
@@ -4393,16 +4408,16 @@ Wakaba,Not like that... something more exciting! ,14,2
 Wakaba,Our academy's just too darned peaceful. ,14,2
 Wakaba,I wish something surprising would happen. ,14,2
 ka-do,To the one Engaged: I shall wait for you at the Duel Arena this evening.,14,2
-Cko,Extra! Extra! Extra! ,14,2
-Cko,"At last, at last, at last! ",14,2
-Cko,"At last, that which I feared has come to pass!",14,2
-Cko,Earlier than for other people. ,14,2
-Cko,My big sis is advanced for her age. ,14,2
-Cko,"Okay, say ""Ahh."" ",14,2
-Cko,Ahhhhhhh!! ,14,2
-Cko,What should we do about this wisdom tooth? ,14,2
-Cko,Ahhhhhhh!! ,14,2
-Cko,"Oh, what should I do? ",14,2
+Shadow,Extra! Extra! Extra! ,14,2
+Shadow,"At last, at last, at last! ",14,2
+Shadow,"At last, that which I feared has come to pass!",14,2
+Shadow,Earlier than for other people. ,14,2
+Shadow,My big sis is advanced for her age. ,14,2
+Shadow,"Okay, say ""Ahh."" ",14,2
+Shadow,Ahhhhhhh!! ,14,2
+Shadow,What should we do about this wisdom tooth? ,14,2
+Shadow,Ahhhhhhh!! ,14,2
+Shadow,"Oh, what should I do? ",14,2
 Utena,Have it pulled? ,14,2
 ZUM,The Absolute Destiny: Apocalypse ,14,2
 ZUM,The Absolute Destiny: Apocalypse ,14,2
@@ -4582,21 +4597,21 @@ Miki,...what am I saying?! ,15,2
 Utena,Himemiya! Micky's here! ,15,2
 Miki,It's not like I'm here to visit Himemiya-san in particular!,15,2
 Miki,I just happened to be passing by... ,15,2
-Himemiya,Hello. ,15,2
+Anthy,Hello. ,15,2
 Miki,Umm... ,15,2
-Himemiya,Yes...? ,15,2
+Anthy,Yes...? ,15,2
 Miki,Umm... ,15,2
 Miki,"...Chuuchuu is really cute, isn't he? ",15,2
 Utena,It's not Chuuchuu. It's Chuchu. ,15,2
 Utena,"If it was Chuuchuu, it would sound too mouse-like.",15,2
-Himemiya,But I kind of like Chuuchuu as well. ,15,2
+Anthy,But I kind of like Chuuchuu as well. ,15,2
 Miki,"Himemiya-san, you like Chuuchuu too? ",15,2
-Himemiya,I like it. ,15,2
+Anthy,I like it. ,15,2
 Miki,"I like it, too! ",15,2
 Miki,I guess we have something in common! ,15,2
 Miki,"Sorry, I'm saying some strange things, aren't I?",15,2
 Miki,Umm... ,15,2
-Himemiya,Yes? ,15,2
+Anthy,Yes? ,15,2
 Utena,Come on! Just a little more. ,15,2
 Miki,"Himemiya-san, if it's alright with you, ",15,2
 Miki,would you play the piano with me tomorrow after school?,15,2
@@ -4630,7 +4645,8 @@ Nanami,"If the egg's shell does not break, the chick will die without being born
 Nanami,The chamber of freedom and the cage of freedom...,15,2
 Nanami,"...without showing the vastness of the skies, they cherish the chick.",15,2
 Nanami,Break the world's cage! ,15,2
-Nanami&Jur,For the sake of revolutionizing the world!,15,2
+Nanami,For the sake of revolutionizing the world!,15,2
+Juri,For the sake of revolutionizing the world!,15,2
 Namani,What is it? Any complaints? ,15,2
 Juri,None here. ,15,2
 Miki,None here. ,15,2
@@ -4658,9 +4674,9 @@ Miki,"Himemiya-san, not here yet? ",15,2
 Miki,I must have arrived a little early. ,15,2
 Kozue,You saw? ,15,2
 Kozue,Well? Don't you want to say something? ,15,2
-Himemiya,Say something? ,15,2
+Anthy,Say something? ,15,2
 Miki,Himemiya-san. ,15,2
-Himemiya,Sorry. I also went to check the greenhouse. ,15,2
+Anthy,Sorry. I also went to check the greenhouse. ,15,2
 Miki,"Oh, please... I'm just happy you came. ",15,2
 Kozue,I have an interview appointment today. ,15,2
 Form,Nemuro Memorial Hall Interview Application Form Please answer the following questions.,15,2
@@ -4694,15 +4710,15 @@ Wakaba,It's the finals schedule! ,15,2
 Wakaba,"No matter how hard you wish... what will come, will come.",15,2
 Wakaba,"Oh, no! English and Math are on the same day.",15,2
 Card,To the one Engaged: I shall wait for you at the Duel Arena this evening.,15,2
-C-Ko,Extra! Extra! Extra! ,15,2
-C-Ko,We have hot coffee and sandwiches and cold beer available.,15,2
-C-Ko,We have hot coffee and sandwiches and cold beer available.,15,2
-C-Ko,"Wait a minute, I'm supposed to be the only one on this car.",15,2
-C-Ko,We have hot coffee and sandwiches and cold beer available.,15,2
-C-Ko,Shut up! I don't want anything to drink! ,15,2
-C-Ko,I don't want anything to eat! ,15,2
+Shadow,Extra! Extra! Extra! ,15,2
+Shadow,We have hot coffee and sandwiches and cold beer available.,15,2
+Shadow,We have hot coffee and sandwiches and cold beer available.,15,2
+Shadow,"Wait a minute, I'm supposed to be the only one on this car.",15,2
+Shadow,We have hot coffee and sandwiches and cold beer available.,15,2
+Shadow,Shut up! I don't want anything to drink! ,15,2
+Shadow,I don't want anything to eat! ,15,2
 Utena,Then ignore her. ,15,2
-B-Ko,"Excuse me, coffee and a sandwich... ",15,2
+Shadow,"Excuse me, coffee and a sandwich... ",15,2
 ZUM,The Absolute Destiny: Apocalypse ,15,2
 ZUM,The Absolute Destiny: Apocalypse ,15,2
 ZUM,Birth records ,15,2
@@ -4729,7 +4745,7 @@ Utena,Kozue-chan? ,15,2
 Kozue,I swear by this black rose... ,15,2
 Kozue,...that I shall win this Duel and bring death to the Rose Bride!,15,2
 Utena,Let me guess... because of that black rose?,15,2
-Himemiya,Could be. ,15,2
+Anthy,Could be. ,15,2
 Kozue,"Now then, Tenjou Utena, draw your sword! ",15,2
 Kozue,"Otherwise, the Rose Bride will be mine! ",15,2
 Utena,That stance... It's the same style as Miki's.,15,2
@@ -4759,7 +4775,7 @@ Kozue,This is Miki's brilliance. ,15,2
 FPFE,Time Machine ,15,2
 Kozue,It ends now! ,15,2
 FPFE,To the time of all my dreams and wishes,15,2
-Himemiya,Utena-sama! ,15,2
+Anthy,Utena-sama! ,15,2
 FPFE,"Hair tied back, ",15,2
 FPFE,"toting a box lunch, ",15,2
 FPFE,"A mysterious charm, Fi! Fi! ",15,2
@@ -4832,20 +4848,20 @@ OP,"like the roses dancing all around me, whirling free.",16,2
 OP,But if the two of us should get split up ,16,2
 OP,"by whatever means, ",16,2
 OP,"I swear to you, I will change the world. ",16,2
-Narrator,Once upon a time... ,16,2
-Narrator,there was a princess grieving over the deaths of her mother and father.,16,2
-Narrator,Before this princess appeared a prince traveling upon a white horse.,16,2
-Narrator,"His appearance gallant, and his smile gentle,",16,2
-Narrator,"the prince enveloped the princess in the scent of roses, and wiped away her tears.",16,2
-Prince,"""Little one bearing up alone under grief, ",16,2
-Prince,"please lose not thy strength and nobility when thou growest up.""",16,2
-Prince,"""As a token of this day, please retain this.""",16,2
-Princess,"""Pray, shall we meet once more?"" ",16,2
-Prince,"""This ring should guide thee to me."" ",16,2
-Narrator,Was the ring from the prince meant as an engagement ring?,16,2
-Narrator,"That part was good, but because of the strength of her admiration for the prince,",16,2
-Narrator,the princess made up her mind to become a prince herself!,16,2
-Narrator,But is that really good for her? ,16,2
+Narration,Once upon a time... ,16,2
+Narration,there was a princess grieving over the deaths of her mother and father.,16,2
+Narration,Before this princess appeared a prince traveling upon a white horse.,16,2
+Narration,"His appearance gallant, and his smile gentle,",16,2
+Narration,"the prince enveloped the princess in the scent of roses, and wiped away her tears.",16,2
+Narration,"""Little one bearing up alone under grief, ",16,2
+Narration,"please lose not thy strength and nobility when thou growest up.""",16,2
+Narration,"""As a token of this day, please retain this.""",16,2
+Narration,"""Pray, shall we meet once more?"" ",16,2
+Narration,"""This ring should guide thee to me."" ",16,2
+Narration,Was the ring from the prince meant as an engagement ring?,16,2
+Narration,"That part was good, but because of the strength of her admiration for the prince,",16,2
+Narration,the princess made up her mind to become a prince herself!,16,2
+Narration,But is that really good for her? ,16,2
 Title,Cowbell of Happiness ,16,2
 Roger,"All right, everyone, thanks a lot! ",16,2
 Roger,"Hey, Steve... Up next is a pendant from the famous designer brand Sebastian Dior.",16,2
@@ -4862,11 +4878,12 @@ Anthy,How cute... ,16,2
 Keiko,"How pretty, Nanami-sama! ",16,2
 Yuuko,What a beautiful dress! ,16,2
 Nanami,My dear uncle bought it for me. It's no big deal.,16,2
-keiko,"How pretty, Nanami-sama! ",16,2
+Keiko,"How pretty, Nanami-sama! ",16,2
 Yuuko,What a beautiful ring! ,16,2
 Keiko,What beautiful shoes! ,16,2
 Yuuko,What beautiful earrings! ,16,2
-Keiko&Yuuk,"It's so you. You're always the best dresser, Nanami-sama.",16,2
+Keiko,"It's so you. You're always the best dresser, Nanami-sama.",16,2
+Yuuko,"It's so you. You're always the best dresser, Nanami-sama.",16,2
 Nanami,It's no big deal. ,16,2
 Nanami,"Well, if you're so impressed with something like this...",16,2
 Nanami,I'll be unveiling the prize of my collection at the party today.,16,2
@@ -4889,7 +4906,7 @@ Nanami,What's this? ,16,2
 Miki,Oh! Th- This crest is... ,16,2
 Juri,"Oh, this is Sebastian Dior! ",16,2
 Nanami,Sebastian Dior is... ,16,2
-miki,Sebastion Dior... ,16,2
+Miki,Sebastion Dior... ,16,2
 Miki,"the most elite designer brand, and purveyor to the British Royal Family.",16,2
 Miki,This is the first time I've ever seen it.,16,2
 Nanami,The most elite designer brand... ,16,2
@@ -5020,7 +5037,7 @@ Nanami,Shut up. Moo. ,16,2
 Nanami,What's with this? Moo. I don't know! ,16,2
 Nanami,Moo... Moo... Moo... MOO! ,16,2
 Nanami,Moooo! ,16,2
-nami,Moooo! ,16,2
+Nanami,Moooo! ,16,2
 Nanami,Moooo! ,16,2
 Nanami,Moooo! ,16,2
 Nanami,MOOOOO! ,16,2
@@ -5036,19 +5053,19 @@ Nanami,"Moo, honestly, moo, Tsuwabuki, moo... ",16,2
 Nanami,"He doesn't even know, moo, what I like. Moo.",16,2
 Nanami,How rude of him. Moo. ,16,2
 Nanami,Moo.. moo.. moo... ,16,2
-C-ko,Extra! Extra! Extra! ,16,2
-C-ko,Chuu chuu! That's easy. We only need to bell the cat.,16,2
-C-ko,"Chuu chuu! Oh, Nezutarou, how smart you are!",16,2
-C-ko,Chuu chuu! But who ever will bell the cat?,16,2
-C-ko,Chuu chuu! Don't worry about that. The cat has already been belled.,16,2
-C-ko,"Actually, I secretly put it on him just now.",16,2
-C-ko,Chuu! Wonderful! ,16,2
-C-ko,"Nezutarou-san, you're great! ",16,2
-C-ko,"Master Cat, I went and spread the false information as we agreed.",16,2
-C-ko,"They all feel so secure that they must be sound asleep tonight, so you can catch and eat as much as youwish.",16,2
-C-ko,"So, as you promised, please let me pass. ",16,2
-C-ko,Mr. Cat... Hey... ,16,2
-C-ko,"Chomp, munch, munch, munch... ",16,2
+Shadow,Extra! Extra! Extra! ,16,2
+Shadow,Chuu chuu! That's easy. We only need to bell the cat.,16,2
+Shadow,"Chuu chuu! Oh, Nezutarou, how smart you are!",16,2
+Shadow,Chuu chuu! But who ever will bell the cat?,16,2
+Shadow,Chuu chuu! Don't worry about that. The cat has already been belled.,16,2
+Shadow,"Actually, I secretly put it on him just now.",16,2
+Shadow,Chuu! Wonderful! ,16,2
+Shadow,"Nezutarou-san, you're great! ",16,2
+Shadow,"Master Cat, I went and spread the false information as we agreed.",16,2
+Shadow,"They all feel so secure that they must be sound asleep tonight, so you can catch and eat as much as youwish.",16,2
+Shadow,"So, as you promised, please let me pass. ",16,2
+Shadow,Mr. Cat... Hey... ,16,2
+Shadow,"Chomp, munch, munch, munch... ",16,2
 Tsuwabuki,"What goes around, comes around. ",16,2
 Utena,Exactly. ,16,2
 Utena,Nanami! ,16,2
@@ -5375,24 +5392,24 @@ Anthy,"It's alright. Romance is like, what will happen will happen.",19,2
 Utena,"That's true, but... ",19,2
 card,"Utena, you meanie!! ",19,2
 Utena,"Huh? Oh, great... ",19,2
-C-ko,Extra! Extra! Extra! ,19,2
-C-ko,"Step right up, step right up! Fresh tires for sale!",19,2
-C-ko,"Today, tire shop's sale! ",19,2
-C-ko,I'll take one. ,19,2
-C-ko,"But mister, what is a tire shop? ",19,2
-C-ko,"How good of you to ask, ma'am! ",19,2
-C-ko,Fish shops... ,19,2
-C-ko,...sell fish. ,19,2
-C-ko,Bread shops... ,19,2
-C-ko,...sell bread. ,19,2
-C-ko,"And we're a tire shop, so we sell tires. ",19,2
-C-ko,Telling good tires from bad ones takes quite a bit of experience.,19,2
-C-ko,You can't easily tell if it tastes good or bad just by looking.,19,2
-C-ko,"Well, please give me one of those tires. ",19,2
-C-ko,Thank you! ,19,2
-C-ko,Have your husband eat something invigorating! ,19,2
-C-ko,"Oh, come on... tire-shop owner... ",19,2
-C-ko,"Now, how will I cook this tire up for dinner, I wonder?",19,2
+Shadow,Extra! Extra! Extra! ,19,2
+Shadow,"Step right up, step right up! Fresh tires for sale!",19,2
+Shadow,"Today, tire shop's sale! ",19,2
+Shadow,I'll take one. ,19,2
+Shadow,"But mister, what is a tire shop? ",19,2
+Shadow,"How good of you to ask, ma'am! ",19,2
+Shadow,Fish shops... ,19,2
+Shadow,...sell fish. ,19,2
+Shadow,Bread shops... ,19,2
+Shadow,...sell bread. ,19,2
+Shadow,"And we're a tire shop, so we sell tires. ",19,2
+Shadow,Telling good tires from bad ones takes quite a bit of experience.,19,2
+Shadow,You can't easily tell if it tastes good or bad just by looking.,19,2
+Shadow,"Well, please give me one of those tires. ",19,2
+Shadow,Thank you! ,19,2
+Shadow,Have your husband eat something invigorating! ,19,2
+Shadow,"Oh, come on... tire-shop owner... ",19,2
+Shadow,"Now, how will I cook this tire up for dinner, I wonder?",19,2
 Utena,Is that edible? ,19,2
 Tatsuya,Wakaba... ,19,2
 Tatsuya,Do you have a minute? ,19,2
@@ -5645,7 +5662,7 @@ Saionji,"It's not finished yet, ",20,2
 Saionji,"...but for what it's worth, this is my gift to you as my thanks for your sincerity.",20,2
 Wakaba,"Oh, really now... ",20,2
 Wakaba,This is... enough for me. ,20,2
-Wakaaba,Student Council President Kiryuu still hasn't been to school.,20,2
+Wakaba,Student Council President Kiryuu still hasn't been to school.,20,2
 Wakaba,"In his place, Nanami-san is Acting Studing Council President.",20,2
 Wakaba,It looks like Miki-kun is doing his best to assist Nanami-san.,20,2
 Wakaba,Arisugawa-sempai is the same as usual. ,20,2
@@ -5700,7 +5717,7 @@ Mikage,I understand. ,20,2
 Mikage,I suppose you have no choice but to revolutionize the world.,20,2
 Mikage,The way before you has been prepared. ,20,2
 Mikage,So... ,20,2
-Saiionji,I didn't think he'd ask me to bring him that thing to grant my wish.,20,2
+Saionji,I didn't think he'd ask me to bring him that thing to grant my wish.,20,2
 Saionji,"Of course, I knew I couldn't stay in this sort of place forever.",20,2
 Saionji,Okay! Ready to go! ,20,2
 Saionji,"Saionji Kyouichi, heading for a new era of glory... moving out!",20,2
@@ -5847,8 +5864,12 @@ Yuuko,Isn't that Kiryuu Touga-sama? ,21,2
 Aiko,"It is, it's Touga-sama, the Student Council President!",21,2
 Keiko,Then this girl is... ,21,2
 Yuuko,Touga-sama's little sister?! ,21,2
-Trio,It's so dreamy! ,21,2
-Trio,"Ah, what a wonderful encounter! ",21,2
+Aiko,It's so dreamy! ,21,2
+Keiko,It's so dreamy! ,21,2
+Yuuko,It's so dreamy! ,21,2
+Aiko,"Ah, what a wonderful encounter! ",21,2
+Keiko,"Ah, what a wonderful encounter! ",21,2
+Yuuko,"Ah, what a wonderful encounter! ",21,2
 Aiko,"It's like, meeting Nanami-sama changed my life.",21,2
 Keiko,We were lucky we were the first ones to talk to Nanami-sama.,21,2
 Yuuko,We've got to be grateful. Nanami-sama chose us from among so many students.,21,2
@@ -5858,7 +5879,9 @@ Aiko,"Keiko, Yuuko! ",21,2
 Aiko,"From now on, let's work together and give it our best shot!",21,2
 Keiko,Right! ,21,2
 Yuuko,We're all the chosen ones. ,21,2
-Trio,Let's do it! ,21,2
+Aiko,Let's do it! ,21,2
+Keiko,Let's do it! ,21,2
+Yuuko,Let's do it! ,21,2
 Nanami,I know! A party! ,21,2
 Nanami,Why didn't I come up with it sooner? ,21,2
 Nanami,I'll throw a magnificent party to encourage my brother!,21,2
@@ -5873,7 +5896,9 @@ Yuuko,Touga-sama has really been looking gloomy lately.,21,2
 Aiko,"I'm really touched by your consideration for your brother, Nanami-sama!",21,2
 boy,"K- Kiryuu-san, the blackboard... ",21,2
 Nanami,Would you all help me with it? ,21,2
-Trio,"Yes, gladly! ",21,2
+Aiko,"Yes, gladly! ",21,2
+Keiko,"Yes, gladly! ",21,2
+Yuuko,"Yes, gladly! ",21,2
 Juri,A party? ,21,2
 Keiko,Do please attend. ,21,2
 Juri,When the Student Council is in such crisis? Honestly...,21,2
@@ -5933,7 +5958,8 @@ Nanami,"My, I just thought, ""Even a dead tree may add to the beauty of a mounta
 Nanami,What impudent people there are in this world!,21,2
 Utena,Now look... ,21,2
 Keiko,Why don't you try to think about your own standing?,21,2
-Aiko&Yuuko,I'll say! ,21,2
+Aiko,I'll say! ,21,2
+Yuuko,I'll say! ,21,2
 Nanami,I can't stand it to even think about a girl like you hanging around my brother.,21,2
 Nanami,"Right, I won't allow even a single insect to swarm on my brother.",21,2
 Nanami,"Shall we go, everyone? ",21,2
@@ -6014,21 +6040,21 @@ Keiko,Touga-sama! ,21,2
 Keiko,"From now on, please look only at me! ",21,2
 plate,Tenjou Utena ,21,2
 card,To the one Engaged: I shall wait for you at the Duel Arena this evening.,21,2
-C-ko,Extra! Extra! Extra! ,21,2
-C-ko,Any bad insects here? Any bad insects here?,21,2
-C-ko,"Oh, it's Namahage! (an ogre-like demon) ",21,2
-C-ko,"No, I'm a mantis. Snipsnipsnip! ",21,2
-C-ko,"Everyone, hurry up and run! ",21,2
-C-ko,Snipsnipsnip! ,21,2
-C-ko,Run! Run! ,21,2
-C-ko,Snipsnipsnipsnip! ,21,2
-C-ko,Run! Runrunrun! ,21,2
-C-ko,Snipsnipnipsnipsnipsnisnipsnips! ,21,2
-C-ko,Runrunrunrurunrunrun! ,21,2
-C-ko,"Damn, just running away won't fix this. Take this insecticide!",21,2
-C-ko,"Can't breathe, snip... ",21,2
-C-ko,"We're gonna die, too! ",21,2
-C-ko,It's a curse... ,21,2
+Shadow,Extra! Extra! Extra! ,21,2
+Shadow,Any bad insects here? Any bad insects here?,21,2
+Shadow,"Oh, it's Namahage! (an ogre-like demon) ",21,2
+Shadow,"No, I'm a mantis. Snipsnipsnip! ",21,2
+Shadow,"Everyone, hurry up and run! ",21,2
+Shadow,Snipsnipsnip! ,21,2
+Shadow,Run! Run! ,21,2
+Shadow,Snipsnipsnipsnip! ,21,2
+Shadow,Run! Runrunrun! ,21,2
+Shadow,Snipsnipnipsnipsnipsnisnipsnips! ,21,2
+Shadow,Runrunrunrurunrunrun! ,21,2
+Shadow,"Damn, just running away won't fix this. Take this insecticide!",21,2
+Shadow,"Can't breathe, snip... ",21,2
+Shadow,"We're gonna die, too! ",21,2
+Shadow,It's a curse... ,21,2
 Utena,That's a room deodorant. ,21,2
 Utena,You're... ,21,2
 Keiko,I swear by this Black Rose... ,21,2
@@ -6147,7 +6173,7 @@ Nanami,So true. Just who are these people who manipulate regular students and fo
 Juri,You're rather impatient. ,22,2
 Juri,"Because your friends, and even Touga, have been targeted?",22,2
 Nanami,"As usual, you know everything. ",22,2
-Nanam,"But, if your intelligence network is good enough to find that out,",22,2
+Nanami,"But, if your intelligence network is good enough to find that out,",22,2
 Nanami,"...then I want you to find out who these people are, and now!",22,2
 Miki,There is one clue. ,22,2
 Juri,Only those people chosen by the Ends of the World should possess the Rose Signet.,22,2
@@ -6343,19 +6369,19 @@ Mikage,"Soon, the road leading to eternity from this Academy will be opened.",22
 Tokiko,Nemuro-san... ,22,2
 Mikage,What Mamiya-kun did was proper. ,22,2
 Mikage,"Now I, too, wish to grasp eternity. ",22,2
-C-ko,Extra! Extra! Extra! ,22,2
-C-ko,It's complete! The all-purpose robot made from the essences of science!,22,2
-C-ko,A robot does not age. A robot does not tire.,22,2
-C-ko,I catch the monkeys. ,22,2
-C-ko,You are superior to humans. ,22,2
-C-ko,A robot is superior. I catch many monkeys. ,22,2
-C-ko,You cannot become worried. ,22,2
-C-ko,A robot does not worry. ,22,2
-C-ko,"When I see a monkey, I catch it quickly! ",22,2
-C-ko,A robot is not lonely. ,22,2
-C-ko,"I have all the monkeys I have caught. A robot can work indefinitely, and can catch many monkeys.",22,2
+Shadow,Extra! Extra! Extra! ,22,2
+Shadow,It's complete! The all-purpose robot made from the essences of science!,22,2
+Shadow,A robot does not age. A robot does not tire.,22,2
+Shadow,I catch the monkeys. ,22,2
+Shadow,You are superior to humans. ,22,2
+Shadow,A robot is superior. I catch many monkeys. ,22,2
+Shadow,You cannot become worried. ,22,2
+Shadow,A robot does not worry. ,22,2
+Shadow,"When I see a monkey, I catch it quickly! ",22,2
+Shadow,A robot is not lonely. ,22,2
+Shadow,"I have all the monkeys I have caught. A robot can work indefinitely, and can catch many monkeys.",22,2
 Tokiko,But those who look at you get lonely. ,22,2
-C-ko,A monkey! A monkey! ,22,2
+Shadow,A monkey! A monkey! ,22,2
 Akio,You... It's been quite a while. ,22,2
 Tokiko,The Academy has changed a lot. ,22,2
 Tokiko,"Just now over there, I saw Professor Nemuro.",22,2
@@ -6607,15 +6633,15 @@ Wakaba,Uuuteeenaaa! ,23,2
 Wakaba,"Hey, you haven't forgotten your ultra-best friend Wakaba-sama lately, have you?",23,2
 Utena,"No, I haven't. ",23,2
 Wakaba,"No matter what happens, I'm on your side, Utena.",23,2
-C-ko,Extra! Extra! Extra! ,23,2
-C-ko,Your pop was a class rep at your age. ,23,2
-C-ko,"Wow, that's great, Pop! ",23,2
-C-ko,"Hey, you, what's with this paperwork? It's terrible!",23,2
-C-ko,"Shit, even though I was a class rep back when!",23,2
-C-ko,"Honey, you can't just leave your socks here when you take them off, it's terrible!",23,2
-C-ko,"Shit, even though I was a class rep back when!",23,2
-C-ko,"Well, I'm off to school, Pop! ",23,2
-C-ko,Wait! Give me that school backpack! Your pop'll go to school!,23,2
+Shadow,Extra! Extra! Extra! ,23,2
+Shadow,Your pop was a class rep at your age. ,23,2
+Shadow,"Wow, that's great, Pop! ",23,2
+Shadow,"Hey, you, what's with this paperwork? It's terrible!",23,2
+Shadow,"Shit, even though I was a class rep back when!",23,2
+Shadow,"Honey, you can't just leave your socks here when you take them off, it's terrible!",23,2
+Shadow,"Shit, even though I was a class rep back when!",23,2
+Shadow,"Well, I'm off to school, Pop! ",23,2
+Shadow,Wait! Give me that school backpack! Your pop'll go to school!,23,2
 Wakaba,See you later! ,23,2
 Utena,...the power to revolutionize the world! ,23,2
 Mikage,Here we go. ,23,2
@@ -6780,19 +6806,19 @@ Tsuwabuki,"And so, I have a secret that absolutely no one must know!",24,2
 text,Nanami-sama Secret Diary ,24,2
 Utena,Tsuwabuki-kun's been hurt? ,24,2
 Nanami,"Yes, while protecting me. ",24,2
-Himemiya,Did he die? ,24,2
+Anthy,Did he die? ,24,2
 Nanami,Of course not! ,24,2
 Nanami,"The wound itself looks like little more than a bruise and a broken nail,",24,2
 Nanami,...but he's still unconscious. ,24,2
 Nanami,"Right now, I'm having them arrange a hospital for him.",24,2
-Himemiya,Hmm? What's this? ,24,2
+Anthy,Hmm? What's this? ,24,2
 Utena,A schedule book? ,24,2
 Nanami,"Oh, that's Tsuwabuki's. ",24,2
 Utena,So he's got names and addresses and stuff written in here?,24,2
-Himemiya,It has diary-type things written in it.,24,2
+Anthy,It has diary-type things written in it.,24,2
 Nanami,What? Read it! ,24,2
-Himemiya,"""My name is Tsuwabuki Mitsuru."" ",24,2
-Himemiya,"""I am a student who has dedicated all of myself to Nanami-san.""",24,2
+Anthy,"""My name is Tsuwabuki Mitsuru."" ",24,2
+Anthy,"""I am a student who has dedicated all of myself to Nanami-san.""",24,2
 Tsuwabuki,I have always had my eye on Nanami-san. ,24,2
 Tsuwabuki,...and only Nanami-san. ,24,2
 Keiko,It's your fault! ,24,2
@@ -6809,8 +6835,8 @@ Keiko,"Well, uh... ",24,2
 Aiko,It's not what it seems. ,24,2
 KYA,Excuse us! ,24,2
 Nanami,Are you alright? ,24,2
-Himemiya,"Yes, thank you. ",24,2
-Himemiya,"You're... Nanami-san, they said it was?",24,2
+Anthy,"Yes, thank you. ",24,2
+Anthy,"You're... Nanami-san, they said it was?",24,2
 Nanami,"Since you're so popular among the boys, ",24,2
 Nanami,...you tend to make them jealous. ,24,2
 Tsuwabuki,Nanami-san is incredible. ,24,2
@@ -6825,12 +6851,12 @@ Nanami,What do you mean by filthy underbelly? ,24,2
 Keiko,"Nanami-sama, she's come wearing the dress we sent her.",24,2
 Aiko,It really suits her. ,24,2
 Boy,"Oh, I apologize, Miss! ",24,2
-Himemiya,It's all right. ,24,2
+Anthy,It's all right. ,24,2
 Tsuwabuki,"Never dirtying her own hands, ",24,2
 Tsuwabuki,"...her stoic manner in which she merely watches the suffering from a safe distance,",24,2
 Tsuwabuki,...certainly is the proper form for she who rules the Academy from the shadows.,24,2
 Utena,"Yeah, something like that happened. ",24,2
-Himemiya,"So that was Nanami-san's doing, wasn't it?",24,2
+Anthy,"So that was Nanami-san's doing, wasn't it?",24,2
 Nanami,Th- that's all Tsuwabuki's delusions! ,24,2
 Nanami,It's unimaginable that I would do something so wild.,24,2
 Nanami,"Tsuwabuki sure is a weird kid, huh? ",24,2
@@ -6849,7 +6875,7 @@ SYT,Curry... ,24,2
 SYT,curry... ,24,2
 SYT,curry... ,24,2
 SYT,CURRY!! ,24,2
-Himemiya,It's ready! ,24,2
+Anthy,It's ready! ,24,2
 Keiko,Nanami-sama! ,24,2
 Nanami,"Be quiet, it's getting good now. ",24,2
 Keiko,"I'm sorry, but, um.. ",24,2
@@ -6861,13 +6887,13 @@ Nanami,Phantom... smithereens? ,24,2
 Nanami,No way... ,24,2
 Tsuwabuki,Tenjou-san and Himemiya-san... ,24,2
 Tsuwabuki,"That's right, their personalities were exchanged by Nanami-san's curry.",24,2
-Himemiya,"Utena-sama, that's wonderful! ",24,2
+Anthy,"Utena-sama, that's wonderful! ",24,2
 Utena,"Well, it feels weird being praised by my own body.",24,2
-Himemiya,"You see, I'm not very good at sports, ",24,2
-Himemiya,...so seeing my own body acting so wonderfully makes me happy.,24,2
+Anthy,"You see, I'm not very good at sports, ",24,2
+Anthy,...so seeing my own body acting so wonderfully makes me happy.,24,2
 Utena,"But, we gotta think of a way to return to normal.",24,2
-Himemiya,Don't worry! ,24,2
-Himemiya,I'm sure even now Nanami-sama is... ,24,2
+Anthy,Don't worry! ,24,2
+Anthy,I'm sure even now Nanami-sama is... ,24,2
 Tsuwabuki,"Right. Nanami-san put forth her best efforts,",24,2
 Tsuwabuki,...to atone for her sin without losing her cheerful smile.,24,2
 Keiko,Nanami-sama! ,24,2
@@ -6882,19 +6908,25 @@ Nanami,Onii-sama!! ,24,2
 Touga,Nanami! The replacement? ,24,2
 Nanami,That was the last one. ,24,2
 Nanami,They said it will take another 200 years to refine it to 900 Billion X spice.,24,2
-All,200 years? ,24,2
+Aiko,200 years? ,24,2
+Keiko,200 years? ,24,2
+Yuuko,200 years? ,24,2
+Tsuwabuki,200 years? ,24,2
+Touga,200 years? ,24,2
+Anthy,200 years? ,24,2
+Utena,200 years? ,24,2
 Tsuwabuki,"Surely, I thought it looked like karmic retribution.",24,2
-Himemiya,"Now that you mention it, that was the case.",24,2
+Anthy,"Now that you mention it, that was the case.",24,2
 Utena,"Nanami is just thoroughly evil, isn't she?",24,2
 Nanami,What are you talking about?! ,24,2
 Nanami,"It wasn't the curry I substituted that switched your personalities,",24,2
 Nanami,"...it was purely because of your cooking skills, am I not right?",24,2
-Himemiya,Was it? ,24,2
+Anthy,Was it? ,24,2
 Nanami,You... ,24,2
 Utena,"So what other evil deeds are written after that, I wonder?",24,2
 Nanami,"Wait a second, aside from that, ",24,2
 Nanami,...is there anything about Tsuwabuki in there?,24,2
-Himemiya,There's nothing written but stuff about Nanami-san.,24,2
+Anthy,There's nothing written but stuff about Nanami-san.,24,2
 Tsuwabuki,Nanami-san seems to have been treating Himemiya-san badly for any reason at all.,24,2
 Tsuwabuki,As in this case... ,24,2
 Miki,"Huh, they say this dorm is haunted, but it's actually quite nice inside.",24,2
@@ -6923,24 +6955,24 @@ Utena,"You really are evil, aren't you? ",24,2
 Nanami,Evil? Moi? ,24,2
 Nanami,You have got to be kidding me! ,24,2
 Nanami,"That time, it was me that was the victim, wasn't it?",24,2
-Himemiya,"""And so, Nanami-san has been hostile toward Himemiya-san, but...""",24,2
+Anthy,"""And so, Nanami-san has been hostile toward Himemiya-san, but...""",24,2
 Nanami,"St- st- st- st- st- stop that, I wasn't hostile or anything.",24,2
 Utena,You don't have to play dumb anymore. ,24,2
-Himemiya,"""...there's a reason for that. A profound reason, which must not be uttered to another soul...""",24,2
+Anthy,"""...there's a reason for that. A profound reason, which must not be uttered to another soul...""",24,2
 Utena,Reason? ,24,2
 Utena,Oh. ,24,2
 Nanami,"Hey, stop already! And give that back! ",24,2
 Utena,Thought this wasn't yours? ,24,2
-Himemiya,"You're going to tear that apart, you know!",24,2
+Anthy,"You're going to tear that apart, you know!",24,2
 Nanami,"You inhuman, demon, villain! ",24,2
 Utena,That's you! ,24,2
 Nanami,What is it? ,24,2
 Utena,Can you hear it? ,24,2
 Nanami,What? ,24,2
-Himemiya,That slight tooth-grinding. ,24,2
-Himemiya,Like a rope bridge swaying in the wind.,24,2
+Anthy,That slight tooth-grinding. ,24,2
+Anthy,Like a rope bridge swaying in the wind.,24,2
 Nanami,"No, it's the sound of a seaside swingset squeaking.",24,2
-Himemiya,"He who once ruled the Student Council, Touga-sempai.",24,2
+Anthy,"He who once ruled the Student Council, Touga-sempai.",24,2
 Nanami,Guess who! ,24,2
 Touga,"Stop it, Nanami. ",24,2
 Nanami,"It's such a lovely evening, isn't it? Onii-sama...",24,2
@@ -6950,15 +6982,15 @@ Nanami,You two!! ,24,2
 Utena,"""Only Touga-sempai could be the one and only man to live up to Nanami-san's ideals.""",24,2
 Tsuwabuki,"Even though I'm still inexperienced, someday I want to be a big brother like Touga-sempai.",24,2
 Utena,"C'mon, let's stop. ",24,2
-Himemiya,Oh? ,24,2
+Anthy,Oh? ,24,2
 Utena,It's not right. All his thoughts are packed in this book.,24,2
 Utena,"And here we are, peeking at it... ",24,2
 Nanami,"You've read almost everything, so who cares about the weight of Tsuwabuki-kun's feelings?",24,2
 Nanami,How about the weight of my feelings? ,24,2
 Utena,About 49 kilos? ,24,2
 Nanami,I've gained?! ,24,2
-Himemiya,"Oh, I wonder what's on this page. ",24,2
-Himemiya,Operation the First... ,24,2
+Anthy,"Oh, I wonder what's on this page. ",24,2
+Anthy,Operation the First... ,24,2
 Nanami,"Did you say ""operation?"" ",24,2
 Nanami,Where am I? ,24,2
 Nanami,Who am I? ,24,2
@@ -6972,7 +7004,7 @@ Tsuwabuki,"Come here, Nanami! ",24,2
 Nanami,ONII-SAMA!! ,24,2
 Nanami,"Wait, what is this? ",24,2
 Utena,Beats me. ,24,2
-Himemiya,Operation the Second... ,24,2
+Anthy,Operation the Second... ,24,2
 Tsuwabuki,"Arrrrggh, wait a minute! ",24,2
 Nanami,Tsuwabuki... ,24,2
 Tsuwabuki,"Please, don't read any further! ",24,2
@@ -6982,8 +7014,8 @@ Tsuwabuki,"What do you mean, plots? ",24,2
 Tsuwabuki,"All I wanted was to become the kind of man that suits you, Nanami-san.",24,2
 Nanami,Why you little...! ,24,2
 Utena,"Nanami, calm down! If you get too excited, you'll turn into a cow again!",24,2
-Himemiya,"Operation the Second... When Nanami-san becomes a cow again,",24,2
-Himemiya,"And this time, I think I can cope with that this way.",24,2
+Anthy,"Operation the Second... When Nanami-san becomes a cow again,",24,2
+Anthy,"And this time, I think I can cope with that this way.",24,2
 Utena,Nanami! ,24,2
 Utena,Get rid of that cowbell! ,24,2
 Utena,Get rid of it! ,24,2
@@ -7005,9 +7037,9 @@ Utena,What you can do now is throw that bell away before you completely turn int
 Nanami,Wh- What are you talking about? Moo. ,24,2
 Nanami,How could I possibly become a cow? Moo. ,24,2
 Nanami,"Really now, don't surprise me. Moo. Quit kidding around, already. Moo.",24,2
-Himemiya,"Utena-sama, it's finally finished! ",24,2
+Anthy,"Utena-sama, it's finally finished! ",24,2
 Utena,What's this? ,24,2
-Himemiya,It's a sweater. ,24,2
+Anthy,It's a sweater. ,24,2
 Utena,"Thanks, but it's a bit out of season, isn't it?",24,2
 Nanami,"Moo. If it had gone a little more, moo, I would have attracted intense attention.",24,2
 Nanami,"Somehow, my mind is getting, moo, fuzzy... ",24,2
@@ -7016,13 +7048,13 @@ Nanami,"Or I might have been bitten by a, moo, virulent poisonous snake...",24,2
 Nanami,"Somebody, moo, get me a blanket! ",24,2
 Utena,Nanami... ,24,2
 Utena,"Nanami, you look... ",24,2
-Himemiya,I'm scared! ,24,2
+Anthy,I'm scared! ,24,2
 Tsuwabuki,Nanami-san! ,24,2
-Himemiya,She's coming right for us! ,24,2
+Anthy,She's coming right for us! ,24,2
 Utena,"Oh, I get it! She got all excited when she saw this red sweater!",24,2
-Himemiya,"Oh, my! ",24,2
+Anthy,"Oh, my! ",24,2
 Utena,"Himemiya, get away! ",24,2
-Himemiya,All right! ,24,2
+Anthy,All right! ,24,2
 Tsuwabuki,It's all right now. ,24,2
 Tsuwabuki,"It's all right now, Nanami-san. ",24,2
 Tsuwabuki,"I'll take care of you, even if you do become a cow.",24,2
@@ -7045,17 +7077,17 @@ Nanami,Seize him! ,24,2
 Tsuwabuki,St- St- St- St- St- Stop!! Let me go! Let me goooo!,24,2
 Nanami,"What's this, Operation the Twenty-fourth? ",24,2
 Tsuwabuki,"I'm done for! If they read that page, I'm done for!",24,2
-C-ko,Extra! Extra! ,24,2
-C-ko,I'm done for! I'm really done for! ,24,2
-C-ko,Why is that? ,24,2
-C-ko,"My secret which can't stay hidden any longer is,",24,2
-C-ko,...that the king has the ears of a donkey! ,24,2
-C-ko,"Did you say ""donkey?"" ",24,2
-C-ko,"Sorry, not a donkey. ",24,2
-C-ko,"The truth is, I am... ",24,2
-C-ko,...a monkey hiding behind a girl's face! ,24,2
-C-ko,"Ah, the shame of it all. Now she'll never get married.",24,2
-C-ko,Monkey is captured. Monkey is captured. ,24,2
+Shadow,Extra! Extra! ,24,2
+Shadow,I'm done for! I'm really done for! ,24,2
+Shadow,Why is that? ,24,2
+Shadow,"My secret which can't stay hidden any longer is,",24,2
+Shadow,...that the king has the ears of a donkey! ,24,2
+Shadow,"Did you say ""donkey?"" ",24,2
+Shadow,"Sorry, not a donkey. ",24,2
+Shadow,"The truth is, I am... ",24,2
+Shadow,...a monkey hiding behind a girl's face! ,24,2
+Shadow,"Ah, the shame of it all. Now she'll never get married.",24,2
+Shadow,Monkey is captured. Monkey is captured. ,24,2
 ED,Missing truth and forever ,24,2
 ED,Kissing love and true your heart ,24,2
 ED,Embrace me with your true arms ,24,2
@@ -7299,23 +7331,23 @@ Utena,Micky! ,25,3
 Utena,Are you all right? ,25,3
 Saionji,The Rose Bride belongs to me. ,25,3
 Utena,"Let go of Himemiya, Saionji! ",25,3
-A-ko,"I wonder, I wonder... Do you know what I wonder?",25,3
-B-ko,I hear there's going to be another duel out back in the forest today!,25,3
-A-ko,It's been quite a while since this phrase was last used.,25,3
-A-ko,"Of course, it's better done by two people... ",25,3
-B-ko,...than by one! ,25,3
-A-ko,"Half the suffering, ",25,3
-A-ko&B-ko,...double the happiness! ,25,3
-A-ko,"Hey, wait! You used my shampoo without permission last night!",25,3
-B-ko,"And you, you went and finished off the pudding I was eating.",25,3
-B-ko,...though it was from two weeks ago. ,25,3
-A-ko,Are you serious? ,25,3
-B-ko,"But now, brave warrior, ",25,3
-A-ko,I wonder if you really know... ,25,3
-B-ko,...the difficulty in getting along together. ,25,3
-A-ko,"I wonder, I wonder... ",25,3
-A-ko&B-ko,Do you know what I wonder? ,25,3
-A-ko,Ugh... Here it comes. ,25,3
+Shadow,"I wonder, I wonder... Do you know what I wonder?",25,3
+Shadow,I hear there's going to be another duel out back in the forest today!,25,3
+Shadow,It's been quite a while since this phrase was last used.,25,3
+Shadow,"Of course, it's better done by two people... ",25,3
+Shadow,...than by one! ,25,3
+Shadow,"Half the suffering, ",25,3
+Shadow,...double the happiness! ,25,3
+Shadow,"Hey, wait! You used my shampoo without permission last night!",25,3
+Shadow,"And you, you went and finished off the pudding I was eating.",25,3
+Shadow,...though it was from two weeks ago. ,25,3
+Shadow,Are you serious? ,25,3
+Shadow,"But now, brave warrior, ",25,3
+Shadow,I wonder if you really know... ,25,3
+Shadow,...the difficulty in getting along together. ,25,3
+Shadow,"I wonder, I wonder... ",25,3
+Shadow,Do you know what I wonder? ,25,3
+Shadow,Ugh... Here it comes. ,25,3
 ZUM,The Absolute Destiny: Apocalypse ,25,3
 ZUM,The Absolute Destiny: Apocalypse ,25,3
 ZUM,Birth records ,25,3
@@ -7365,7 +7397,8 @@ Utena,Wha...? ,25,3
 Anthy,"O Roses of noble sentiment, ",25,3
 Anthy,"...I beseech thee, reveal... ",25,3
 Saionji,What?! ,25,3
-Utena&Anth,...the power to revolutionize the world!,25,3
+Utena,...the power to revolutionize the world!,25,3
+Anthy,...the power to revolutionize the world!,25,3
 Touga,That Saionji... and after I went to all this trouble to be his friend.,25,3
 Akio,Are you enjoying this game? ,25,3
 Touga,Of course. ,25,3
@@ -7617,15 +7650,15 @@ Utena,I wonder if the parent birds will come back.,26,3
 Utena,What is it? ,26,3
 Miki,"Today, after school, at the Arena of Duels.",26,3
 Utena,No way... ,26,3
-shadow,"I wonder I wonder, do you know what I wonder?",26,3
-shadow,"Honored guest, isn't it about time to quit?",26,3
-shadow,"Damn it, I'm betting my entire purse! All of it on black!",26,3
-shadow,Are you positive? ,26,3
-shadow,"Oh, what a shame! It was red! ",26,3
-shadow,"Honored guest, didn't you said you hated gambling, and had never done it before in your life?",26,3
-shadow,Hey! You're the one who recommended I try it at least once!,26,3
-shadow,Just stay put. I'm gonna withdraw my life savings.,26,3
-shadow,What a sucker. ,26,3
+Shadow,"I wonder I wonder, do you know what I wonder?",26,3
+Shadow,"Honored guest, isn't it about time to quit?",26,3
+Shadow,"Damn it, I'm betting my entire purse! All of it on black!",26,3
+Shadow,Are you positive? ,26,3
+Shadow,"Oh, what a shame! It was red! ",26,3
+Shadow,"Honored guest, didn't you said you hated gambling, and had never done it before in your life?",26,3
+Shadow,Hey! You're the one who recommended I try it at least once!,26,3
+Shadow,Just stay put. I'm gonna withdraw my life savings.,26,3
+Shadow,What a sucker. ,26,3
 Utena,Kozue-chan! What're you doing dressed like that?,26,3
 Kozue,Miki. ,26,3
 Kozue,Ready? Here we go. ,26,3
@@ -7633,7 +7666,8 @@ Anthy,Utena-sama. ,26,3
 Utena,Yeah. ,26,3
 Anthy,"O roses of noble memory, I beseech thee:",26,3
 Anthy,Appear before me. ,26,3
-both,Grant me the power to Revolutionize the World!,26,3
+Anthy,Grant me the power to Revolutionize the World!,26,3
+Utena,Grant me the power to Revolutionize the World!,26,3
 Utena,I thought you and I were already friends! ,26,3
 Miki,"Your sword can't beat mine, can it? ",26,3
 Miki,"As of today, the Rose Bride is mine! ",26,3
@@ -7653,16 +7687,6 @@ Utena,"I mean, Miki's more... ",26,3
 Anthy,More...what? ,26,3
 Miki,What?! ,26,3
 Kozue,Coward. ,26,3
-text,To Be Continued ,26,3
-text,Next Episode Preview ,26,3
-Utena,"Hey Himemiya, do you worry about things you can't tell other people?",26,3
-Anthy,"Sunny-side up, rolled eggs with soup stock, spa egg...",26,3
-Utena,I'm sure everybody has embarrassing things they can't talk to others about.,26,3
-Anthy,"Scrambled eggs, omelettes... ",26,3
-Utena,I wonder what the heck Nanami's worrying about.,26,3
-Anthy,"Without breaking the eggshell, an omelette cannot be made.",26,3
-Utena,Next time on Shoujo Kakumei Utena: ,26,3
-Utena/text,Nanami's Egg TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,26,3
 Nanami,H-huh?,27,3
 Nanami,What is it? ,27,3
 Touga,"What's up, Nanami? ",27,3
@@ -7679,9 +7703,9 @@ Tsuwabuki,"I thought the same-old same-old would be boring at the cafeteria, so 
 Nanami,"Keep calm...keep calm, Nanami! ",27,3
 Nanami,I've never heard of humans laying eggs before.,27,3
 Nanami,That's right. This must be somebody's plot to bring about my downfall.,27,3
-shadow,"Good grief, Nanami-san laid an egg? ",27,3
-shadow,I can't believe it! ,27,3
-shadow,Totally! Nanami-san's like some alien child or something.,27,3
+Shadow,"Good grief, Nanami-san laid an egg? ",27,3
+Shadow,I can't believe it! ,27,3
+Shadow,Totally! Nanami-san's like some alien child or something.,27,3
 Nanami,Noooo!! ,27,3
 Tsuwabuki,"What's wrong, Nanami-san? ",27,3
 Nanami,"Oh, nothing really... ",27,3
@@ -7736,15 +7760,19 @@ Nanami,I had no idea. There really are people in this world who lay eggs...,27,3
 Nanami,How marvelous! ,27,3
 Keiko,"Oh, Nanami-sama. ",27,3
 Yuuko,What're you doing there? ,27,3
-Eiko,You look kind of pale. ,27,3
+Aiko,You look kind of pale. ,27,3
 Nanami,"I swear, you don't know the half of it! I wake up first thing in the morning and what do I find-",27,3
 Nanami,Wait a sec. What if I'm the only one who didn't know until now?,27,3
 Nanami,"Actually, I laid an egg this morning. ",27,3
 Yuuko,Your first egg? ,27,3
 Keiko,"What, Nanami-sama, it took you this long?",27,3
-Eiko,"You're more behind the times than I thought, Nanami-sama!",27,3
-all,Way behind the times! Way behind the times! Nanami-sama is a teru-teru-boozu.,27,3
-all,"Not only that, she's a space alien! ",27,3
+Aiko,"You're more behind the times than I thought, Nanami-sama!",27,3
+Yuuko,Way behind the times! Way behind the times! Nanami-sama is a teru-teru-boozu.,27,3
+Keiko,Way behind the times! Way behind the times! Nanami-sama is a teru-teru-boozu.,27,3
+Aiko,Way behind the times! Way behind the times! Nanami-sama is a teru-teru-boozu.,27,3
+Yuuko,"Not only that, she's a space alien! ",27,3
+Keiko,"Not only that, she's a space alien! ",27,3
+Aiko,"Not only that, she's a space alien! ",27,3
 Nanami,Oh noooooo!! ,27,3
 Nanami,I don't care if they come to pick me up. I'm not going back.,27,3
 Keiko,Nanami-sama? ,27,3
@@ -7843,13 +7871,13 @@ guys,Stir stir stir stir! ,27,3
 guys,Slurp slurp slurp. ,27,3
 guys,Burp! ,27,3
 Nanami,NOOOOOO!!!!!!! ,27,3
-shadow,"Now then, gentlemen. Things are only impossible because you think they're impossible.",27,3
-shadow,Take this egg for instance. I bet you think that eggs can't stand upright.,27,3
-shadow,"However! If we support it with chopsticks this way, we can...",27,3
-shadow,Pardon me! Wouldn't it be faster to simply break the bottom?,27,3
-shadow,"No, that is not correct! ",27,3
-shadow,If we support it with chopsticks like so...,27,3
-shadow,I guess it wasn't an egg. ,27,3
+Shadow,"Now then, gentlemen. Things are only impossible because you think they're impossible.",27,3
+Shadow,Take this egg for instance. I bet you think that eggs can't stand upright.,27,3
+Shadow,"However! If we support it with chopsticks this way, we can...",27,3
+Shadow,Pardon me! Wouldn't it be faster to simply break the bottom?,27,3
+Shadow,"No, that is not correct! ",27,3
+Shadow,If we support it with chopsticks like so...,27,3
+Shadow,I guess it wasn't an egg. ,27,3
 Nanami,I'm sorry. I don't have the courage to eat my own egg.,27,3
 Nanami,Please live here in happiness. ,27,3
 Nanami,It's been a long time since we ate together.,27,3
@@ -7901,16 +7929,6 @@ Utena,I hope so... ,27,3
 Utena,Yes! ,27,3
 Utena,Chu-Chu! Welcome back! ,27,3
 text,To Be Continued ,27,3
-text,Next Episode Preview ,27,3
-Utena,Tsuchiya Ruka. A swordsman good enough to surpass Arisugawa-senpai.,27,3
-Utena,This amazing person has returned to the Fencing Club.,27,3
-Anthy,"You seem to be worried, Utena-sama. ",27,3
-Utena,I feel some kind of unease. ,27,3
-Anthy,"Getting close to Shiori-san, toying around with Arisugawa-senpai...",27,3
-Anthy,He doesn't seen to be someone to be taken lightly.,27,3
-Utena,What? So he was actually a Duelist too?,27,3
-Utena,Next time on Shoujo Kakumei Utena: ,27,3
-Utena/text,"Whispering in the Dark TRANSLATOR'S NOTE ON THE EPISODEA teru-teru-boozu is a small charm shaped like ghost in a sheet, whichis hung up to pray for good weatherReturn to the Script Index ... Returnto Empty Movement",27,3
 Juri,Feelings I can never put into words.,28,3
 Juri,But my heart always keeps on whispering. ,28,3
 Juri,And...you too... ,28,3
@@ -8065,27 +8083,28 @@ Ruka,What splendid roses. ,28,3
 Ruka,Such a nice smell. ,28,3
 Utena,Are you a Duelist too? ,28,3
 Ruka,"Today, after school, in the Arena of Duels.",28,3
-shadow,Can you catch anything? ,28,3
-shadow,Doesn't look like it. ,28,3
-shadow,I got one! ,28,3
-shadow,Hold on tight! Don't let it get away! ,28,3
-shadow,"Okay, come to papa! ",28,3
-shadow,"Hey, isn't that a sandal? ",28,3
-shadow,"Ooh, I got one over here! ",28,3
-shadow,"Don't lose it, this is for dinner tonight!",28,3
-shadow,"Damn, it's a kettle. ",28,3
-shadow,"Look, they're biting over there too! ",28,3
-shadow,"Okay, this is the real thing this time!",28,3
-shadow,A tire? ,28,3
-shadow,I guess. ,28,3
-shadow,Heave! ,28,3
+Shadow,Can you catch anything? ,28,3
+Shadow,Doesn't look like it. ,28,3
+Shadow,I got one! ,28,3
+Shadow,Hold on tight! Don't let it get away! ,28,3
+Shadow,"Okay, come to papa! ",28,3
+Shadow,"Hey, isn't that a sandal? ",28,3
+Shadow,"Ooh, I got one over here! ",28,3
+Shadow,"Don't lose it, this is for dinner tonight!",28,3
+Shadow,"Damn, it's a kettle. ",28,3
+Shadow,"Look, they're biting over there too! ",28,3
+Shadow,"Okay, this is the real thing this time!",28,3
+Shadow,A tire? ,28,3
+Shadow,I guess. ,28,3
+Shadow,Heave! ,28,3
 Ruka,"If you saw my match with Juri, you should already know.",28,3
 Ruka,I'm far better with a sword. ,28,3
 Utena,We'll never know till we try. ,28,3
 Ruka,"That's correct. You've got hidden powers, and I may not be able to beat them.",28,3
 Anthy,"O roses of noble memory, I beseech thee:",28,3
 Anthy,Appear before me. ,28,3
-both,Grant me the power to Revolutionize the World!,28,3
+Anthy,Grant me the power to Revolutionize the World!,28,3
+Utena,Grant me the power to Revolutionize the World!,28,3
 Ruka,Neither Saionji nor Touga is an amateur. Yet they couldn't beat you.,28,3
 Ruka,I wonder how we'll do. ,28,3
 Utena,You're the first person who's ever said that during a Duel.,28,3
@@ -8118,14 +8137,6 @@ Ruka,Right. There's no need for me to say it.,28,3
 Ruka,"After all, you know it better than anybody else.",28,3
 Juri,Ruka! What're you after! What're you thinking?!,28,3
 Juri,Ruka!! ,28,3
-text,Next Episode Preview ,28,3
-Utena,"There's a rumor going around that Arisugawa-senpai loves Shiori-san, but what do you think's going on?",28,3
-Anthy,I don't think other people would understand. ,28,3
-Utena,Huh? ,28,3
-Anthy,"""Love""...it means different things to different people.",28,3
-Utena,"No, I wasn't asking something that general. What I wanna know now is...",28,3
-Utena,Next time on Shoujo Kakumei Utena: ,28,3
-Utena/text,Azure Blue Paler Than the Sky TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,28,3
 Shiori,"Believe in miracles, that your wishes come true...",29,3
 Ruka,Oh that? That wasn't my sword. ,29,3
 Ruka,"Your acting was really something. Great, for an ad-lib.",29,3
@@ -8270,7 +8281,8 @@ Ruka,"This time it's the main event, Tenjou Utena-kun.",29,3
 Juri,Do it. ,29,3
 Anthy,"O roses of noble memory, I beseech thee:",29,3
 Anthy,Appear before me. ,29,3
-both,Grant me the power to Revolutionize the World!,29,3
+Anthy,Grant me the power to Revolutionize the World!,29,3
+Utena,Grant me the power to Revolutionize the World!,29,3
 Ruka,Hidden wishes... ,29,3
 Ruka,How painful they must be. ,29,3
 Ruka,"What're you waiting for, Juri?! ",29,3
@@ -8292,31 +8304,22 @@ Nanami,Well there's nothing to worry about with Juri in charge.,29,3
 girl,I'm so sorry...and with a local meet coming up and all...,29,3
 Juri,Don't worry. Just concentrate on healing that leg.,29,3
 girl,I'm really sorry for causing trouble at a time like this.,29,3
-shadow,"Hey, do you know? ",29,3
-shadow,Hmm? ,29,3
-shadow,That patient died yesterday. ,29,3
-shadow,He was such a babe too! What a shame. ,29,3
-shadow,And after he kept saying he wanted to fence again after leaving the hospital.,29,3
-shadow,It seems he knew how sick he was. But he forced his way out of the hospital anyway and went backto school.,29,3
-shadow,I bet there's somebody he loved in the Fencing Club.,29,3
-shadow,"Come to think of it, he was always saying:",29,3
-shadow,"""I want to give the Power of Miracles to the one I love. I want to free her.""",29,3
-shadow,"What's that supposed to mean, I wonder? ",29,3
-shadow,Who knows... ,29,3
+Shadow,"Hey, do you know? ",29,3
+Shadow,Hmm? ,29,3
+Shadow,That patient died yesterday. ,29,3
+Shadow,He was such a babe too! What a shame. ,29,3
+Shadow,And after he kept saying he wanted to fence again after leaving the hospital.,29,3
+Shadow,It seems he knew how sick he was. But he forced his way out of the hospital anyway and went backto school.,29,3
+Shadow,I bet there's somebody he loved in the Fencing Club.,29,3
+Shadow,"Come to think of it, he was always saying:",29,3
+Shadow,"""I want to give the Power of Miracles to the one I love. I want to free her.""",29,3
+Shadow,"What's that supposed to mean, I wonder? ",29,3
+Shadow,Who knows... ,29,3
 Juri,Are you doing well? The next time we meet...,29,3
 Juri,...there's one thing I really want to ask.,29,3
 Juri,What hopes had you entrusted to the Power of Miracles?,29,3
 Juri,And who were they for? ,29,3
 Juri,I pray that they come true. ,29,3
-text,Next Episode Preview ,29,3
-Anthy,"What's wrong, Utena-sama? ",29,3
-Utena,I guess there really are people you mustn't fall in love with.,29,3
-Anthy,"Well, I don't really know. ",29,3
-Anthy,But I think there's a part of love that you can't do anything about.,29,3
-Utena,"Really... come to think of it, do you have somebody you love?",29,3
-Anthy,Yes. Someone very special to me. ,29,3
-Utena,Next time on Shoujo Kakumei Utena: ,29,3
-Utena/text,The Barefoot Girl TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,29,3
 guy,"Well like, I said it was my first kiss, but she just ran away.",30,3
 Wakaba,Saying it's your first kiss is pretty shameless.,30,3
 guy,But saying it's your first makes a better impression.,30,3
@@ -8502,16 +8505,16 @@ Utena,But I'm doing it because of my Prince. ,30,3
 Akio,Prince? ,30,3
 Utena,I want to meet this Prince I loved in my past...and so...,30,3
 Akio,I'll carry you on my back. Or would you prefer in my arms?,30,3
-shadow,"Those shoes, those shoes, those shoes! ",30,3
-shadow,Throw out those shoes at once! ,30,3
-shadow,Why should I do that to my precious red shoes?,30,3
-shadow,If you wear those you'll have to go on dancing until you die!,30,3
-shadow,There are things...one does...even if one knows...they're wrong!,30,3
-shadow,After all...don't you have...the same red shoes...as mine?,30,3
-shadow,"I own them, that's all. I'll never put them on.",30,3
-shadow,"You won't put them on, but you have them.",30,3
-shadow,"You have them, but you won't put them on, fool.",30,3
-shadow,Your life's too short for that! ,30,3
+Shadow,"Those shoes, those shoes, those shoes! ",30,3
+Shadow,Throw out those shoes at once! ,30,3
+Shadow,Why should I do that to my precious red shoes?,30,3
+Shadow,If you wear those you'll have to go on dancing until you die!,30,3
+Shadow,There are things...one does...even if one knows...they're wrong!,30,3
+Shadow,After all...don't you have...the same red shoes...as mine?,30,3
+Shadow,"I own them, that's all. I'll never put them on.",30,3
+Shadow,"You won't put them on, but you have them.",30,3
+Shadow,"You have them, but you won't put them on, fool.",30,3
+Shadow,Your life's too short for that! ,30,3
 note,"[""hakanai"" = ""don't put on"" / ""fleeting time""]",30,3
 Anthy,Utena-sama... ,30,3
 Utena,Yes? ,30,3
@@ -8578,31 +8581,20 @@ Wakaba,"She's so wonderful. Beautiful, and smart-looking, plus she's a rich girl
 Wakaba,I guess it feels like I just can't win...or whatever.,30,3
 Utena,No. ,30,3
 Utena,I'm in love with my Prince! ,30,3
-text,Next Episode Preview ,30,3
-Utena,"Himemiya, you're type-AB, right? ",30,3
-Utena,"Let's see, elusive and seldom reveal their true feelings huh?",30,3
-Anthy,"And you're type-B, right Utena-sama? ",30,3
-Anthy,Type-B's are self-centered and prone to misconception...,30,3
-Utena,"Yeah, sorry okay. ",30,3
-Utena,"By the way, how come Nanami's staying in our room?",30,3
-Anthy,Because Nanami-san's a type-B. ,30,3
-Utena,"Well, she is sort of misconception-prone... ",30,3
-Utena,Next time on Shoujo Kakumei Utena: ,30,3
-Utena/text,Her Tragedy TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,30,3
-voice,Once upon a time...,31,3
-voice,...there was a princess grieving over the deaths of her mother and father.,31,3
-voice,Before this princess appeared a prince traveling upon a white horse.,31,3
-voice,"His appearance gallant, and his smile gentle, the prince enveloped the princess",31,3
-voice,"in the scent of roses, and wiped away her tears.",31,3
-voice,"""Little one bearing up alone under grief, please lose not thy strength and nobility when thou growestup.""",31,3
-voice,"""As a token of this day, please retain this.""",31,3
-voice,"""Pray, shall we meet once more?"" ",31,3
-voice,"""This ring should guide thee to me."" ",31,3
-voice,Was the ring from the prince meant as an engagement ring?,31,3
-voice,"That part was good, ",31,3
-voice,"but because of the strength of her admiration for the prince,",31,3
-voice,the princess made up her mind to become a prince herself!,31,3
-voice,But is that really good for her? ,31,3
+Narration,Once upon a time...,31,3
+Narration,...there was a princess grieving over the deaths of her mother and father.,31,3
+Narration,Before this princess appeared a prince traveling upon a white horse.,31,3
+Narration,"His appearance gallant, and his smile gentle, the prince enveloped the princess",31,3
+Narration,"in the scent of roses, and wiped away her tears.",31,3
+Narration,"""Little one bearing up alone under grief, please lose not thy strength and nobility when thou growestup.""",31,3
+Narration,"""As a token of this day, please retain this.""",31,3
+Narration,"""Pray, shall we meet once more?"" ",31,3
+Narration,"""This ring should guide thee to me."" ",31,3
+Narration,Was the ring from the prince meant as an engagement ring?,31,3
+Narration,"That part was good, ",31,3
+Narration,"but because of the strength of her admiration for the prince,",31,3
+Narration,the princess made up her mind to become a prince herself!,31,3
+Narration,But is that really good for her? ,31,3
 text,Her Tragedy ,31,3
 Nanami,"Yes, this is the Kiryuu residence. ",31,3
 Nanami,"If you want my brother, he's out right now.",31,3
@@ -8772,7 +8764,8 @@ Juri,Something must have happened. ,31,3
 Utena,Something...? ,31,3
 Miki,It's abnormal for Nanami-kun to part from Touga-sempai.,31,3
 Utena,Abnormal isn't it... ,31,3
-Miki&Juri,So- ,31,3
+Miki,So- ,31,3
+Juri,So- ,31,3
 Miki,Go ahead. ,31,3
 Juri,Thanks. Haven't you heard anything? ,31,3
 Utena,Ran away... ,31,3
@@ -8817,21 +8810,23 @@ Utena,Of course! Akio-san couldn't be that kind of person.,31,3
 Utena,"He's got Kanae-san who's important to him, and plus he's your brother...",31,3
 Utena,Am I babbling? ,31,3
 Anthy,Yes. ,31,3
-shadow,Monkey escaped...monkey escaped... ,31,3
-shadow,Where is monkey...where is monkey... ,31,3
-shadow,Cuckoo! Cuckoo! ,31,3
-shadow,Now I'm gonna sneak my egg into somebody else's nest and get them to raise it cuckoo.,31,3
-shadow,"In the jargon this is known as ""parasitism"". ",31,3
-shadow,Ta-da! A newborn cuckoo. ,31,3
-shadow,"But, it's a cuckoo who's real identity is secret!",31,3
-shadow,"Check it out, mom. Some strange duck is here!",31,3
-shadow,"Nya, ugly little duckling! ",31,3
-shadow,"This can't be, dammit! ",31,3
-shadow,Just watch! One day a beautiful white swan -,31,3
+Shadow,Monkey escaped...monkey escaped... ,31,3
+Shadow,Where is monkey...where is monkey... ,31,3
+Shadow,Cuckoo! Cuckoo! ,31,3
+Shadow,Now I'm gonna sneak my egg into somebody else's nest and get them to raise it cuckoo.,31,3
+Shadow,"In the jargon this is known as ""parasitism"". ",31,3
+Shadow,Ta-da! A newborn cuckoo. ,31,3
+Shadow,"But, it's a cuckoo who's real identity is secret!",31,3
+Shadow,"Check it out, mom. Some strange duck is here!",31,3
+Shadow,"Nya, ugly little duckling! ",31,3
+Shadow,"This can't be, dammit! ",31,3
+Shadow,Just watch! One day a beautiful white swan -,31,3
 Utena,is not what you're gonna become. ,31,3
-shadow,Argh. ,31,3
-shadow,Monkey detected...monkey detected...monkey fleeing...capture monkey...,31,3
-all,Jan-ken-pon! ,31,3
+Shadow,Argh. ,31,3
+Shadow,Monkey detected...monkey detected...monkey fleeing...capture monkey...,31,3
+Anthy,Jan-ken-pon! ,31,3
+Utena,Jan-ken-pon! ,31,3
+Nanami,Jan-ken-pon! ,31,3
 Anthy,"My, I lost. ",31,3
 Nanami,"So, I'll be taking the bed. ",31,3
 Utena,"Come, you're sponging off her. Show some restraint.",31,3
@@ -8866,15 +8861,6 @@ Nanami,"I told you to leave me alone, didn't I?",31,3
 Utena,Where're you going? ,31,3
 Nanami,The bathroom. ,31,3
 Nanami,"Geez, you startled me. Um... ",31,3
-text,Next episode preview ,31,3
-Utena,"That Nanami! How can she hog your bed when she's sponging off you?!""",31,3
-Anthy,"I'll sleep in my brother's room, so don't worry.",31,3
-Utena,"Well, I guess Nanami's got it rough too.",31,3
-Utena,Why can't she realize her bad brother is deceiving her?,31,3
-Anthy,People find it hard to doubt those they've fallen in love with.,31,3
-Anthy,They can't even imagine they're being deceived and used.,31,3
-Utena,Next time on Shoujo Kakumei Utena: ,31,3
-Utena/text,Romance of the Dancing Girls TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,31,3
 girl,"Touga, where are you now? Hey, do you hate me?",32,3
 girl,"I'm lonely. Please come, Touga. ",32,3
 girl,"Hey, please...let me hear your voice. ",32,3
@@ -9096,17 +9082,17 @@ Nanami,"Today, after school, at the Arena of Duels.",32,3
 Utena,Say what?! Don't be ridiculous! ,32,3
 Nanami,Are you saying you don't care what happens to this thing?,32,3
 Utena,Nanami... ,32,3
-shadow,"Here, psychokinesis! ",32,3
-shadow,"See, my customer, this is no trick or gimmick!",32,3
-shadow,That's bogus. It's obvious that's a trick.,32,3
-shadow,"Then, here we go again. Psychokinesis! ",32,3
-shadow,It's a sham! A fraud! ,32,3
-shadow,Geez. But what kind of trick could it be?,32,3
-shadow,"How the heck would I know, you con artist?!",32,3
-shadow,Shit...special psychokinesis! ,32,3
-shadow,Bogus...totally bogus... ,32,3
-shadow,"Psychokinesis, maximum power! ",32,3
-shadow,Bogus...bogus... ,32,3
+Shadow,"Here, psychokinesis! ",32,3
+Shadow,"See, my customer, this is no trick or gimmick!",32,3
+Shadow,That's bogus. It's obvious that's a trick.,32,3
+Shadow,"Then, here we go again. Psychokinesis! ",32,3
+Shadow,It's a sham! A fraud! ,32,3
+Shadow,Geez. But what kind of trick could it be?,32,3
+Shadow,"How the heck would I know, you con artist?!",32,3
+Shadow,Shit...special psychokinesis! ,32,3
+Shadow,Bogus...totally bogus... ,32,3
+Shadow,"Psychokinesis, maximum power! ",32,3
+Shadow,Bogus...bogus... ,32,3
 Utena,Touga. Are you the one who put Nanami up to this?,32,3
 Touga,No. Nanami came here of her own free will.,32,3
 Utena,And you call yourself her brother?! ,32,3
@@ -9140,31 +9126,21 @@ Touga,It was when Nanami was still a baby. ,32,3
 Akio,You'd better clear up the misunderstanding fast.,32,3
 Touga,But isn't it more romantic to be siblings not bound by blood?,32,3
 Akio,Such a bad brother... ,32,3
-text,Next episode preview ,32,3
-Utena,These're blooming so nicely. That's my Himemiya.,32,3
-Utena,Noone can beat you at raising roses. ,32,3
-Anthy,"Utena-sama, I have a favor to ask. ",32,3
-Utena,What is it? ,32,3
-Anthy,Could you deliver these roses to my brother tonight?,32,3
-Utena,To Akio-san? I don't mind... ,32,3
-Anthy,"Then, please do so. ",32,3
-Utena,Next time on Shoujo Kakumei Utena: ,32,3
-Utena/text,The Prince who Runs in the Night TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,32,3
-voice,Once upon a time...,33,3
-voice,...there was a princess grieving over the deaths of her mother and father.,33,3
-voice,Before this princess appeared a prince traveling upon a white horse.,33,3
-voice,"His appearance gallant, and his smile gentle, the prince enveloped the princess...",33,3
-voice,"...in the scent of roses, and wiped away her tears.",33,3
-voice,"""Little one bearing up alone under grief,",33,3
-voice,"please lose not thy strength and nobility when thou growest up.""",33,3
-voice,"""As a token of this day, please retain this.""",33,3
-voice,"""Pray, shall we meet once more?"" ",33,3
-voice,"""This ring should guide thee to me."" ",33,3
-voice,Was the ring from the prince meant as an engagement ring?,33,3
-voice,"That part was good, ",33,3
-voice,"but because of the strength of her admiration for the prince,",33,3
-voice,the princess made up her mind to become a prince herself!,33,3
-voice,But is that really good for her? ,33,3
+Narration,Once upon a time...,33,3
+Narration,...there was a princess grieving over the deaths of her mother and father.,33,3
+Narration,Before this princess appeared a prince traveling upon a white horse.,33,3
+Narration,"His appearance gallant, and his smile gentle, the prince enveloped the princess...",33,3
+Narration,"...in the scent of roses, and wiped away her tears.",33,3
+Narration,"""Little one bearing up alone under grief,",33,3
+Narration,"please lose not thy strength and nobility when thou growest up.""",33,3
+Narration,"""As a token of this day, please retain this.""",33,3
+Narration,"""Pray, shall we meet once more?"" ",33,3
+Narration,"""This ring should guide thee to me."" ",33,3
+Narration,Was the ring from the prince meant as an engagement ring?,33,3
+Narration,"That part was good, ",33,3
+Narration,"but because of the strength of her admiration for the prince,",33,3
+Narration,the princess made up her mind to become a prince herself!,33,3
+Narration,But is that really good for her? ,33,3
 title,The Prince who Runs in the Night ,33,3
 Anthy,Hello? ,33,3
 Anthy,Yes. ,33,3
@@ -9176,40 +9152,40 @@ Utena,I feel like I rode all the rides I wanted to.,33,3
 Utena,Himemiya should've come too. ,33,3
 Utena,I'm sure being by herself wasn't this much fun.,33,3
 Utena,Did I tell you that I'm an only child? ,33,3
-shadows,"I wonder I wonder, do you know what I wonder?",33,3
-shadow,The stars are really gorgeous tonight. ,33,3
-shadow,"If possible, we'd like all our listeners to take a look at the stars our their windows.",33,3
-shadow,The beautiful Autumn constellations are twinkling.,33,3
-shadow,"Tonight, we'll be together forever! ",33,3
-shadow,"Now then, it's time for the Pop Quiz! ",33,3
-shadow,"What is ""something eternal""? ",33,3
-shadow,That's an eternal mystery. ,33,3
-shadow,Who's our first respondant for tonight? ,33,3
-shadow,"Let's see. His penname is ""Ends of the World"".",33,3
-shadow,He sure has a weird name. ,33,3
-shadow,"Well, let's call him! ",33,3
+Shadow,"I wonder I wonder, do you know what I wonder?",33,3
+Shadow,The stars are really gorgeous tonight. ,33,3
+Shadow,"If possible, we'd like all our listeners to take a look at the stars our their windows.",33,3
+Shadow,The beautiful Autumn constellations are twinkling.,33,3
+Shadow,"Tonight, we'll be together forever! ",33,3
+Shadow,"Now then, it's time for the Pop Quiz! ",33,3
+Shadow,"What is ""something eternal""? ",33,3
+Shadow,That's an eternal mystery. ,33,3
+Shadow,Who's our first respondant for tonight? ,33,3
+Shadow,"Let's see. His penname is ""Ends of the World"".",33,3
+Shadow,He sure has a weird name. ,33,3
+Shadow,"Well, let's call him! ",33,3
 Akio,Yes. ,33,3
-shadow,"Good evening! Is this Mr. ""Ends of the World""?",33,3
+Shadow,"Good evening! Is this Mr. ""Ends of the World""?",33,3
 Akio,Yes. ,33,3
-shadow,Have you been listening to the program just now?,33,3
+Shadow,Have you been listening to the program just now?,33,3
 Akio,Of course. ,33,3
-shadow,You've got a really sexy voice. ,33,3
-shadow,"Thanks for your postcard. What sort of work do you do, Mr. ""Ends of the World.""",33,3
+Shadow,You've got a really sexy voice. ,33,3
+Shadow,"Thanks for your postcard. What sort of work do you do, Mr. ""Ends of the World.""",33,3
 Akio,I'm an educator. Plus some minor part time work.,33,3
-shadow,Are educators really allowed to moonlight? ,33,3
+Shadow,Are educators really allowed to moonlight? ,33,3
 Akio,"Well, I've had good luck so far keeping it a secret.",33,3
-shadow,"Thank you very much. Then, let's go straight to the quiz.",33,3
-shadows,"I wonder, I wonder, do you know what I wonder?",33,3
-shadow,Multiple choice. Which of the following three things is eternal?,33,3
-shadow,1. A diamond. 2. A beautiful memory. 3. Canned peaches.,33,3
+Shadow,"Thank you very much. Then, let's go straight to the quiz.",33,3
+Shadow,"I wonder, I wonder, do you know what I wonder?",33,3
+Shadow,Multiple choice. Which of the following three things is eternal?,33,3
+Shadow,1. A diamond. 2. A beautiful memory. 3. Canned peaches.,33,3
 Akio,That would be... ,33,3
-shadow,Would be? ,33,3
+Shadow,Would be? ,33,3
 Akio,"Sorry, I've got another call. ",33,3
-shadow,What? But we're on the air right now! ,33,3
+Shadow,What? But we're on the air right now! ,33,3
 Akio,It's me. Yeah. Yeah. Understood. ,33,3
 Akio,I'll be right there. ,33,3
 Akio,"Sorry, something came up at work. ",33,3
-shadow,"""Work""? Which? ",33,3
+Shadow,"""Work""? Which? ",33,3
 Akio,The part time. ,33,3
 sign,stopstopstopstopstopstopstopstopstopstopstopstopstopstopstopstop ,33,3
 Saionji,What the hell is that? ,33,3
@@ -9241,10 +9217,10 @@ Anthy,Utena-sama? ,33,3
 Utena,What? ,33,3
 Anthy,Nevermind... ,33,3
 Utena,Himemiya! ,33,3
-shadow,That challenger just barely lost. ,33,3
-shadow,"Well, the champion's fighting style was truly magnificent.",33,3
-shadow,Now the King of Impersonation has been on top for the last eight weeks!,33,3
-shadow,Just four more matches and it'll be time to fight the glorious Grand Champion of the Kings of Impersonation!,33,3
+Shadow,That challenger just barely lost. ,33,3
+Shadow,"Well, the champion's fighting style was truly magnificent.",33,3
+Shadow,Now the King of Impersonation has been on top for the last eight weeks!,33,3
+Shadow,Just four more matches and it'll be time to fight the glorious Grand Champion of the Kings of Impersonation!,33,3
 Utena,That champion is so amazing. ,33,3
 Utena,I wonder if he'll be able to challenge the Grand Champion of the Kings of Impersonation?,33,3
 Utena,I hope he makes it. ,33,3
@@ -9297,16 +9273,16 @@ Anthy,More what? ,33,3
 Miki,What?! ,33,3
 Kozue,Coward. ,33,3
 Akio,Yes. ,33,3
-shadow,"Good evening! Is this Mr. ""Ends of the World""?",33,3
+Shadow,"Good evening! Is this Mr. ""Ends of the World""?",33,3
 Akio,Yes. ,33,3
-shadow,We finally got through! ,33,3
-shadow,It really isn't good to hang up or switch calls all of a sudden when you're on the air.,33,3
+Shadow,We finally got through! ,33,3
+Shadow,It really isn't good to hang up or switch calls all of a sudden when you're on the air.,33,3
 Akio,Sorry about that. It was an emergency. ,33,3
-shadow,"Well then, let's go on to the second question!",33,3
+Shadow,"Well then, let's go on to the second question!",33,3
 Akio,There's another one? ,33,3
-shadow,"'Cause it's a rule. I wonder, I wonder, do you know what I wonder!",33,3
-shadow,"Multiple choice. Of the following three choices, which is the miracle?",33,3
-shadow,1. Edison's invention. 2. A meeting with a prince. 3. A can of coelacanth.,33,3
+Shadow,"'Cause it's a rule. I wonder, I wonder, do you know what I wonder!",33,3
+Shadow,"Multiple choice. Of the following three choices, which is the miracle?",33,3
+Shadow,1. Edison's invention. 2. A meeting with a prince. 3. A can of coelacanth.,33,3
 Akio,A miracle. Yes...the power of miracles. ,33,3
 Ruka,"I was wondering how much you'd grown while I was away,",33,3
 Ruka,but it looks like I shouldn't have gotten my hopes up.,33,3
@@ -9354,15 +9330,15 @@ Shiori,Only for you... ,33,3
 Ruka,Oh that? That wasn't my sword. ,33,3
 Ruka,"Your acting was really something. Great, for an ad-lib.",33,3
 Utena,"Why, senpai? ",33,3
-shadow,It seems he knew how sick he was. But he forced his way out of the hospital anyway and went backto school.,33,3
-shadow,I bet there's somebody he loved in the Fencing Club.,33,3
-shadow,"Come to think of it, he was always saying:",33,3
+Shadow,It seems he knew how sick he was. But he forced his way out of the hospital anyway and went backto school.,33,3
+Shadow,I bet there's somebody he loved in the Fencing Club.,33,3
+Shadow,"Come to think of it, he was always saying:",33,3
 Ruka,"Juri, don't worry. ",33,3
-shadow,"""I want to give the Power of Miracles to the one I love.""",33,3
+Shadow,"""I want to give the Power of Miracles to the one I love.""",33,3
 Ruka,Don't worry. ,33,3
-shadow,"""I want to free her."" ",33,3
+Shadow,"""I want to free her."" ",33,3
 Akio,Miracles happen every day. It's just that people don't realize it.,33,3
-shadow,"Um, enough of the deep stuff. Please answer promptly.",33,3
+Shadow,"Um, enough of the deep stuff. Please answer promptly.",33,3
 Akio,Answer? ,33,3
 Utena,"Um, having fun until this late... ",33,3
 Utena,When I get back I gotta make lunch for tomorrow right away.,33,3
@@ -9398,18 +9374,6 @@ Akio,Thanks for your help. ,33,3
 Akio,Weren't the stars beautiful tonight? ,33,3
 Utena,I didn't expect that to happen. ,33,3
 Utena,All I came for today was to deliver roses.,33,3
-text,Next Episode Preview ,33,3
-Utena,This is the beginning of it all. ,33,3
-Utena,That day...that meeting... ,33,3
-Anthy,The sealed light. ,33,3
-Utena,This is what the prince gave me. ,33,3
-Utena,And I became me. ,33,3
-Anthy,The sorrowing Prince. ,33,3
-Utena,When I look at this I remember. ,33,3
-Utena,That I mustn't lose my nobility. ,33,3
-Anthy,Who are you? ,33,3
-Utena,Next time on Shoujo Kakumei Utena: ,33,3
-Utena/text,The Seal of the Rose ,33,3
 Anthy,The absolute destiny apocalypse. TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,33,3
 Akio,I just found a comet.,34,4
 Akio,A new star that no one knows about yet. ,34,4
@@ -9423,17 +9387,17 @@ Akio,Do you still torment me? ,34,4
 Utena,I'll become a Prince. ,34,4
 text,Seal of the Rose ,34,4
 Utena,"You know, I'm really not good with that stuff...",34,4
-shadow,I'm sure that a new world would open up for our Theater Club if you joined us.,34,4
-shadow,You bet it'd open up. Fans of yours would be joining in droves!,34,4
+Shadow,I'm sure that a new world would open up for our Theater Club if you joined us.,34,4
+Shadow,You bet it'd open up. Fans of yours would be joining in droves!,34,4
 Utena,But... ,34,4
-shadow,Don't worry. Our judgement never fails. ,34,4
-shadow,Never ever. ,34,4
+Shadow,Don't worry. Our judgement never fails. ,34,4
+Shadow,Never ever. ,34,4
 Utena,But I can't act. I'm no good on stage. ,34,4
-shadow,That's no big deal. ,34,4
-shadow,Flowers will bud just by you standing onstage.,34,4
-shadow,You bet they will. A star is born! ,34,4
-shadow,"Anyways, please come see our play after school tomorrow.",34,4
-shadow,It's such an ultra-sad story! ,34,4
+Shadow,That's no big deal. ,34,4
+Shadow,Flowers will bud just by you standing onstage.,34,4
+Shadow,You bet they will. A star is born! ,34,4
+Shadow,"Anyways, please come see our play after school tomorrow.",34,4
+Shadow,It's such an ultra-sad story! ,34,4
 Utena,Huh? ,34,4
 ticket,Theatrical Troupe Shadow Play Kashira Presents: The Tale of the Rose: 34th Exhibition,34,4
 boy,"Tenjou, we're counting on you for next week's match.",34,4
@@ -9466,75 +9430,75 @@ Utena,"Do you like plays, Akio-san? ",34,4
 Akio,"""All life's a stage."" ",34,4
 Akio,"All people are either actors, or spectators. ",34,4
 Utena,But I wonder why no one else is here? Maybe we're too early.,34,4
-shadow,Extra. Extra extra extra. ,34,4
-shadow,"Finally, finally it's begun. ",34,4
-shadow,The sealed light. The sorrowful Prince. ,34,4
-shadow,That which could not be told until now: the Tale of the Rose!,34,4
-shadow,"Beware! Beware! She's here in the world, somewhere.",34,4
-shadow,"You too, beware! ",34,4
-shadow,"I wonder I wonder, do you know what I wonder?",34,4
-shadow,This is a story from the days when all the women of the world were still princesses.,34,4
-shadow,"In those days, the world had not yet been completely engulfed in darkness.",34,4
-shadow,"Because, the Rose Prince was there. ",34,4
-shadow,Growl growl-growl-growl! ,34,4
-shadow,Save me! A monster is chasing me! ,34,4
-shadow,Gallop gallop gallop! Accursed beast! I shall slay you!,34,4
-shadow,Glargh... ,34,4
-shadow,"Are you unhurt, princess? ",34,4
-shadow,"Thank you, Rose Prince. ",34,4
-shadow,"Then, the promised kiss! ",34,4
-shadow,Growl growl growl growl ,34,4
-shadow,"Save me! It's Christmas Eve, yet I'm all alone!",34,4
-shadow,"Gallop gallop gallop! Fear not, for I have reserved us a table at a French restaurant!",34,4
-shadow,"Thank you, Rose Prince. ",34,4
-shadow,"Then, the promised kiss! ",34,4
-shadow,"Yes, all the women of the world were princesses.",34,4
-shadow,"Because we were all protected by the Rose Prince, the world was overflowing with light.",34,4
-shadow,But... ,34,4
-shadow,"Hello there, Rose Prince. ",34,4
-shadow,"What is the matter, old woman? ",34,4
-shadow,Calamity is threatening the world. ,34,4
-shadow,"There is one who plans to steal away all the light in the world,",34,4
-shadow,and plunge the land deep into darkness. ,34,4
-shadow,Who is this you speak of?! ,34,4
-shadow,It is a witch. ,34,4
-shadow,A witch?! ,34,4
-shadow,Yes. Surely you must know of the castle which floats in the sky.,34,4
-shadow,That is the witch's castle! ,34,4
-shadow,The witch who dwells there schemes even now to steal all the light of the world.,34,4
-shadow,"What is this ""light of the world"". ",34,4
-shadow,Know ye not of the light? ,34,4
-shadow,"It is that which is eternal, ",34,4
-shadow,"shining, ",34,4
-shadow,"the power of miracles, ",34,4
-shadow,the power to revolutionize the world. ,34,4
-shadow,"Then I shall slay this witch, and protect the light of the world!",34,4
-shadow,"Thus, the prince flew to the castle to protect the light of the world and to dispatch the witch.",34,4
-shadow,However! ,34,4
-shadow,Welcome to within the castle. ,34,4
-shadow,Forsooth! Tis the selfsame old woman! ,34,4
-shadow,You fool! This is a trap to emprison you within the castle!,34,4
-shadow,YOU are the light! ,34,4
-shadow,"Why do you do this? Witch, who art thou?",34,4
-shadow,Have ye not recognized me yet? ,34,4
-shadow,Gadzooks! You are my...sister!! ,34,4
-shadow,"Correct, brother, it is I. ",34,4
-shadow,You are the Prince who protects all the women of the world.,34,4
-shadow,You make all the women of the world into princesses -,34,4
-shadow,the Rose Prince. ,34,4
-shadow,And I am your - ,34,4
-shadow,sister. ,34,4
-shadow,I'm the only one who can't become your princess!,34,4
-shadow,But there's nothing I can do about that...,34,4
-shadow,That's why I - ,34,4
-shadow,became a witch! ,34,4
-shadow,Women who can't be princesses have no choice but to become witches.,34,4
-shadow,"And so the witch imprisoned the Prince, and the world was completely enclosed in darkness.",34,4
-shadow,The witch roams this world of darkness even now.,34,4
-shadow,"Seeking the young and noble, to sacrifice them anew!",34,4
-shadow,"Surely the light presents an obstacle to the witch, to her dominion over the dark.",34,4
-shadow,Beware! Beware! She is still somewhere in this world...,34,4
-shadow,"You too, beware! ",34,4
+Shadow,Extra. Extra extra extra. ,34,4
+Shadow,"Finally, finally it's begun. ",34,4
+Shadow,The sealed light. The sorrowful Prince. ,34,4
+Shadow,That which could not be told until now: the Tale of the Rose!,34,4
+Shadow,"Beware! Beware! She's here in the world, somewhere.",34,4
+Shadow,"You too, beware! ",34,4
+Shadow,"I wonder I wonder, do you know what I wonder?",34,4
+Shadow,This is a story from the days when all the women of the world were still princesses.,34,4
+Shadow,"In those days, the world had not yet been completely engulfed in darkness.",34,4
+Shadow,"Because, the Rose Prince was there. ",34,4
+Shadow,Growl growl-growl-growl! ,34,4
+Shadow,Save me! A monster is chasing me! ,34,4
+Shadow,Gallop gallop gallop! Accursed beast! I shall slay you!,34,4
+Shadow,Glargh... ,34,4
+Shadow,"Are you unhurt, princess? ",34,4
+Shadow,"Thank you, Rose Prince. ",34,4
+Shadow,"Then, the promised kiss! ",34,4
+Shadow,Growl growl growl growl ,34,4
+Shadow,"Save me! It's Christmas Eve, yet I'm all alone!",34,4
+Shadow,"Gallop gallop gallop! Fear not, for I have reserved us a table at a French restaurant!",34,4
+Shadow,"Thank you, Rose Prince. ",34,4
+Shadow,"Then, the promised kiss! ",34,4
+Shadow,"Yes, all the women of the world were princesses.",34,4
+Shadow,"Because we were all protected by the Rose Prince, the world was overflowing with light.",34,4
+Shadow,But... ,34,4
+Shadow,"Hello there, Rose Prince. ",34,4
+Shadow,"What is the matter, old woman? ",34,4
+Shadow,Calamity is threatening the world. ,34,4
+Shadow,"There is one who plans to steal away all the light in the world,",34,4
+Shadow,and plunge the land deep into darkness. ,34,4
+Shadow,Who is this you speak of?! ,34,4
+Shadow,It is a witch. ,34,4
+Shadow,A witch?! ,34,4
+Shadow,Yes. Surely you must know of the castle which floats in the sky.,34,4
+Shadow,That is the witch's castle! ,34,4
+Shadow,The witch who dwells there schemes even now to steal all the light of the world.,34,4
+Shadow,"What is this ""light of the world"". ",34,4
+Shadow,Know ye not of the light? ,34,4
+Shadow,"It is that which is eternal, ",34,4
+Shadow,"shining, ",34,4
+Shadow,"the power of miracles, ",34,4
+Shadow,the power to revolutionize the world. ,34,4
+Shadow,"Then I shall slay this witch, and protect the light of the world!",34,4
+Shadow,"Thus, the prince flew to the castle to protect the light of the world and to dispatch the witch.",34,4
+Shadow,However! ,34,4
+Shadow,Welcome to within the castle. ,34,4
+Shadow,Forsooth! Tis the selfsame old woman! ,34,4
+Shadow,You fool! This is a trap to emprison you within the castle!,34,4
+Shadow,YOU are the light! ,34,4
+Shadow,"Why do you do this? Witch, who art thou?",34,4
+Shadow,Have ye not recognized me yet? ,34,4
+Shadow,Gadzooks! You are my...sister!! ,34,4
+Shadow,"Correct, brother, it is I. ",34,4
+Shadow,You are the Prince who protects all the women of the world.,34,4
+Shadow,You make all the women of the world into princesses -,34,4
+Shadow,the Rose Prince. ,34,4
+Shadow,And I am your - ,34,4
+Shadow,sister. ,34,4
+Shadow,I'm the only one who can't become your princess!,34,4
+Shadow,But there's nothing I can do about that...,34,4
+Shadow,That's why I - ,34,4
+Shadow,became a witch! ,34,4
+Shadow,Women who can't be princesses have no choice but to become witches.,34,4
+Shadow,"And so the witch imprisoned the Prince, and the world was completely enclosed in darkness.",34,4
+Shadow,The witch roams this world of darkness even now.,34,4
+Shadow,"Seeking the young and noble, to sacrifice them anew!",34,4
+Shadow,"Surely the light presents an obstacle to the witch, to her dominion over the dark.",34,4
+Shadow,Beware! Beware! She is still somewhere in this world...,34,4
+Shadow,"You too, beware! ",34,4
 Saionji,Touga. ,34,4
 Touga,You're late. Would you hurry up and fight me?,34,4
 Saionji,Isn't this a surprise? ,34,4
@@ -9544,18 +9508,18 @@ Touga,...without the Sword of Dios appearing. ,34,4
 Saionji,I wonder why we all keep losing to that wench.,34,4
 Touga,She's not just a wench. She's a girl who was shown something eternal in her youth.,34,4
 Saionji,She's that girl?! ,34,4
-shadows,Cheers! ,34,4
-shadow,Our performance today was the greatest! ,34,4
-shadow,"Ah, the bliss of being an actress! ",34,4
-shadow,Extra extra extra extra... ,34,4
-shadow,"Gadzooks, you are my sister! ",34,4
-shadow,"Yes, my brother! ",34,4
-shadow,"The sealed light, the sorrowful Prince, the Tale of the Rose now beblub blub....",34,4
-shadow,"That girl's got talent, but she's kinda weird.",34,4
-shadow,Maybe she doesn't have any friends. ,34,4
-shadow,I don't wanna hear that from you! ,34,4
-shadow,She definitely doesn't have any friends. ,34,4
-shadow,"No, she doesn't. ",34,4
+Shadow,Cheers! ,34,4
+Shadow,Our performance today was the greatest! ,34,4
+Shadow,"Ah, the bliss of being an actress! ",34,4
+Shadow,Extra extra extra extra... ,34,4
+Shadow,"Gadzooks, you are my sister! ",34,4
+Shadow,"Yes, my brother! ",34,4
+Shadow,"The sealed light, the sorrowful Prince, the Tale of the Rose now beblub blub....",34,4
+Shadow,"That girl's got talent, but she's kinda weird.",34,4
+Shadow,Maybe she doesn't have any friends. ,34,4
+Shadow,I don't wanna hear that from you! ,34,4
+Shadow,She definitely doesn't have any friends. ,34,4
+Shadow,"No, she doesn't. ",34,4
 Anthy,Good night. ,34,4
 Utena,You going to bed already? ,34,4
 Utena,"So, what did you think of the show today?",34,4
@@ -9659,11 +9623,9 @@ Utena,"But while we were riding together, I lost my balance and almost fell off 
 Anthy,"Ooh, how scary. ",34,4
 Utena,But I got saved at the last moment by Akio-san riding a white horse.,34,4
 Utena,"But just what does Touga think he's doing, getting close to me all of a sudden?",34,4
-Utena,Next time on Shoujo Kakumei Utena: ,34,4
-Utena/text,The Love that Blossomed in Winter TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,34,4
-voice,Once upon a time...,35,4
-voice,...there was a princess grieving over the deaths of her mother and father.,35,4
-voice,Before this princess appeared a prince traveling upon a white horse.,35,4
+Narration,Once upon a time...,35,4
+Narration,...there was a princess grieving over the deaths of her mother and father.,35,4
+Narration,Before this princess appeared a prince traveling upon a white horse.,35,4
 Utena,Who's that? ,35,4
 Dios,A witch. ,35,4
 Utena,A witch? ,35,4
@@ -9829,29 +9791,29 @@ Saionji,"but you've never really loved anyone, and you see everyone else only as
 Saionji,That was your strength. ,35,4
 Saionji,But can that sword of yours defeat her now?,35,4
 Touga,You're talking too much. You'll leave yourself open.,35,4
-shadow,"I wonder I wonder, do you know what I wonder, Miss?",35,4
-shadow,"Oh, what is it I wonder? ",35,4
-shadow,"I'm the cool sailor, the nice-guy genius Cassanova!",35,4
-shadow,The incomparable Playboy Fisherman! ,35,4
-shadow,My! ,35,4
-shadow,How wonderful! ,35,4
-shadow,I can't move! ,35,4
-shadow,Boil me! ,35,4
-shadow,Broil me! ,35,4
-shadow,Slice me! ,35,4
-shadow,Make me into sashimi! ,35,4
-shadow,"Hah, all fish are like that. ",35,4
-shadow,All fish exist for me to use. ,35,4
-shadow,"I don't mean to brag, but there's no fish I couldn't catch.",35,4
-shadow,"Wow, is that so? ",35,4
-shadow,All the fish in the sea are at my beck and call.,35,4
-shadow,"Oh, I caught another. ",35,4
-shadow,What's this? It's not doing what I want it to.,35,4
-shadow,Is this some new breed of fish? This's never happened before!,35,4
-shadow,What the hell are you- ,35,4
-shadow,"Shh. I'm a ""koi"" [Japanese for ""goldfish"", and for ""love""].",35,4
-shadow,How could a koi be in the ocean?! ,35,4
-shadow,"I wonder I wonder, do you know what I wonder?",35,4
+Shadow,"I wonder I wonder, do you know what I wonder, Miss?",35,4
+Shadow,"Oh, what is it I wonder? ",35,4
+Shadow,"I'm the cool sailor, the nice-guy genius Cassanova!",35,4
+Shadow,The incomparable Playboy Fisherman! ,35,4
+Shadow,My! ,35,4
+Shadow,How wonderful! ,35,4
+Shadow,I can't move! ,35,4
+Shadow,Boil me! ,35,4
+Shadow,Broil me! ,35,4
+Shadow,Slice me! ,35,4
+Shadow,Make me into sashimi! ,35,4
+Shadow,"Hah, all fish are like that. ",35,4
+Shadow,All fish exist for me to use. ,35,4
+Shadow,"I don't mean to brag, but there's no fish I couldn't catch.",35,4
+Shadow,"Wow, is that so? ",35,4
+Shadow,All the fish in the sea are at my beck and call.,35,4
+Shadow,"Oh, I caught another. ",35,4
+Shadow,What's this? It's not doing what I want it to.,35,4
+Shadow,Is this some new breed of fish? This's never happened before!,35,4
+Shadow,What the hell are you- ,35,4
+Shadow,"Shh. I'm a ""koi"" [Japanese for ""goldfish"", and for ""love""].",35,4
+Shadow,How could a koi be in the ocean?! ,35,4
+Shadow,"I wonder I wonder, do you know what I wonder?",35,4
 Akio,Don't worry. See? ,35,4
 Utena,Yeah. ,35,4
 Akio,"His body's big, but he's quite gentle. ",35,4
@@ -9916,16 +9878,6 @@ Anthy,What is it? ,35,4
 Utena,Nothing... ,35,4
 Utena,I feel like I was just about to remember something important...,35,4
 Utena,What... ,35,4
-text,Next Episode Preview ,35,4
-Utena,I came to this Ohtori Academy to meet a prince.,35,4
-Anthy,Does it look like you'll get to meet this prince?,35,4
-Utena,"Prince-like people, would-be princes, people I want to be princes...",35,4
-Utena,"But a ""prince"" is... ",35,4
-Utena,Kiryuu Touga challenged me to another Duel!,35,4
-Utena,I've got to fight. ,35,4
-Anthy,Do you know what's scarier than Dueling? ,35,4
-Utena,Next time on Shoujo Kakumei Utena: ,35,4
-Utena/text,And the Gates of Night Open TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,35,4
 Utena,Please...don't open this coffin.,36,4
 Saionji,Who would have thought that that girl was Tenjou Utena...,36,4
 Saionji,That girl who was inside the coffin. ,36,4
@@ -10067,18 +10019,18 @@ Touga,"But if I win, you become my woman. ",36,4
 Utena,I misjudged you. I can't believe you'd say such a thing...,36,4
 Touga,No objections? ,36,4
 Utena,No. ,36,4
-shadow,"Gallop gallop gallop. Lo, give ear to the sound if ye be afar!",36,4
-shadow,And behold if ye be close at hand! ,36,4
-shadow,For I be a Prince upon a white horse! ,36,4
-shadow,My! A Prince of white horses! ,36,4
-shadow,"This flowing mane, these splendid forelegs...how magnificent!",36,4
-shadow,"See here, that's not the Prince of white horses, that's the white horse of the Prince.",36,4
-shadow,The Prince is me. ,36,4
-shadow,"But, does that mean you're not a human Prince?",36,4
-shadow,"I'm human, but I'm called a ""Prince upon a white horse.""",36,4
-shadow,"Well anyway, you're a Prince too right? How wonderful!",36,4
-shadow,Do you really want a horse Prince? ,36,4
-shadow,Of horse! ,36,4
+Shadow,"Gallop gallop gallop. Lo, give ear to the sound if ye be afar!",36,4
+Shadow,And behold if ye be close at hand! ,36,4
+Shadow,For I be a Prince upon a white horse! ,36,4
+Shadow,My! A Prince of white horses! ,36,4
+Shadow,"This flowing mane, these splendid forelegs...how magnificent!",36,4
+Shadow,"See here, that's not the Prince of white horses, that's the white horse of the Prince.",36,4
+Shadow,The Prince is me. ,36,4
+Shadow,"But, does that mean you're not a human Prince?",36,4
+Shadow,"I'm human, but I'm called a ""Prince upon a white horse.""",36,4
+Shadow,"Well anyway, you're a Prince too right? How wonderful!",36,4
+Shadow,Do you really want a horse Prince? ,36,4
+Shadow,Of horse! ,36,4
 Touga,This fight will determine the one who shall Revolutionize the World.,36,4
 Utena,"Who cares about that. Anways, your promise not to touch Anthy if I win is for real, right?",36,4
 Touga,Yeah. Utena/Anthy: Grant me the power to Revolutionizethe World!,36,4
@@ -10113,13 +10065,6 @@ Utena,Akio-san... ,36,4
 Utena,"Oh, shoot. I gotta get in bed the right way.",36,4
 Utena,Himemiya? ,36,4
 Utena,"Ah, there she is. ",36,4
-text,Next Episode Preview ,36,4
-Utena,"""And there, I should be able to see you again."" From your Prince.",36,4
-Anthy,"Utena-sama, a letter arrived from the Ends of the World didn't it.",36,4
-Utena,"Himemiya, I just can't seem to forgive you.",36,4
-Anthy,"Utena-sama, did you know that I always held you in contempt?",36,4
-Utena,Next time on Shoujo Kakumei Utena: ,36,4
-Utena/text,The One Who Will Revolutionize the World.TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,36,4
 Utena,I'll become a Prince no matter what!,37,4
 Dios,"If you can retain that nobility even when you grow up,",37,4
 Dios,That ring... ,37,4
@@ -10248,34 +10193,34 @@ Juri,I was thinking of putting in the new pendant I just bought.,37,4
 Miki,"Oh man, a strong rival just appeared. ",37,4
 Nanami,"What are you, idiots? ",37,4
 sign,Shadows Gathering Kashira Theater ,37,4
-shadows,"I wonder I wonder, do you know what I wonder?",37,4
-shadow,I've decided to leave you now. ,37,4
-shadow,My only path is that of an actress! ,37,4
-shadow,Three...two...one... ,37,4
-shadow,*kiss* ,37,4
-shadow,"Like that, starring in a movie to break through like, boooom!",37,4
-shadow,Get into a major scandal and be in all the magazines.,37,4
-shadow,"You did it, didn't you? ",37,4
-shadow,"No, I haven't. Not seriously/Just licked. [Note: nameru = to lick/not to take it seriously]",37,4
-shadow,Not seriously? ,37,4
-shadow,"In other words, you just want a taste of the life!",37,4
-shadow,That's exactly it! ,37,4
-shadow,*KISS* ,37,4
-shadow,I saw this application on your desk. You're going to take it right?,37,4
-shadow,The audition? ,37,4
-shadow,But a member of a student drama club like me going for a movie audition - they're all gonna laugh.,37,4
-shadow,I won't laugh. ,37,4
-shadow,Really? We're....really friends! ,37,4
-shadows,*KISS* ,37,4
-shadow,"Extra extra extra! Hey, you. ",37,4
-shadow,Shall we be off? ,37,4
-shadow,"Yes, Mr. Judge! ",37,4
-shadow,Mr. Judge? ,37,4
-shadow,The judges for the audition tomorrow...please take me to dinner!,37,4
-shadow,Very well. Just leave it up to Daddy here.,37,4
-shadow,Daddy? ,37,4
-shadow,"I wonder, do you know that only one person will pass the audition?",37,4
-shadow,"I wonder I wonder, do you know what I wonder?",37,4
+Shadow,"I wonder I wonder, do you know what I wonder?",37,4
+Shadow,I've decided to leave you now. ,37,4
+Shadow,My only path is that of an actress! ,37,4
+Shadow,Three...two...one... ,37,4
+Shadow,*kiss* ,37,4
+Shadow,"Like that, starring in a movie to break through like, boooom!",37,4
+Shadow,Get into a major scandal and be in all the magazines.,37,4
+Shadow,"You did it, didn't you? ",37,4
+Shadow,"No, I haven't. Not seriously/Just licked. [Note: nameru = to lick/not to take it seriously]",37,4
+Shadow,Not seriously? ,37,4
+Shadow,"In other words, you just want a taste of the life!",37,4
+Shadow,That's exactly it! ,37,4
+Shadow,*KISS* ,37,4
+Shadow,I saw this application on your desk. You're going to take it right?,37,4
+Shadow,The audition? ,37,4
+Shadow,But a member of a student drama club like me going for a movie audition - they're all gonna laugh.,37,4
+Shadow,I won't laugh. ,37,4
+Shadow,Really? We're....really friends! ,37,4
+Shadow,*KISS* ,37,4
+Shadow,"Extra extra extra! Hey, you. ",37,4
+Shadow,Shall we be off? ,37,4
+Shadow,"Yes, Mr. Judge! ",37,4
+Shadow,Mr. Judge? ,37,4
+Shadow,The judges for the audition tomorrow...please take me to dinner!,37,4
+Shadow,Very well. Just leave it up to Daddy here.,37,4
+Shadow,Daddy? ,37,4
+Shadow,"I wonder, do you know that only one person will pass the audition?",37,4
+Shadow,"I wonder I wonder, do you know what I wonder?",37,4
 Akio,"Does it hurt, Anthy? ",37,4
 Akio,But I'm not the one causing your pain. ,37,4
 Akio,It's the world. ,37,4
@@ -10327,15 +10272,6 @@ Anthy,"And there, we shall meet again. ",37,4
 Anthy,"From your Prince."" ",37,4
 Anthy,Utena-sama. You can still turn back. ,37,4
 Utena,Let's go. ,37,4
-text,Next Episode Preview ,37,4
-Utena,"At last, the final Duel, the Duel Called Revolution has begun.",37,4
-Anthy,"I'm sorry, Utena-sama. ",37,4
-Utena,There's nothing for you to apologize about.,37,4
-Utena,I chose this by myself. ,37,4
-Anthy,"But Utena-sama, you don't yet know the truth about this world,",37,4
-Anthy,the true terror of the world! ,37,4
-Utena,Next time on Shoujo Kakumei Utena: ,37,4
-Utena/text,The Ends of the World TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,37,4
 title,"""The Ends of the World""",38,4
 Utena,Where are we? ,38,4
 Utena,The Prince... ,38,4
@@ -10481,7 +10417,11 @@ Juri,The egg is the world. ,38,4
 Nanami,"If we do not break the shell of the world,",38,4
 Nanami,we will die without being born. ,38,4
 Saionji,Break the shell of the world. ,38,4
-all,To Revolutionize the World! ,38,4
+Touga,To Revolutionize the World! ,38,4
+Miki,To Revolutionize the World! ,38,4
+Juri,To Revolutionize the World! ,38,4
+Nanami,To Revolutionize the World! ,38,4
+Saionji,To Revolutionize the World! ,38,4
 Miki,"It's begun, hasn't it. ",38,4
 Juri,Yeah. ,38,4
 Nanami,Tenjou Utena. ,38,4
@@ -10512,15 +10452,6 @@ Akio,Do you know what you're saying? ,38,4
 Utena,Sure I do! It means I'll become a Prince! ,38,4
 Utena,Why...? ,38,4
 Utena,Himemiya...why... ,38,4
-text,Next Episode Preview ,38,4
-shadow,Extra extra! ,38,4
-shadow,They caught me by surprise from behind! ,38,4
-shadow,But I couldn't become a real princess with a fake prince!,38,4
-shadow,"Oh, when that happens the power of miracles will make me a real Prince!",38,4
-shadow,That's right out of some anime or something.,38,4
-shadows,"Shoujo Kakumei Utena - the Finale! shadows/text: Someday, Shine With Me",38,4
-shadow,"I wonder I wonder, do you know what I wonder?!",38,4
-shadow,Whatever. The Absolute Destiny: Apocalypse. TRANSLATOR'S NOTE ON THE EPISODENone.Return to the Script Index ... Returnto Empty Movement,38,4
 Utena,Why...,39,4
 Utena,Why... ,39,4
 Anthy,You remind me of the Dios I once loved. ,39,4
@@ -10655,35 +10586,35 @@ Utena,I really...couldn't become a Prince. ,39,4
 Utena,"I'm sorry, Himemiya. Sorry for ending up just a make-believe Prince...",39,4
 Utena,Forgive me. ,39,4
 Wakaba,I guess Utena's not here. And here I wanted to do homework together.,39,4
-shadow,What're you gonna do when you graduate? ,39,4
-shadow,"I'm going to high school, of course. ",39,4
-shadow,"No, I mean in your future. ",39,4
-shadow,Haven't decided yet. ,39,4
-shadow,I wanna be an actress. ,39,4
-shadow,Do you really believe you can pull that off?,39,4
-shadow,"Man, you're dead serious about becoming one.",39,4
-shadow,"Well, look forward to our ten year reunion.",39,4
-shadow,Hey... ,39,4
-shadow,And what about you? ,39,4
-shadow,What about? ,39,4
-shadow,Your future. ,39,4
-shadow,I guess I'll get married to some high-ranking man.,39,4
-shadow,There she goes. ,39,4
-shadow,There she goes. ,39,4
-shadow,"Hey, aren't women supposed to be good at nabbing handsome guys?",39,4
-shadow,Get a load of this! ,39,4
-shadow,This little tramp just started going out with the man of her dreams.,39,4
-shadow,"She's the one who kept going ""Utena-sama, Utena-sama"" all the time.",39,4
-shadow,"Hey, you got a problem with that? ",39,4
-shadow,"Hey, who was Utena-sama again? ",39,4
-shadow,"What, don't you know? ",39,4
-shadow,Remember? She's that girl who always dressed like a guy.,39,4
-shadow,She got hassled by the teachers all the time.,39,4
-shadow,"Oh, now I remember. Her! ",39,4
-shadow,But didn't she get hurt real bad and hospitalized a month or two ago?,39,4
-shadow,Huh? Hospitalized? I heard she got betrayed by a friend or a lover or something and switched schools.,39,4
-shadow,I heard she got in trouble with the Chairman of the Board of Trustees and expelled.,39,4
-shadow,"Well, not like it matters. ",39,4
+Shadow,What're you gonna do when you graduate? ,39,4
+Shadow,"I'm going to high school, of course. ",39,4
+Shadow,"No, I mean in your future. ",39,4
+Shadow,Haven't decided yet. ,39,4
+Shadow,I wanna be an actress. ,39,4
+Shadow,Do you really believe you can pull that off?,39,4
+Shadow,"Man, you're dead serious about becoming one.",39,4
+Shadow,"Well, look forward to our ten year reunion.",39,4
+Shadow,Hey... ,39,4
+Shadow,And what about you? ,39,4
+Shadow,What about? ,39,4
+Shadow,Your future. ,39,4
+Shadow,I guess I'll get married to some high-ranking man.,39,4
+Shadow,There she goes. ,39,4
+Shadow,There she goes. ,39,4
+Shadow,"Hey, aren't women supposed to be good at nabbing handsome guys?",39,4
+Shadow,Get a load of this! ,39,4
+Shadow,This little tramp just started going out with the man of her dreams.,39,4
+Shadow,"She's the one who kept going ""Utena-sama, Utena-sama"" all the time.",39,4
+Shadow,"Hey, you got a problem with that? ",39,4
+Shadow,"Hey, who was Utena-sama again? ",39,4
+Shadow,"What, don't you know? ",39,4
+Shadow,Remember? She's that girl who always dressed like a guy.,39,4
+Shadow,She got hassled by the teachers all the time.,39,4
+Shadow,"Oh, now I remember. Her! ",39,4
+Shadow,But didn't she get hurt real bad and hospitalized a month or two ago?,39,4
+Shadow,Huh? Hospitalized? I heard she got betrayed by a friend or a lover or something and switched schools.,39,4
+Shadow,I heard she got in trouble with the Chairman of the Board of Trustees and expelled.,39,4
+Shadow,"Well, not like it matters. ",39,4
 Kozue,"That's the timing, got it? ",39,4
 Tsuwabuki,Yes! ,39,4
 Miki,You'll assist me with my job from next term on.,39,4

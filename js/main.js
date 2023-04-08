@@ -2,6 +2,8 @@ let data, characters;
 
 d3.csv("data/UtFullmEA.csv").then( _data =>{
     data = _data
+    characters  = [...new Set(data.map(d => d["Speaker"]))];
+    console.log(characters)
     data = data.filter(function(d){
         //These are all of the characters that appear throughout multiple episodes
         //We can remove some of the less important people or Narration

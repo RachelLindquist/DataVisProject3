@@ -4571,15 +4571,15 @@ Mamiya,The Student Council... ,15,2
 Mamiya,The Student Council members... ,15,2
 Mamiya,"With their spirits, we might forge a sword powerful enough to defeat Tenjou Utena.",15,2
 Mamiya,That's what my Black Rose tells me. ,15,2
-Souji,"However, they have all been defeated in Duels.",15,2
-Souji,They are weak-hearted people. ,15,2
+Mikage,"However, they have all been defeated in Duels.",15,2
+Mikage,They are weak-hearted people. ,15,2
 Mamiya,There aren't many people who can fully control their hearts.,15,2
 Mamiya,I'm sure it's particularly difficult for people of such young age.,15,2
 Mamiya,It would be far better to let their spirit swords be received by someone else.,15,2
 Mamiya,"That way, a stronger Duelist can be born.",15,2
-Souji,I understand. ,15,2
-Souji,"For the sake of making you the Rose Bride, I'll consider it.",15,2
-Souji,"However, drawing their spirit swords requires a hand that can capture their hearts.",15,2
+Mikage,I understand. ,15,2
+Mikage,"For the sake of making you the Rose Bride, I'll consider it.",15,2
+Mikage,"However, drawing their spirit swords requires a hand that can capture their hearts.",15,2
 Girl,Kozue! ,15,2
 Girl,"Hey, Kozue... You've changed boyfriends again?",15,2
 Kozue,I haven't changed boyfriends... I've added one.,15,2
@@ -4683,7 +4683,7 @@ Form,Nemuro Memorial Hall Interview Application Form Please answer the following
 Form,Name --- Kaoru Kozue Age --- 13 Sex --- Female Address ---,15,2
 Man,We've been expecting you. Enter. ,15,2
 Kozue,"I'm Kaoru Kozue, 7th grade, Class B. ",15,2
-Souji,"Well, please begin. ",15,2
+Mikage,"Well, please begin. ",15,2
 Kozue,Miki is my twin brother. ,15,2
 Kozue,"Since we were very little, he has treated me very fondly.",15,2
 Kozue,"Lately, even though he pretends there's nothing wrong,",15,2
@@ -4691,20 +4691,20 @@ Kozue,"...if something happens to sully me, he acts outwardly as if everything's
 Kozue,"But in his heart, he's hurt and he obsesses over me.",15,2
 Kozue,That's why I purposely go out with people that I know Miki would hate.,15,2
 Kozue,However... ,15,2
-Souji,Deeper. Go deeper. ,15,2
+Mikage,Deeper. Go deeper. ,15,2
 Kozue,"But, Miki's attention is gradually going to that other woman.",15,2
 Kozue,It's going away from me. ,15,2
-Souji,I understand. ,15,2
-Souji,I guess you have no choice but to revolutionize the world.,15,2
-Souji,The way before you has been prepared. ,15,2
+Mikage,I understand. ,15,2
+Mikage,I guess you have no choice but to revolutionize the world.,15,2
+Mikage,The way before you has been prepared. ,15,2
 Miki,Kozue? ,15,2
 Miki,Kozue... ,15,2
 Miki,What are you doing? ,15,2
 Miki,That ring?! ,15,2
 Kozue,Isn't it nice? It matches yours. ,15,2
 Kozue,And here is one of the roses that bloom at the ends of the world.,15,2
-Souji,That is your new power. ,15,2
-Souji,"So, you should grasp it, without hesitation. ",15,2
+Mikage,That is your new power. ,15,2
+Mikage,"So, you should grasp it, without hesitation. ",15,2
 Utena,What's up? ,15,2
 Wakaba,It's the finals schedule! ,15,2
 Wakaba,"No matter how hard you wish... what will come, will come.",15,2
@@ -4788,9 +4788,9 @@ FPFE,"To the faraway ancient me, ",15,2
 FPFE,"Ten, two, one, zero... Take off!",15,2
 Utena,"Brother, eh? ",15,2
 Miki,Kozue... ,15,2
-Souji,Failure... ,15,2
-Souji,But that was just the first one. ,15,2
-Souji,There are other Student Council members. ,15,2
+Mikage,Failure... ,15,2
+Mikage,But that was just the first one. ,15,2
+Mikage,There are other Student Council members. ,15,2
 Miki,What happened to that Black Rose signet? ,15,2
 Kozue,What's a Rose Signet? ,15,2
 Miki,Never mind. ,15,2
@@ -5374,18 +5374,18 @@ Juri,"Shiori, don't tease me...",17,2
 Shiori,"You're supposed to be stronger than anyone, but now you're like this...",17,2
 plate,TENJOU UTENA,17,2
 card,To the one Engaged,17,2
-C-ko,Extra! Extra! Extra!,17,2
-C-ko,I'm done for! They all found out my secrets!,17,2
-C-ko,There's nothing to worry about.,17,2
-C-ko,I'm dying!,17,2
-C-ko,No one thinks of it as embarrassing.,17,2
-C-ko,Is that so?,17,2
-C-ko,Sure it is! Everyone wears things like woolen panties.,17,2
-C-ko,But who would wear three pairs of them?,17,2
-C-ko,So I am done for then.,17,2
-C-ko,"Even though I'm considered a fashionable, nice dresser, I'm wearing woolen panties!",17,2
-C-ko,"And three pairs, even!",17,2
-C-ko,I'll never get married this way. What should I do?,17,2
+Shadow,Extra! Extra! Extra!,17,2
+Shadow,I'm done for! They all found out my secrets!,17,2
+Shadow,There's nothing to worry about.,17,2
+Shadow,I'm dying!,17,2
+Shadow,No one thinks of it as embarrassing.,17,2
+Shadow,Is that so?,17,2
+Shadow,Sure it is! Everyone wears things like woolen panties.,17,2
+Shadow,But who would wear three pairs of them?,17,2
+Shadow,So I am done for then.,17,2
+Shadow,"Even though I'm considered a fashionable, nice dresser, I'm wearing woolen panties!",17,2
+Shadow,"And three pairs, even!",17,2
+Shadow,I'll never get married this way. What should I do?,17,2
 Utena,Take 'em off?,17,2
 ZUM,The Absolute Destiny,17,2
 ZUM,The Absolute Destiny,17,2
@@ -7202,7 +7202,7 @@ Mamiya,How selfish they are. ,23,2
 Mamiya,"They owe it to you that the castle appeared and the road to the arena opened, right?",23,2
 Mamiya,They're all afraid of you. ,23,2
 Mamiya,They think you may be capable of obtaining eternity.,23,2
-Nemuro,I'm not going to do anything like dueling. ,23,2
+Mikage,I'm not going to do anything like dueling. ,23,2
 Mamiya,Why not? Aren't you thinking you want the power to revolutionize the world for your very own?,23,2
 Mamiya,Knowing eternity exists in that castle? ,23,2
 Mamiya,"Eternity means lasting forever, right? ",23,2
@@ -7212,11 +7212,11 @@ Mamiya,"Eternity means that this moment lasts billions of billions of years, wit
 Mamiya,I... I... ,23,2
 Mamiya,I want eternity. ,23,2
 Tokiko,What are you talking about? ,23,2
-Nemuro,This is the first step of the job you're advancing.,23,2
-Nemuro,"Soon, the road leading to eternity from this Academy will be opened.",23,2
+Mikage,This is the first step of the job you're advancing.,23,2
+Mikage,"Soon, the road leading to eternity from this Academy will be opened.",23,2
 Tokiko,Nemuro-san... ,23,2
-Nemuro,What Mamiya-kun did was proper. ,23,2
-Nemuro,"Now I, too, wish to grasp eternity. ",23,2
+Mikage,What Mamiya-kun did was proper. ,23,2
+Mikage,"Now I, too, wish to grasp eternity. ",23,2
 Mikage,You're finally back. ,23,2
 Mikage,I knew you'd come back to me sooner or later.,23,2
 Mikage,"Tokiko-san, you don't have to regret the fact that you deserted me.",23,2

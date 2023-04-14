@@ -1,19 +1,19 @@
 let data, characters;
 
-d3.csv("data/UtFullmEA.csv").then( _data =>{
+d3.csv("data/UtFullmEA.csv").then( _data => {
     data = _data
     characters  = [...new Set(data.map(d => d["Speaker"]))];
     console.log(characters)
-    data = data.filter(function(d){
-        //These are all of the characters that appear throughout multiple episodes
-        //We can remove some of the less important people or Narration
-        //The series also has different songs that play each episode, 1 (zettai unmei...) is constant
-        //The other changes based on who the antagonist of the episode is
-        //I left both of them out, but they can be added
-        //Main characters: Utena, Saionji, Miki, Juri, Touga, Anthy, Akio (Dios), Nanami
-        //Important characters: Shiori, Kozue, Shadow, Ruka, Mikage, Mitsuru, Wakaba
-        //Important, but only for 1 or a couple episodes: Mamiya, Tatsuya, Tokiko, Kanae
-        //Nanami's lackies, show up often: Keiko, Aiko, Yuuko
+    data = data.filter(function(d) {
+        // These are all of the characters that appear throughout multiple episodes
+        // We can remove some of the less important people or Narration
+        // The series also has different songs that play each episode, 1 (zettai unmei...) is constant
+        // The other changes based on who the antagonist of the episode is
+        // I left both of them out, but they can be added
+        // Main characters: Utena, Saionji, Miki, Juri, Touga, Anthy, Akio (Dios), Nanami
+        // Important characters: Shiori, Kozue, Shadow, Ruka, Mikage, Mitsuru, Wakaba
+        // Important, but only for 1 or a couple episodes: Mamiya, Tatsuya, Tokiko, Kanae
+        // Nanami's lackies, show up often: Keiko, Aiko, Yuuko
         return d["Speaker"].includes("Wakaba") || d["Speaker"].includes("Utena") || d["Speaker"].includes("Shiori")
         || d["Speaker"].includes("Saionji") || d["Speaker"].includes("Miki") || d["Speaker"].includes("Juri") 
         || d["Speaker"].includes("Touga") || d["Speaker"].includes("Anthy") || d["Speaker"].includes("Nanami") 
@@ -24,7 +24,10 @@ d3.csv("data/UtFullmEA.csv").then( _data =>{
         || d["Speaker"].includes("Tokiko") || d["Speaker"].includes("Dios") || d["Speaker"].includes("Ruka") 
         || d["Speaker"].includes("Akio");
     });
-    console.log(data)
+    // console.log(data)
+    // console.log("data.map:", data.map(d => d.Speaker));
+
+    // TODO convert to lowercase ?
     characters  = [...new Set(data.map(d => d["Speaker"]))];
     console.log(characters)
     //lineCount = countLines();
@@ -43,12 +46,68 @@ d3.csv("data/UtFullmEA.csv").then( _data =>{
         'containerWidth': 1000,
     }, getPhrases(data));
 
-    //I will fix this later to match character's actual colors depending on how many characters we want to display
+    // TODO I will fix this later to match character's actual colors depending on how many characters we want to display
     const  characterColors= d3.scaleOrdinal()
         .domain(characters)
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
-    
+
+    var characterLinesVsEp = {};
+
+    for (const dialogData of data) {
+        // console.log("speaker:", dialogData.Speaker);
+        const character = dialogData.Speaker;
+        const epNum = dialogData.Episode;
+
+        if (!characterLinesVsEp.hasOwnProperty(character))
+            characterLinesVsEp[character] = {};
+
+        if (!characterLinesVsEp[character].hasOwnProperty(epNum))
+            characterLinesVsEp[character][epNum] = 0;
+
+        // not sure how ?.length works. ref https://bobbyhadz.com/blog/javascript-count-spaces-in-string
+        characterLinesVsEp[character][epNum] += (dialogData.Line.match(/(\s+)/g)?.length || 0);
+    }
+
+    console.log("characterlinesvsepdata:", characterLinesVsEp);
+
+    // now convert to array for that can be fed to heatmap object
+    var heatmapdata_characterLinesVsEp = [];
+
+    Object.keys(characterLinesVsEp).forEach(k => {
+        Object.keys(characterLinesVsEp[k]).forEach(epNum => {
+            heatmapdata_characterLinesVsEp.push({"character": k, "epNum": epNum,
+                "words": characterLinesVsEp[k][epNum]});
+        });
+    });
+
+    console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
+
+    let heatMapObj = new heatmap ({
+        'parentElement': '#dateheatmap',
+        'contentWidth': 800,
+        'contentHeight': 400,
+        'scaleType': 'linear',
+        //    'set_filterIDs': set_
+    }, heatmapdata_characterLinesVsEp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
 
@@ -83,7 +142,7 @@ function getCharLines(){
     return lines;
 }
 
-function getWords(){
+function getWords() {
     let words = [];
     data.forEach(c => {
         let line = c["Line"];
@@ -108,8 +167,8 @@ function getPhrases(){
     return phrases;//.slice(0, 2000);
 }
 
-
-function clean(line){
+// returns array of words
+function clean(line) {
     //removed puncutation and cleans up the line
     line = line.replace("..."," ");
     line = line.replace(/-/g, " ");
@@ -117,6 +176,8 @@ function clean(line){
     line = line.toLowerCase();
     var punctuationless = line.replace(/[.,\/#!$%\^&\*;:{}=\_`~()?]/g,"");
     var cleanedString = punctuationless.replace(/\s{2,}/g," ");
+
+    // convert string to array
     lineArr = cleanedString.split(" ");
 
     //remove filler words, pretend I've listed them all 

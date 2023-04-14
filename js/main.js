@@ -27,10 +27,9 @@ d3.csv("data/UtFullmEA.csv").then( _data =>{
     console.log(data)
     characters  = [...new Set(data.map(d => d["Speaker"]))];
     console.log(characters)
-    lineCount = countLines();
-    episodeCount = countEpisodes();
+    //lineCount = countLines();
+    //episodeCount = countEpisodes();
     characterLines = getCharLines();
-    getPhrases();
 
     let words = new WordCloud({
         'parentElement': '#wordCloud',
@@ -81,6 +80,7 @@ function getCharLines(){
         lines[c[0]["Speaker"]] = t;
     })
     console.log(lines);
+    return lines;
 }
 
 function getWords(){

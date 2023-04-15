@@ -39,3 +39,32 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
+  .Arc1 rect {
+    fill: #6080b5;
+  }
+  .Arc2 rect {
+    fill: #d4c32d;
+  }
+  .Arc3 rect {
+    fill: #96e82a;
+  }
+  .Arc4 rect {
+    fill: #d42d6a;
+  }
+
+  #tooltip {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 2px 2px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+  }
+  .tooltip-label {
+    font-weight: 500;
+    font-size: 10px;
+    color: #888;
+  }

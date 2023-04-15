@@ -118,6 +118,12 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     // console.log(getBarData(data));
     
+    // line chart
+    let lineChart = new LineChart ({
+        'parentElement': '#linechart',
+        'containerWidth': 600,
+        'containerHeight': 300,
+    }, heatmapdata_characterLinesVsEp);
 
 });
 

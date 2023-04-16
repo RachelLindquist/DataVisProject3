@@ -13,15 +13,15 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     characters = [...new Set(data.map(d => d["Speaker"]))];
     // console.log(characters)
     data = data.filter(function(d) {
-        //These are all of the characters that appear throughout multiple episodes
-        //We can remove some of the less important people or Narration
-        //The series also has different songs that play each episode, 1 (zettai unmei...) is constant
-        //The other changes based on who the antagonist of the episode is
-        //I left both of them out, but they can be added
-        //Main characters: Utena, Saionji, Miki, Juri, Touga, Anthy, Akio (Dios), Nanami
-        //Important characters: Shiori, Kozue, Shadow, Ruka, Mikage, Mitsuru, Wakaba
-        //Important, but only for 1 or a couple episodes: Mamiya, Tatsuya, Tokiko, Kanae
-        //Nanami's lackies, show up often: Keiko, Aiko, Yuuko
+        // These are all of the characters that appear throughout multiple episodes
+        // We can remove some of the less important people or Narration
+        // The series also has different songs that play each episode, 1 (zettai unmei...) is constant
+        // The other changes based on who the antagonist of the episode is
+        // I left both of them out, but they can be added
+        // Main characters: Utena, Saionji, Miki, Juri, Touga, Anthy, Akio (Dios), Nanami
+        // Important characters: Shiori, Kozue, Shadow, Ruka, Mikage, Mitsuru, Wakaba
+        // Important, but only for 1 or a couple episodes: Mamiya, Tatsuya, Tokiko, Kanae
+        // Nanami's lackies, show up often: Keiko, Aiko, Yuuko
         return d["Speaker"].includes("Wakaba") || d["Speaker"].includes("Utena") || d["Speaker"].includes("Shiori")
         || d["Speaker"].includes("Saionji") || d["Speaker"].includes("Miki") || d["Speaker"].includes("Juri") 
         || d["Speaker"].includes("Touga") || d["Speaker"].includes("Anthy") || d["Speaker"].includes("Nanami") 
@@ -60,12 +60,18 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
 
     // heatmap
-    var characterLinesVsEp = {};
+    let characterLinesVsEp = {};
+
+    let epSet = new Set();
+    let characterSet = new Set();
 
     for (const dialogData of data) {
         // console.log("speaker:", dialogData.Speaker);
         const character = dialogData.Speaker;
         const epNum = dialogData.Episode;
+
+        epSet.add(epNum);
+        characterSet.add(character);
 
         if (!characterLinesVsEp.hasOwnProperty(character))
             characterLinesVsEp[character] = {};
@@ -80,7 +86,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     console.log("characterlinesvsepdata:", characterLinesVsEp);
 
     // now convert to array for that can be fed to heatmap object
-    var heatmapdata_characterLinesVsEp = [];
+    // array of objects, with each object to be mapped to a single cell in the heatmap
+    let heatmapdata_characterLinesVsEp = [];
 
     Object.keys(characterLinesVsEp).forEach(k => {
         Object.keys(characterLinesVsEp[k]).forEach(epNum => {
@@ -93,12 +100,13 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     let heatMapObj = new heatmap ({
         'parentElement': '#dateheatmap',
-        'contentWidth': 800,
+        'contentWidth': 600,
         'contentHeight': 400,
-        'scaleType': 'linear',
-        //    'set_filterIDs': set_
-    }, heatmapdata_characterLinesVsEp);
-
+    }, heatmapdata_characterLinesVsEp, 
+        Array.from(epSet).sort((a, b) => (parseInt(a) - parseInt(b))), 
+        Array.from(characterSet), 
+        "Episodes", 
+        "Characters");
 
    // stacked chart
     placeholderClass = new tempClass(data,data); //this is a placeholder for heatmap
@@ -121,7 +129,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     // line chart
     let lineChart = new LineChart ({
         'parentElement': '#linechart',
-        'containerWidth': 600,
+        'containerWidth': 640,
         'containerHeight': 300,
     }, heatmapdata_characterLinesVsEp);
 
@@ -196,7 +204,7 @@ function clean(line) {
     // convert string to array
     lineArr = cleanedString.split(" ");
 
-    //remove filler words, pretend I've listed them all 
+    // remove filler words, pretend I've listed them all 
     let remove = ['i', 'me', 'my', 'myself', 'we', 'us', 'our', 'ours', 'ourselves', 'you', 'your', 'yours', 'yourself', 'yourselves', 'he', 'him',
         'his', 'himself', 'she', 'her', 'hers', 'herself', 'it', 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which',
         'who', 'whom', 'whose', 'this', 'that', 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do',
@@ -262,16 +270,14 @@ function dicToArr2(totalp) {
     return (data1);
 }
 
-
-
-//filter function for each item we plan on filtering
+// filter function for each item we plan on filtering
 function filterData(workingData) {
     // console.log(barFilter)
     placeholderClass.data = workingData;
 
 
-    //dayChart filtering
-    if (barFilter.length != 0) {
+    // dayChart filtering
+    if (barFilter.length !== 0) {
         placeholderClass.data = placeholderClass.data.filter(d => barFilter.includes(d.Arc));
     }
 

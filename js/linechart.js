@@ -51,7 +51,9 @@ class LineChart {
         const x = d3.scaleLinear()
             .domain(d3.extent(vis.data, d => d.epNum ))
             .range([ 0, vis.width ]);
+
         vis.svg.append("g")
+            .attr('class', 'axis y-axis')
             .attr("transform", `translate(0, ${vis.height})`)
             .call(d3.axisBottom(x).ticks(10));
 
@@ -59,7 +61,9 @@ class LineChart {
         const y = d3.scaleLinear()
             .domain([0, d3.max(vis.data, d => +d.words)])
             .range([ vis.height, 0 ]);
+
         vis.svg.append("g")
+            .attr('class', 'axis y-axis')
             .call(d3.axisLeft(y));
 
         // color palette

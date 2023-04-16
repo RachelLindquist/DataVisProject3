@@ -3,6 +3,9 @@
     <head>
         <title>I'm a Graph Now Too</title>
         <link rel="icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8NVwyBaC3ugf4DNizgNGXFimeOcvvtj4Zw&usqp=CAU">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "css/style.css">
     </head>
     <body>
@@ -27,15 +30,15 @@
             </div>
         </div> 
 
+        <div>
+            <svg id="dateheatmap"></svg>
+        </div>
+        <div id="tooltip_heatmap"></div>
 
         <div id="wordCloud"></div>
         <div id="phraseCloud"></div>
         <svg id="stackedBarChart"></svg>
         <svg id="linechart"></svg>
-
-        <div>
-            <svg id="dateheatmap"></svg>
-        </div>
 
         <script src = "js/d3.v6.min.js"></script>
         <!-- Load d3-cloud -->

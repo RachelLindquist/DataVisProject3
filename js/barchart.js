@@ -161,7 +161,7 @@ class StackedBarChart {
         bars.on('click', function (event, d) {
 
             // "Calls By Zipcode"
-            if (vis.title == "Characters Lines by Arc") {
+            if (vis.title === "Characters Lines by Arc") {
                 //already has wednesday
                 const isActive = barFilter.includes(getArcFromVals(d).slice(-1));
                 if (isActive) {
@@ -220,7 +220,7 @@ function getCharacters(data_base) {
 }
 
 function getLargest(data_base) {
-    mx = 0
+    let mx = 0
 
     data_base.forEach(arc => {
         arc.forEach(d => {
@@ -236,7 +236,7 @@ function getLargest(data_base) {
 function getArcFromVals(item) {
     // console.log(item.data)
     for (let arc in item.data) {
-        if (item.data[arc] == (item[1] - item[0])) {
+        if (item.data[arc] === (item[1] - item[0])) {
             return (arc)
         }
     }

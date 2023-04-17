@@ -5,6 +5,7 @@ class tempClass {
     constructor(_data, _ALLDATA) {
         this.data = _data;
         this.ALLDATA = _ALLDATA;
+        this.hist = [];
     }
 }
 
@@ -12,7 +13,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     data = _data
     characters = [...new Set(data.map(d => d["Speaker"]))];
     // console.log(characters)
-    data = data.filter(function(d) {
+    data = data.filter(function (d) {
         // These are all of the characters that appear throughout multiple episodes
         // We can remove some of the less important people or Narration
         // The series also has different songs that play each episode, 1 (zettai unmei...) is constant
@@ -23,35 +24,29 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         // Important, but only for 1 or a couple episodes: Mamiya, Tatsuya, Tokiko, Kanae
         // Nanami's lackies, show up often: Keiko, Aiko, Yuuko
         return d["Speaker"].includes("Wakaba") || d["Speaker"].includes("Utena") || d["Speaker"].includes("Shiori")
-        || d["Speaker"].includes("Saionji") || d["Speaker"].includes("Miki") || d["Speaker"].includes("Juri") 
-        || d["Speaker"].includes("Touga") || d["Speaker"].includes("Anthy") || d["Speaker"].includes("Nanami") 
-        || d["Speaker"].includes("Kozue") || d["Speaker"].includes("Keiko") || d["Speaker"].includes("Aiko") 
-        /*|| d["Speaker"].includes("Narration") */ || d["Speaker"].includes("Shadow") || d["Speaker"].includes("Yuuko") 
-        || d["Speaker"].includes("Kanae") || d["Speaker"].includes("Keiko") || d["Speaker"].includes("Mamiya") 
-        || d["Speaker"].includes("Mitsuru") || d["Speaker"].includes("Mikage") || d["Speaker"].includes("Tatsuya") 
-        || d["Speaker"].includes("Tokiko") || d["Speaker"].includes("Dios") || d["Speaker"].includes("Ruka") 
-        || d["Speaker"].includes("Akio");
+            || d["Speaker"].includes("Saionji") || d["Speaker"].includes("Miki") || d["Speaker"].includes("Juri")
+            || d["Speaker"].includes("Touga") || d["Speaker"].includes("Anthy") || d["Speaker"].includes("Nanami")
+            || d["Speaker"].includes("Kozue") || d["Speaker"].includes("Keiko") || d["Speaker"].includes("Aiko")
+        /*|| d["Speaker"].includes("Narration") */ || d["Speaker"].includes("Shadow") || d["Speaker"].includes("Yuuko")
+            || d["Speaker"].includes("Kanae") || d["Speaker"].includes("Keiko") || d["Speaker"].includes("Mamiya")
+            || d["Speaker"].includes("Mitsuru") || d["Speaker"].includes("Mikage") || d["Speaker"].includes("Tatsuya")
+            || d["Speaker"].includes("Tokiko") || d["Speaker"].includes("Dios") || d["Speaker"].includes("Ruka")
+            || d["Speaker"].includes("Akio");
     });
     console.log("data:", data);
 
+
+    let widthitem = window.innerWidth / 2 - 15;
+    let heightitem = window.innerHeight / 2.5;
+
     // TODO convert to lowercase ?
     characters = [...new Set(data.map(d => d["Speaker"]))];
-    console.log("characters:", characters);
+    // console.log("characters:", characters);
     //lineCount = countLines();
     //episodeCount = countEpisodes();
     characterLines = getCharLines();
 
-    let words = new WordCloud({
-        'parentElement': '#wordCloud',
-        'containerHeight': 500,
-        'containerWidth': 500,
-    }, getWords(data));
 
-    let phrases = new WordCloud({
-        'parentElement': '#phraseCloud',
-        'containerHeight': 1000,
-        'containerWidth': 1000,
-    }, getPhrases(data));
 
     //I will fix this later to match character's actual colors depending on how many characters we want to display
     const characterColors = d3.scaleOrdinal()
@@ -59,61 +54,20 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
 
-    // heatmap
-    let characterLinesVsEp = {};
 
-    let epSet = new Set();
-    let characterSet = new Set();
 
-    for (const dialogData of data) {
-        // console.log("speaker:", dialogData.Speaker);
-        const character = dialogData.Speaker;
-        const epNum = dialogData.Episode;
+    // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
 
-        epSet.add(epNum);
-        characterSet.add(character);
 
-        if (!characterLinesVsEp.hasOwnProperty(character))
-            characterLinesVsEp[character] = {};
 
-        if (!characterLinesVsEp[character].hasOwnProperty(epNum))
-            characterLinesVsEp[character][epNum] = 0;
+    // placeholder to help sort through all the garbage
+    placeholderClass = new tempClass(data, data); //this is a placeholder for heatmap
 
-        // not sure how ?.length works. ref https://bobbyhadz.com/blog/javascript-count-spaces-in-string
-        characterLinesVsEp[character][epNum] += (dialogData.Line.match(/(\s+)/g)?.length || 0);
-    }
 
-    console.log("characterlinesvsepdata:", characterLinesVsEp);
+    placeholderClass.hist = histo(data);
 
-    // now convert to array for that can be fed to heatmap object
-    // array of objects, with each object to be mapped to a single cell in the heatmap
-    let heatmapdata_characterLinesVsEp = [];
 
-    Object.keys(characterLinesVsEp).forEach(k => {
-        Object.keys(characterLinesVsEp[k]).forEach(epNum => {
-            heatmapdata_characterLinesVsEp.push({"character": k, "epNum": epNum,
-                "words": characterLinesVsEp[k][epNum]});
-        });
-    });
-
-    console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
-
-    let heatMapObj = new heatmap ({
-        'parentElement': '#dateheatmap',
-        'contentWidth': 600,
-        'contentHeight': 400,
-    }, heatmapdata_characterLinesVsEp, 
-        Array.from(epSet).sort((a, b) => (parseInt(a) - parseInt(b))), 
-        Array.from(characterSet), 
-        "Episodes", 
-        "Characters");
-
-   // stacked chart
-    placeholderClass = new tempClass(data,data); //this is a placeholder for heatmap
-
-    let widthitem = window.innerWidth / 2 - 15;
-    let heightitem = window.innerHeight / 2.5;
-
+    // stacked chart
     characterLinesChart = new StackedBarChart({
         'parentElement': '#stackedBarChart',
         'containerHeight': heightitem,
@@ -124,14 +78,37 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     }, getBarData(data), "Characters Lines by Arc", true, "Character", "Number of Lines", data);
     characterLinesChart.updateVis();
 
-    // console.log(getBarData(data));
-    
+    // Wordcloud
+    wordCloud = new WordCloud({
+        'parentElement': '#wordCloud',
+        'containerHeight': 500,
+        'containerWidth': 500,
+    }, getWords(data));
+
+    //phraseCloud
+    phraseCloud = new WordCloud({
+        'parentElement': '#phraseCloud',
+        'containerHeight': 1000,
+        'containerWidth': 1000,
+    }, getPhrases(data));
+
     // line chart
-    let lineChart = new LineChart ({
+    lineChart = new LineChart({
         'parentElement': '#linechart',
         'containerWidth': 640,
         'containerHeight': 300,
-    }, heatmapdata_characterLinesVsEp);
+    }, placeholderClass.hist[0]);
+
+    // heatmap
+    heatMapObj = new heatmap({
+        'parentElement': '#dateheatmap',
+        'contentWidth': 600,
+        'contentHeight': 400,
+    }, placeholderClass.hist[0],
+        placeholderClass.hist[1],
+        placeholderClass.hist[2],
+        "Episodes",
+        "Characters");
 
 });
 
@@ -172,7 +149,7 @@ function getWords() {
         let line = c["Line"];
         line = clean(line);
         line.forEach(l => {
-            words.push({Speaker: c["Speaker"], Word: l, Episode: c["Episode"], Arc: c["Arc"]});
+            words.push({ Speaker: c["Speaker"], Word: l, Episode: c["Episode"], Arc: c["Arc"] });
         });
 
     });
@@ -185,7 +162,7 @@ function getPhrases() {
     data.forEach(c => {
         let line = c["Line"];
         //line = cleanLine(line);
-        phrases.push({Speaker: c["Speaker"], Word: line, Episode: c["Episode"], Arc: c["Arc"]});
+        phrases.push({ Speaker: c["Speaker"], Word: line, Episode: c["Episode"], Arc: c["Arc"] });
     });
     // console.log(phrases);
     return phrases;//.slice(0, 2000);
@@ -270,6 +247,53 @@ function dicToArr2(totalp) {
     return (data1);
 }
 
+function histo(data) {
+    // heatmap
+    let characterLinesVsEp = {};
+
+    let epSet = new Set();
+    let characterSet = new Set();
+
+    for (const dialogData of data) {
+        // console.log("speaker:", dialogData.Speaker);
+        const character = dialogData.Speaker;
+        const epNum = dialogData.Episode;
+
+        epSet.add(epNum);
+        characterSet.add(character);
+
+        if (!characterLinesVsEp.hasOwnProperty(character))
+            characterLinesVsEp[character] = {};
+
+        if (!characterLinesVsEp[character].hasOwnProperty(epNum))
+            characterLinesVsEp[character][epNum] = 0;
+
+        // not sure how ?.length works. ref https://bobbyhadz.com/blog/javascript-count-spaces-in-string
+        characterLinesVsEp[character][epNum] += (dialogData.Line.match(/(\s+)/g)?.length || 0);
+    }
+
+    // console.log("characterlinesvsepdata:", characterLinesVsEp);
+
+    // now convert to array for that can be fed to heatmap object
+    // array of objects, with each object to be mapped to a single cell in the heatmap
+    let heatmapdata_characterLinesVsEp = [];
+
+    Object.keys(characterLinesVsEp).forEach(k => {
+        Object.keys(characterLinesVsEp[k]).forEach(epNum => {
+            heatmapdata_characterLinesVsEp.push({
+                "character": k, "epNum": epNum,
+                "words": characterLinesVsEp[k][epNum]
+            });
+        });
+    });
+
+    epSet = Array.from(epSet).sort((a, b) => (parseInt(a) - parseInt(b))),
+        characterSet = Array.from(characterSet)
+
+    return ([heatmapdata_characterLinesVsEp, epSet, characterSet]);
+}
+
+
 // filter function for each item we plan on filtering
 function filterData(workingData) {
     // console.log(barFilter)
@@ -281,8 +305,29 @@ function filterData(workingData) {
         placeholderClass.data = placeholderClass.data.filter(d => barFilter.includes(d.Arc));
     }
 
-    characterLinesChart.data = getBarData(placeholderClass.data);
 
+    
+
+        
+    placeholderClass.hist = histo(placeholderClass.data);
+
+    characterLinesChart.data = getBarData(placeholderClass.data);
+    phraseCloud.words = getPhrases(placeholderClass.data);
+    wordCloud.words = getWords(placeholderClass.data);
+
+
+    lineChart.data = placeholderClass.hist[0];
+
+    heatMapObj.data = placeholderClass.hist[0];
+    heatMapObj.epList = placeholderClass.hist[1];
+    heatMapObj.characterList = placeholderClass.hist[2];
+
+
+    
     characterLinesChart.updateVis();
+    phraseCloud.updateVis();
+    wordCloud.updateVis();
+    lineChart.updateVis();
+    heatMapObj.updateVis();
 
 }

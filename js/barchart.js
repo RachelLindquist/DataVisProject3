@@ -128,7 +128,7 @@ class StackedBarChart {
         let vis = this;
 
         let bars = vis.chart
-            .selectAll("category")
+            .selectAll(".category")
             .data(vis.data)
             .join("g")
             .attr("class", (d) => `category ${d.key}`)

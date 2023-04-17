@@ -95,6 +95,7 @@ class WordCloud{
 
         function draw(words) {
             console.log(words);
+            vis.svg.selectAll("text").remove();
             vis.svg
                 .append("g")
                 .attr("transform", "translate(" + vis.width / 2 + "," + vis.height/ 2 + ")")

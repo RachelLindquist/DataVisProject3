@@ -103,3 +103,50 @@ text.axis-title {
     font-size: 16px;
 }
 
+.section {
+    display: flex; 
+    flex-direction: row;
+}
+
+.graph {
+    background-color:whitesmoke;
+    border-radius: 2px;
+    border-color: darkkhaki;
+    margin: 5px;
+    width: 33%;
+}
+
+.graphlong {
+    background-color:whitesmoke;
+    border-radius: 2px;
+    border-color: darkkhaki;
+    margin: 5px;
+    /* width: 33%; */
+    
+}
+
+.topbar {
+    padding: 5px;
+    padding-bottom: 5px;
+    color: darkslategrey;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.topbarlong {
+    padding: 5px;
+    padding-bottom: 5px;
+    color: darkslategrey;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+}

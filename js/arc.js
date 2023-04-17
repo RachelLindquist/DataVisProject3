@@ -22,7 +22,7 @@ class Arc{
         vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
         vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
 
-        var svg = d3.select(vis.config.parentElement)
+        vis.svg = d3.select(vis.config.parentElement)
             .append("svg")
                 .attr("width", vis.width)
                 .attr("height", vis.height)
@@ -36,6 +36,11 @@ class Arc{
     updateVis(){
         let vis = this;
         vis.getNodesAndLinks();
+        var allNodes = vis.nodes.map(function(d){return d.name})
+        vis.x = d3.scalePoint()
+            .range([0, vis.width-100])
+            .domain(allNodes)
+        
         vis.renderVis();
     }
 
@@ -44,6 +49,7 @@ class Arc{
         //based on example data: https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_network.json
         //get nodes
         let characters = [...new Set(vis.data.map(d => d["Speaker"]))];
+        console.log(characters);
         let i = 1;
         vis.nodes = [];
         characters.forEach(c => {
@@ -71,7 +77,124 @@ class Arc{
         });
     }
 
+    getColor(d){
+        if(d.name === "Shiori"){
+            return "#b85294";
+        } else if (d.name === "Kozue") {
+            return "#8489ef";
+        } else if (d.name === "Wakaba") {
+            return "#d77149";
+        } else if (d.name === "Mitsuru") {
+            return "#f1cc3d";
+        } else if (d.name === "Touga") {
+            return "#ba2332";
+        } else if (d.name === "Saionji") {
+            return "#57845b";
+        } else if (d.name === "Juri") {
+            return "#ef6d10";
+        } else if (d.name === "Miki") {
+            return "#2383e4";
+        } else if (d.name === "Utena") {
+            return "#f6a0cd";
+        } else if (d.name === "Anthy") {
+            return "#7641ab";
+        } else if (d.name === "Akio" || d.name === "Dios") {
+            return "#f3cdf0";
+        } else if (d.name === "Nanami") {
+            return "#f9da31";
+        } else if (d.name === "Mikage") {
+            return "#3c285d";
+        } else if (d.name === "Ruka") {
+            return "#1f3cab";
+        } else if (d.name === "Tatsuya") {
+            return "#3e3b33";
+        } else if (d.name === "Shadow") {
+            return "grey";
+        } else if (d.name === "Tokiko") {
+            return "#5d2128";
+        } else if (d.name === "Kanae") {
+            return "#dcf2c4";
+        } else if (d.name === "Keiko") {
+            return "#9d6a3a";
+        } else if (d.name === "Aiko") {
+            return "#2e2816";
+        } else if (d.name === "Yuuko") {
+            return "#652815";
+        } else {
+            return "black";
+        }
+    }
+
     renderVis(){
         let vis = this;
+        console.log(vis.nodes);
+        vis.circleNodes = vis.svg
+        .selectAll("mynodes")
+        .data(vis.nodes)
+        .enter()
+        .append("circle")
+          .attr("cx", function(d){ return(vis.x(d.name))})
+          .attr("cy", vis.height-60)
+          .attr("r", 8)
+          .style("fill", d => vis.getColor(d))
+
+        vis.nodelabels = vis.svg
+          .selectAll("mylabels")
+          .data(vis.nodes)
+          .enter()
+          .append("text")
+            .attr("x", function(d){ return(vis.x(d.name))})
+            .attr("y", vis.height-40)
+            .text(function(d){ return(d.name)})
+            .style("text-anchor", "middle")
+            .attr('font-size', "10");
+
+        var idToNode = {};
+            vis.nodes.forEach(function (n) {
+              idToNode[n.id] = n;
+            });
+        
+        vis.linkLines = vis.svg
+            .selectAll('mylinks')
+            .data(vis.links)
+            .enter()
+            .append('path')
+            .attr('d', function (d) {
+              let start = vis.x(idToNode[d.source].name)
+              let end = vis.x(idToNode[d.target].name)      
+              return ['M', start, vis.height-60,   
+                'A',                            
+                (start - end)/2, ',', 
+                (start - end)/2, 0, 0, ',',
+                start < end ? 1 : 0, end, ',', vis.height-60] 
+                .join(' ');
+            })
+            .style("fill", "none")
+            .style("stroke", d => vis.getColor(idToNode[d.source]))
+
+        vis.circleNodes.on('mouseover', function (event, d) {
+            vis.circleNodes.style('fill', "#B8B8B8")
+            d3.select(this).style("fill", d => vis.getColor(d))
+            //TODO: fix highlights
+            vis.linkLines
+              .style('stroke', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? vis.getColor(d) : '#b8b8b8';})
+              .style('stroke-width', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? 4 : 1;})
+          })
+          .on('mouseout', function (d) {
+            vis.circleNodes.style("fill", d => vis.getColor(d))
+            vis.linkLines
+              .style('stroke', d => vis.getColor(idToNode[d.source]))
+              .style('stroke-width', '1')
+          })
+
+        /*vis.svg
+          .append("text")
+            .attr("text-anchor", "middle")
+            .style("fill", "#B8B8B8")
+            .style("font-size", "17px")
+            .attr("x", 50)
+            .attr("y", 10)
+            .html("Hover nodes") */
+         
     }
 }

@@ -1,4 +1,5 @@
 let data, characters;
+let arc;
 let barFilter = [];
 
 class tempClass {
@@ -91,6 +92,12 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'containerHeight': 1000,
         'containerWidth': 1000,
     }, getPhrases(data));
+
+    arc = new Arc({
+        'parentElement': '#arc',
+        'containerHeight': 1000,
+        'containerWidth': 1000,
+    }, data);
 
     // line chart
     lineChart = new LineChart({

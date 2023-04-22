@@ -118,6 +118,7 @@ text.axis-title {
     flex-direction: row;
 }
 
+
 .graph {
     background-color:whitesmoke;
     border-radius: 2px;
@@ -161,6 +162,16 @@ text.axis-title {
     flex-direction: column;
 }
 
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background:#b7b7b7;
+    color: rgb(40, 67, 67);
+    font-size: 30px;
+  }
+
+  
 .mynodes {
     background-color: #3e8e41; 
     /* Just for show shouldent do anything */

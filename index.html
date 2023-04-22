@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>I'm a Graph Now Too</title>
-        <link rel="icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8NVwyBaC3ugf4DNizgNGXFimeOcvvtj4Zw&usqp=CAU">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" href = "css/style.css">
-    </head>
-    <body>
-        <p>Thinking we'll use a dropdown to select episodes/arcs maybe so I copied and pasted one</p>
-        <div class="dropdown" id = "arc">
-            <button class="dropbtn">Arcs</button>
-            <div class="dropdown-content">
-              <a href="#">Arc 1 The Student Council Arc</a>
-              <a href="#">Arc 2 The Black Rose Saga</a>
-              <a href="#">Arc 3 The Akio Arc</a>
-              <a href="#">Arc 4 The Apocalypse Arc</a>
-            </div>
-        </div> 
-        <div class="dropdown" id = "episodes">
-            <button class="dropbtn">Episodes</button>
-            <div class="dropdown-content">
-              <a href="#">Episode 01 "The Rose Bride"</a>
-              <a href="#">Episode 02 "For Whom the Rose Smiles"</a>
-              <a href="#">Episode 03 "On the Night of the Ball"</a>
-              <a href="#">Episode 04 "The Sunny Garden - Prelude"</a>
-              <!-- Add more in later-->
-            </div>
-        </div> 
 
+<head>
+    <title>I'm a Graph Now Too</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8NVwyBaC3ugf4DNizgNGXFimeOcvvtj4Zw&usqp=CAU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+    <div class="header">
+        <h1 style="background-color: #b7b7b7; font-size: 30px">This is a header</h1>
+        <p>By Josh Zack, Rachel Lindquist, Nishidha Koneru, and ______________</p>
+        <p>Sourced from ____________________: <a href="https://exoplanetarchive.ipac.caltech.edu"
+                target="_blank">https://exoplanetarchive.ipac.caltech.edu</a>/</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column;">
         <div class="section">
-        <div>
-            <svg id="dateheatmap"></svg>
+            
+            <div>
+                <div class="graphlong">
+                    <div class="topbar">
+                        <h1>
+                            Heatmap of Character vs Ep
+                        </h1>
+                        <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
+                        <p>Colored by the amount of lines they have</p>
+                    </div>
+                    <svg id="dateheatmap"></svg>
+                </div>
+            </div>
+
+            <div>
+                <div class="graphlong">
+                    <div class="topbar">
+                        <h1>
+                            Heatmap of Character vs Lines
+                        </h1>
+                        <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
+                        <p>Layered by Arc</p>
+                    </div>
+                    <svg id="stackedBarChart"></svg>
+                </div>
+                
+
+                <div class="graphlong">
+                    <div class="topbar">
+                        <h1>
+                            Idk what this linechart is
+                        </h1>
+                        <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
+                        <p>Colored by Character</p>
+                    </div>
+                    <svg id="linechart"></svg>
+                </div>
+                
+            </div>
         </div>
 
-        <div>
-        <svg id="stackedBarChart"></svg>
-        
-        <svg id="linechart"></svg>
-    </div>
-    </div>
-        
-        <div class = "section">
-        <div id="wordCloud"></div>
-        <div id="phraseCloud"></div>
+        <div class="section">
+            <div id="wordCloud"></div>
+            <div id="phraseCloud"></div>
+        </div>
     </div>
     <div>
-        <div id = "arc"></div>
+        <div id="arc"></div>
     </div>
 
-        <script src = "js/d3.v6.min.js"></script>
-        <!-- Load d3-cloud -->
-        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="js/d3.v6.min.js"></script>
+    <!-- Load d3-cloud -->
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 
-        <script src = "js/wordCloud.js"></script>
-        <script src = "js/heatmap.js"></script>
-        <script src = "js/main.js"></script>
-        <script src = "js/barchart.js"></script>
-        <script src = "js/linechart.js"></script>
-        <script src = "js/arc.js"></script>
+    <script src="js/wordCloud.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/arc.js"></script>
 
-        <div id="tooltip"></div>
-        <div id="tooltip_heatmap" class="embossed-text"></div>  <!-- I dont know why this has its own tooltip -->
+    <div id="tooltip"></div>
+    <div id="tooltip_heatmap" class="embossed-text"></div> <!-- I dont know why this has its own tooltip -->
 
-    <div class="embossed-text">sample text</div>
+</body>
 
-    </body>
 </html>

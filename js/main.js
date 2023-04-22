@@ -38,10 +38,6 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     });
     // console.log("data:", data);
 
-
-    let widthitem = window.innerWidth / 2 - 15;
-    let heightitem = window.innerHeight / 2.5;
-
     // TODO convert to lowercase ?
     characters = [...new Set(data.map(d => d["Speaker"]))];
     // console.log("characters:", characters);
@@ -57,16 +53,17 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
 
+        
+
 
 
     // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
 
-
+    let widthitem = window.innerWidth / 2 - 15;
+    let heightitem = window.innerHeight / 2.5;
 
     // placeholder to help sort through all the garbage
     placeholderClass = new tempClass(data, data); //this is a placeholder for heatmap
-
-
     placeholderClass.hist = histo(data);
 
 
@@ -84,15 +81,15 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     // Wordcloud
     wordCloud = new WordCloud({
         'parentElement': '#wordCloud',
-        'containerHeight': 500,
-        'containerWidth': 500,
+        'containerHeight': widthitem,
+        'containerWidth': widthitem,
     }, getWords(data));
 
     //phraseCloud
     phraseCloud = new WordCloud({
         'parentElement': '#phraseCloud',
-        'containerHeight': 1000,
-        'containerWidth': 1000,
+        'containerHeight': widthitem,
+        'containerWidth': widthitem,
     }, getPhrases(data));
 
     arc = new Arc({
@@ -104,15 +101,15 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     // line chart
     lineChart = new LineChart({
         'parentElement': '#linechart',
-        'containerWidth': 640,
-        'containerHeight': 300,
+        'containerHeight': heightitem,
+        'containerWidth': widthitem,
     }, placeholderClass.hist[0]);
 
     // heatmap
     heatMapObj = new heatmap({
         'parentElement': '#dateheatmap',
-        'contentWidth': 600,
-        'contentHeight': 400,
+        'containerHeight': heightitem,
+        'containerWidth': widthitem,
     }, placeholderClass.hist[0],
         placeholderClass.hist[1],
         placeholderClass.hist[2],

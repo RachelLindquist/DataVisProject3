@@ -97,10 +97,20 @@ body {
     font-size: 14px;
 }
 
+.hovered-label {
+    font-size: 15px;
+    cursor: default;
+}
+
 text.axis-title {
     color: #460f22;
     font-weight: bold;
     font-size: 16px;
+}
+
+.embossed-text {
+    filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
+    // box-shadow: 0 -3px 5px #777 inset;
 }
 
 .section {

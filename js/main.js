@@ -1,6 +1,8 @@
 let data, characters;
 let arc;
 let barFilter = [];
+let set_filteredOutCharacters = new Set();
+let set_filteredOutEpisodes = new Set();
 
 class tempClass {
     constructor(_data, _ALLDATA) {

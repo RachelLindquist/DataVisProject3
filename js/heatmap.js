@@ -57,7 +57,7 @@ class heatmap {
             .style("text-anchor", "middle")
             .text(vis.xlabel);
 
-        vis.chart.append('text')
+        let ylabels = vis.chart.append('text')
             .attr('class', 'axis-title')
             .attr("transform", "rotate(-90)")
             .attr("y", 0 - vis.config.margin.left)
@@ -65,6 +65,10 @@ class heatmap {
             .attr("dy", "1em")
             .style("text-anchor", "middle")
             .text(vis.ylabel);
+
+        // ylabels .on('mouseover', function (event, d) {
+        //         console.log("mouseover:", d);
+        //     });
 
         console.log("eps:", vis.data.map(d => d.epNum));
         vis.xScale = d3.scaleBand()
@@ -95,7 +99,25 @@ class heatmap {
             .attr('transform', `translate(0, ${vis.height})`)
             .call(vis.xAxis)
             .call(g => g.select('.domain').remove());
-            // .attr('transform', `translate(0, 300));
+        // .attr('transform', `translate(0, 300));
+
+        // TODO check if approach correct to add mouseover to ticks
+        d3.selectAll('.x-axis .tick')
+            .on('mouseenter', function (event, d) {
+                event.target.classList.add('hovered-label');
+                console.log("mouseover:", d);
+            })
+            .on('mouseleave', (event, d) => {
+                event.target.classList.remove('hovered-label');
+            })
+            .on('click', function (event, d) {
+                if (set_filteredOutEpisodes.has(d))
+                    set_filteredOutEpisodes.delete(d);
+                else
+                    set_filteredOutEpisodes.add(d);
+
+                console.log("filtered out episodes:", set_filteredOutEpisodes);
+            });
 
         vis.yAxisG = vis.chart.append('g')
             .attr('class', 'axis y-axis')
@@ -106,6 +128,22 @@ class heatmap {
 
         // vis.yAxisG
         //     .call(vis.yAxis);
+        d3.selectAll('.y-axis .tick')
+            .on('mouseenter', function (event, d) {
+                event.target.classList.add('hovered-label');
+                console.log("mouseover:", d);
+            })
+            .on('mouseleave', (event, d) => {
+                event.target.classList.remove('hovered-label');
+            })
+            .on('click', function (event,  d) {
+                if (set_filteredOutCharacters.has(d))
+                    set_filteredOutCharacters.delete(d);
+                else
+                    set_filteredOutCharacters.add(d);
+
+                console.log("filtered out characters:", set_filteredOutCharacters);
+            });
 
         vis.color = d3.scaleLinear()
             .range(["#e8a1ac", "#6b1f2b"])
@@ -121,6 +159,7 @@ class heatmap {
             .attr("width", vis.xScale.bandwidth())
             .attr("height", vis.yScale.bandwidth())
             // .attr("class", d => d[0])
+            .attr("class", 'embossed-text')
             // .attr("style", "outline: thin solid red;")
             // .style("fill", d => vis.color(vis.xValue(d)));
             .style("fill", function(d) {
@@ -133,6 +172,7 @@ class heatmap {
                 // event.target.style.outlineColor = "red";
                 // event.target.style.outlineWidth = "4";
                 event.target.style.outline = "3px solid #ab965e";
+                // event.target.classList.add('embossed-text');
 
                 // event.target.style.fill = "red";
                 // event.target.style.fill = "red";

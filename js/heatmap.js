@@ -116,6 +116,7 @@ class heatmap {
                 else
                     set_filteredOutEpisodes.add(d);
 
+                vis.updateVis();
                 console.log("filtered out episodes:", set_filteredOutEpisodes);
             });
 
@@ -142,18 +143,48 @@ class heatmap {
                 else
                     set_filteredOutCharacters.add(d);
 
+                vis.updateVis();
                 console.log("filtered out characters:", set_filteredOutCharacters);
             });
 
         vis.color = d3.scaleLinear()
-            .range(["#e8a1ac", "#6b1f2b"])
-            .domain([0, d3.max(vis.data, d => d.words)]);
+            .range(["#ffffff", "#244396", "#983521"])
+            // .range(["#ffffff", "#d20424"])
+            .domain([0, d3.max(vis.data, d => d.words) / 2, d3.max(vis.data, d => d.words)]);
+
+
+        vis.updateVis();
+    }
+
+
+    clearCells() {
+        let vis = this;
+
+        vis.chart.selectAll('rect')
+            .style("outline", "0");
+
+        vis.data.forEach(function(d) {
+            d.ifClicked = false;
+        });
+    }
+
+    updateVis() {
+
+        console.log()
+        let vis = this;
 
         const heatZones = vis.chart.selectAll('rect')
-            .data(vis.data)
+            .data(vis.data.filter(function (d) {
+                if (set_filteredOutCharacters.has(d.character) ||
+                set_filteredOutEpisodes.has(d.epNum))
+                    return false;
+                else
+                    return true;
+            }))
             // .data(Object.entries(heatmapZoneMap), function(d) {console.log("data is: ", d);})
-            .enter()
-            .append('rect')
+            .join('rect')
+            // .enter()
+            // .append('rect')
             .attr('x', d => vis.xScale(vis.xValue(d)))
             .attr('y', d => vis.yScale(vis.yValue(d)))
             .attr("width", vis.xScale.bandwidth())
@@ -196,24 +227,9 @@ class heatmap {
                 d3.select('#tooltip_heatmap').style('opacity', 0);  // turn off the tooltip
             })
             .on('click', function(event, d) {
-                console.log("click d:", d);
+                // console.log("click d:", d);
                 // console.log("event:", event);
             });
-    }
-
-
-    clearCells() {
-        let vis = this;
-
-        vis.chart.selectAll('rect')
-            .style("outline", "0");
-
-        vis.data.forEach(function(d) {
-            d.ifClicked = false;
-        });
-    }
-
-    updateVis() {
 
     }
 

@@ -1,21 +1,26 @@
-let data, characters;
+let data, characters, episodes;
 let arc;
 let barFilter = [];
-let set_filteredOutCharacters = new Set();
+let set_filteredOutCharacters = new Set(["Akio"]);
 let set_filteredOutEpisodes = new Set();
+
 
 class tempClass {
     constructor(_data, _ALLDATA) {
         this.data = _data;
         this.ALLDATA = _ALLDATA;
-        this.hist = [];
+        this.heatmapData = [];
     }
 }
 
 d3.csv("data/UtFullmEA.csv").then(_data => {
     data = _data
+    
+    // TODO remove this ?
     characters = [...new Set(data.map(d => d["Speaker"]))];
     // console.log(characters)
+
+    // TODO move allowed characters in a list
     data = data.filter(function (d) {
         // These are all of the characters that appear throughout multiple episodes
         // We can remove some of the less important people or Narration
@@ -44,6 +49,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     // TODO convert to lowercase ?
     characters = [...new Set(data.map(d => d["Speaker"]))];
+    episodes = [...new Set(data.map(d => d["Episode"]))];
+    
     // console.log("characters:", characters);
     //lineCount = countLines();
     //episodeCount = countEpisodes();
@@ -57,17 +64,11 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
 
-
-
-    // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
-
-
-
     // placeholder to help sort through all the garbage
-    placeholderClass = new tempClass(data, data); //this is a placeholder for heatmap
+    placeholderClass = new tempClass(data, data);  // this is a placeholder for heatmap
 
 
-    placeholderClass.hist = histo(data);
+    placeholderClass.heatmapData = getHeatmapData(data);
 
 
     // stacked chart
@@ -106,16 +107,16 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'parentElement': '#linechart',
         'containerWidth': 640,
         'containerHeight': 300,
-    }, placeholderClass.hist[0]);
+    }, placeholderClass.heatmapData[0]);
 
     // heatmap
     heatMapObj = new heatmap({
         'parentElement': '#dateheatmap',
         'contentWidth': 600,
         'contentHeight': 400,
-    }, placeholderClass.hist[0],
-        placeholderClass.hist[1],
-        placeholderClass.hist[2],
+    }, placeholderClass.heatmapData[0],
+        placeholderClass.heatmapData[1],
+        placeholderClass.heatmapData[2],
         "Episodes",
         "Characters");
 
@@ -184,6 +185,7 @@ function clean(line) {
     line = line.replace(/-/g, " ");
     line = line.replace(/['"]+/g, '');
     line = line.toLowerCase();
+    // TODO improve regex
     var punctuationless = line.replace(/[.,\/#!$%\^&\*;:{}=\_`~()?]/g, "");
     var cleanedString = punctuationless.replace(/\s{2,}/g, " ");
 
@@ -256,26 +258,33 @@ function dicToArr2(totalp) {
     return (data1);
 }
 
-function histo(data) {
+function getHeatmapData(data) {
     // heatmap
     let characterLinesVsEp = {};
 
     let epSet = new Set();
     let characterSet = new Set();
 
+    characters.forEach(function (d) {
+        characterLinesVsEp[d] = {};
+
+        episodes.forEach(ep => characterLinesVsEp[d][ep] = 0);
+    });
+
     for (const dialogData of data) {
         // console.log("speaker:", dialogData.Speaker);
         const character = dialogData.Speaker;
         const epNum = dialogData.Episode;
 
+        // TODO remove this ?
         epSet.add(epNum);
         characterSet.add(character);
 
-        if (!characterLinesVsEp.hasOwnProperty(character))
-            characterLinesVsEp[character] = {};
+        // if (!characterLinesVsEp.hasOwnProperty(character))
+        //     characterLinesVsEp[character] = {};
 
-        if (!characterLinesVsEp[character].hasOwnProperty(epNum))
-            characterLinesVsEp[character][epNum] = 0;
+        // if (!characterLinesVsEp[character].hasOwnProperty(epNum))
+        //     characterLinesVsEp[character][epNum] = 0;
 
         // not sure how ?.length works. ref https://bobbyhadz.com/blog/javascript-count-spaces-in-string
         characterLinesVsEp[character][epNum] += (dialogData.Line.match(/(\s+)/g)?.length || 0);
@@ -290,7 +299,8 @@ function histo(data) {
     Object.keys(characterLinesVsEp).forEach(k => {
         Object.keys(characterLinesVsEp[k]).forEach(epNum => {
             heatmapdata_characterLinesVsEp.push({
-                "character": k, "epNum": epNum,
+                "character": k,
+                "epNum": epNum,
                 "words": characterLinesVsEp[k][epNum]
             });
         });
@@ -318,18 +328,18 @@ function filterData(workingData) {
     
 
         
-    placeholderClass.hist = histo(placeholderClass.data);
+    placeholderClass.hist = getHeatmapData(placeholderClass.data);
 
     characterLinesChart.data = getBarData(placeholderClass.data);
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 
 
-    lineChart.data = placeholderClass.hist[0];
+    lineChart.data = placeholderClass.heatmapData[0];
 
-    heatMapObj.data = placeholderClass.hist[0];
-    heatMapObj.epList = placeholderClass.hist[1];
-    heatMapObj.characterList = placeholderClass.hist[2];
+    heatMapObj.data = placeholderClass.heatmapData[0];
+    heatMapObj.epList = placeholderClass.heatmapData[1];
+    heatMapObj.characterList = placeholderClass.heatmapData[2];
 
 
     

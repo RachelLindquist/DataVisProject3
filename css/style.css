@@ -160,3 +160,8 @@ text.axis-title {
     display: flex; 
     flex-direction: column;
 }
+
+.mynodes {
+    background-color: #3e8e41; 
+    /* Just for show shouldent do anything */
+}

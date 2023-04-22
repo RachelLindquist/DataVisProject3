@@ -1,5 +1,5 @@
 class heatmap {
-    constructor(_config, _data, epList, characterList, _xlabel, _ylabel) {
+    constructor(_config, _data, epList, characterList, _xlabel, _ylabel, _ALLDATA) {
         this.config = {
             parentElement: _config.parentElement,
             margin: { top: 15, bottom: 85, right: 80, left: 100},
@@ -26,6 +26,7 @@ class heatmap {
         this.characterList = characterList;
         this.xlabel = _xlabel;
         this.ylabel = _ylabel;
+        this.ALLDATA = _ALLDATA;
 
         this.initVis();
     }
@@ -70,13 +71,13 @@ class heatmap {
         //         console.log("mouseover:", d);
         //     });
 
-        console.log("eps:", vis.data.map(d => d.epNum));
+        // console.log("eps:", vis.data.map(d => d.epNum));
         vis.xScale = d3.scaleBand()
             .range([0, vis.width])
             .domain(vis.epList)
             .paddingInner(0.2);
 
-        console.log("arr:", [1, d3.max(vis.data, d => parseInt(d.epNum))]);
+        // console.log("arr:", [1, d3.max(vis.data, d => parseInt(d.epNum))]);
 
         vis.yScale = d3.scaleBand()
             .range([0, vis.height])  // TODO why reverse:w
@@ -113,13 +114,14 @@ class heatmap {
             .on('click', function (event, d) {
                 if (set_filteredOutEpisodes.includes(d)) {
                     set_filteredOutEpisodes = set_filteredOutEpisodes.filter(f => f !== d);;
-                    d3.select(event.currentTarget).style("stroke", "none");
+                    d3.select(event.currentTarget).style("color", "#000000");
                 } else {
                     set_filteredOutEpisodes.push(d);
-                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                    d3.select(event.currentTarget).style("color", "#FF0000");
                 }
 
                 // console.log("filtered out episodes:", set_filteredOutEpisodes);
+                filterData(vis.ALLDATA);
             });
 
         vis.yAxisG = vis.chart.append('g')
@@ -142,13 +144,14 @@ class heatmap {
             .on('click', function (event,  d) {
                 if (set_filteredOutCharacters.includes(d)) {
                     set_filteredOutCharacters = set_filteredOutCharacters.filter(f => f !== d);
-                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                    d3.select(event.currentTarget).style("color", "#000000");
                 } else {
                     set_filteredOutCharacters.push(d);
-                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                    d3.select(event.currentTarget).style("color", "#FF0000");
                 }
 
                 // console.log("filtered out characters:", set_filteredOutCharacters);
+                filterData(vis.ALLDATA);
             });
 
         vis.color = d3.scaleLinear()
@@ -218,6 +221,8 @@ class heatmap {
                     set_filteredOutEpisodes.push(d.epNum);
                     d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
                 }
+
+                filterData(vis.ALLDATA);
             });
     }
 

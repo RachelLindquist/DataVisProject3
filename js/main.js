@@ -117,7 +117,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         placeholderClass.hist[1],
         placeholderClass.hist[2],
         "Episodes",
-        "Characters");
+        "Characters",
+        data);
 
 });
 
@@ -307,12 +308,22 @@ function histo(data) {
 function filterData(workingData) {
     // console.log(barFilter)
     placeholderClass.data = workingData;
+    // console.log(placeholderClass.data);
+    // console.log(set_filteredOutCharacters);
 
 
     // dayChart filtering
     if (barFilter.length !== 0) {
         placeholderClass.data = placeholderClass.data.filter(d => barFilter.includes(d.Arc));
     }
+    if (set_filteredOutCharacters.length !== 0) {
+        placeholderClass.data = placeholderClass.data.filter(d => set_filteredOutCharacters.includes(d.Speaker));
+    }
+    if (set_filteredOutEpisodes.length !== 0) {
+        placeholderClass.data = placeholderClass.data.filter(d => set_filteredOutEpisodes.includes(d.Episode));
+    }
+
+    // console.log(placeholderClass.data)
 
 
     
@@ -321,6 +332,7 @@ function filterData(workingData) {
     placeholderClass.hist = histo(placeholderClass.data);
 
     characterLinesChart.data = getBarData(placeholderClass.data);
+    arc.data = placeholderClass.data;
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 
@@ -338,5 +350,6 @@ function filterData(workingData) {
     wordCloud.updateVis();
     lineChart.updateVis();
     heatMapObj.updateVis();
+    arc.updateVis();
 
 }

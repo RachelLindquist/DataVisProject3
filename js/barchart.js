@@ -167,11 +167,11 @@ class StackedBarChart {
                 if (isActive) {
                     //weekday.findIndex(d[0])
                     barFilter = barFilter.filter(f => f !== getArcFromVals(d).slice(-1)); // Remove from filter
-                    d3.select(event.currentTarget).style("stroke", "none");
+                    // d3.select(event.currentTarget).style("stroke", "none");
                     //^CSS, change as we see fit
                 } else {
                     barFilter.push(getArcFromVals(d).slice(-1)); // Add to filter
-                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                    // d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
                     //^CSS, change as we see fit
                 }
             }

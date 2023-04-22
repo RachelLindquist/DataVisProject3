@@ -49,7 +49,7 @@ class Arc{
         //based on example data: https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_network.json
         //get nodes
         let characters = [...new Set(vis.data.map(d => d["Speaker"]))];
-        console.log(characters);
+        // console.log(characters);
         let i = 1;
         vis.nodes = [];
         characters.forEach(c => {
@@ -70,11 +70,23 @@ class Arc{
                     let rec = n.filter(d => d != s.Speaker);
                     rec.forEach(r => {
                         let tar = vis.nodes.filter(d => d.name === r)[0].id;
-                        vis.links.push({source:sou, target: tar});
+                        let dic = {source:sou, target: tar};
+                        let dicInLinks = false;
+                        vis.links.forEach(i => {
+                            // console.log();
+                            if ((i.source == dic.source) && (i.target == dic.target)){
+                                dicInLinks = true;
+                                // break;
+                            }
+
+                        })
+                        if (!dicInLinks)
+                            vis.links.push(dic);
                     });
                 });
             });
         });
+        // console.log("Links",vis.links);
     }
 
     getColor(d){
@@ -127,7 +139,7 @@ class Arc{
 
     renderVis(){
         let vis = this;
-        console.log(vis.nodes);
+        // console.log(vis.nodes);
         vis.circleNodes = vis.svg
         .selectAll("mynodes")
         .data(vis.nodes)

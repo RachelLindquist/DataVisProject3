@@ -105,18 +105,21 @@ class heatmap {
         d3.selectAll('.x-axis .tick')
             .on('mouseenter', function (event, d) {
                 event.target.classList.add('hovered-label');
-                console.log("mouseover:", d);
+                // console.log("mouseover:", d);
             })
             .on('mouseleave', (event, d) => {
                 event.target.classList.remove('hovered-label');
             })
             .on('click', function (event, d) {
-                if (set_filteredOutEpisodes.has(d))
-                    set_filteredOutEpisodes.delete(d);
-                else
-                    set_filteredOutEpisodes.add(d);
+                if (set_filteredOutEpisodes.includes(d)) {
+                    set_filteredOutEpisodes = set_filteredOutEpisodes.filter(f => f !== d);;
+                    d3.select(event.currentTarget).style("stroke", "none");
+                } else {
+                    set_filteredOutEpisodes.push(d);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                }
 
-                console.log("filtered out episodes:", set_filteredOutEpisodes);
+                // console.log("filtered out episodes:", set_filteredOutEpisodes);
             });
 
         vis.yAxisG = vis.chart.append('g')
@@ -131,18 +134,21 @@ class heatmap {
         d3.selectAll('.y-axis .tick')
             .on('mouseenter', function (event, d) {
                 event.target.classList.add('hovered-label');
-                console.log("mouseover:", d);
+                // console.log("mouseover:", d);
             })
             .on('mouseleave', (event, d) => {
                 event.target.classList.remove('hovered-label');
             })
             .on('click', function (event,  d) {
-                if (set_filteredOutCharacters.has(d))
-                    set_filteredOutCharacters.delete(d);
-                else
-                    set_filteredOutCharacters.add(d);
+                if (set_filteredOutCharacters.includes(d)) {
+                    set_filteredOutCharacters = set_filteredOutCharacters.filter(f => f !== d);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                } else {
+                    set_filteredOutCharacters.push(d);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                }
 
-                console.log("filtered out characters:", set_filteredOutCharacters);
+                // console.log("filtered out characters:", set_filteredOutCharacters);
             });
 
         vis.color = d3.scaleLinear()
@@ -196,8 +202,22 @@ class heatmap {
                 d3.select('#tooltip_heatmap').style('opacity', 0);  // turn off the tooltip
             })
             .on('click', function(event, d) {
-                console.log("click d:", d);
-                // console.log("event:", event);
+                // console.log(d)
+                if (set_filteredOutCharacters.includes(d.character)) {
+                    set_filteredOutCharacters = set_filteredOutCharacters.filter(f => f !== d.character);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                } else {
+                    set_filteredOutCharacters.push(d.character);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                }
+
+                if (set_filteredOutEpisodes.includes(d.epNum)) {
+                    set_filteredOutEpisodes = set_filteredOutEpisodes.filter(f => f !== d.epNum);;
+                    d3.select(event.currentTarget).style("stroke", "none");
+                } else {
+                    set_filteredOutEpisodes.push(d.epNum);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                }
             });
     }
 

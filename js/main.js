@@ -1,8 +1,8 @@
 let data, characters;
 let arc;
 let barFilter = [];
-let set_filteredOutCharacters = new Set();
-let set_filteredOutEpisodes = new Set();
+let set_filteredOutCharacters = [];
+let set_filteredOutEpisodes = [];
 
 class tempClass {
     constructor(_data, _ALLDATA) {
@@ -36,7 +36,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
             || d["Speaker"].includes("Tokiko") || d["Speaker"].includes("Dios") || d["Speaker"].includes("Ruka")
             || d["Speaker"].includes("Akio");
     });
-    console.log("data:", data);
+    // console.log("data:", data);
 
 
     let widthitem = window.innerWidth / 2 - 15;
@@ -332,7 +332,7 @@ function filterData(workingData) {
     heatMapObj.characterList = placeholderClass.hist[2];
 
 
-    
+
     characterLinesChart.updateVis();
     phraseCloud.updateVis();
     wordCloud.updateVis();

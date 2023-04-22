@@ -94,7 +94,7 @@ class WordCloud{
         vis.layout.start();
 
         function draw(words) {
-            console.log(words);
+            // console.log(words);
             vis.svg.selectAll("text").remove();
             vis.svg
                 .append("g")

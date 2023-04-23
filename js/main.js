@@ -105,7 +105,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     lineChart = new LineChart({
         'parentElement': '#linechart',
         'containerHeight': heightitem,
-        'containerWidth': parseInt(colWidth * 8),
+        'containerWidth': parseInt(colWidth * 12),
     }, placeholderClass.hdata[0]);
 
     // Wordcloud

@@ -106,7 +106,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'parentElement': '#linechart',
         'containerHeight': heightitem,
         'containerWidth': parseInt(colWidth * 12),
-    }, placeholderClass.hdata[0]);
+    }, getLineChartData(data)[0]);
+    // placeholderClass.hdata[0]
 
     // Wordcloud
     wordCloud = new WordCloud({
@@ -325,6 +326,58 @@ function getHeatmapData(data) {
     return ([heatmapdata_characterLinesVsEp, epSet, characterSet]);
 }
 
+function getLineChartData(data) {
+    let characterLinesVsEp = {};
+
+    let epSet = new Set();
+    let characterSet = new Set();
+    let characters = [...new Set(data.map(d => d["Speaker"]))];
+    let epidodes = [...new Set(data.map(d => d["Episode"]))];
+    console.log("chars and episodes", characters, episodes)
+
+    console.log("characters:", characters);
+    // add an object for each (character, ep) pair. This will map to indivudual cells in the heatmap
+    characters.forEach(function (d) {
+        characterLinesVsEp[d] = {};
+
+        episodes.forEach(ep => characterLinesVsEp[d][ep] = 0);
+    });
+
+    for (const dialogData of data) {
+        // console.log("speaker:", dialogData.Speaker);
+        const character = dialogData.Speaker;
+        const epNum = dialogData.Episode;
+
+        // TODO remove this ?
+        epSet.add(epNum);
+        characterSet.add(character);
+
+        // not sure how ?.length works. ref https://bobbyhadz.com/blog/javascript-count-spaces-in-string
+        // console.log("character:", character);
+        characterLinesVsEp[character][epNum] += (dialogData.Line.match(/(\s+)/g)?.length || 0);
+    }
+
+    // console.log("characterlinesvsepdata:", characterLinesVsEp);
+
+    // now convert to array for that can be fed to heatmap object
+    // array of objects, with each object to be mapped to a single cell in the heatmap
+    let heatmapdata_characterLinesVsEp = [];
+
+    Object.keys(characterLinesVsEp).forEach(k => {
+        Object.keys(characterLinesVsEp[k]).forEach(epNum => {
+            heatmapdata_characterLinesVsEp.push({
+                "character": k,
+                "epNum": epNum,
+                "words": characterLinesVsEp[k][epNum]
+            });
+        });
+    });
+
+    epSet = Array.from(epSet).sort((a, b) => (parseInt(a) - parseInt(b))),
+        characterSet = Array.from(characterSet)
+
+    return ([heatmapdata_characterLinesVsEp, epSet, characterSet]);
+}
 
 // filter function for each item we plan on filtering
 function filterData(workingData) {
@@ -356,7 +409,9 @@ function filterData(workingData) {
     wordCloud.words = getWords(placeholderClass.data);
 
 
-    lineChart.data = placeholderClass.hdata[0];
+    //lineChart.data = placeholderClass.hdata[0];
+    console.log("lineChartData", getLineChartData(placeholderClass.data));
+    lineChart.data = getLineChartData(placeholderClass.data)[0];
 
     heatMapObj.data = placeholderClass.hdata[0];
     heatMapObj.epList = placeholderClass.hdata[1];

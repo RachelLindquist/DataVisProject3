@@ -1,8 +1,10 @@
 let data, characters, episodes;
 let arc;
-let barFilter = {'ifFilter' : false, arcToShow : ""};
-let set_filteredOutCharacters = new Set();
-let set_filteredOutEpisodes = new Set();
+let barFilter = {'ifFilter' : false, 'arcToShow' : ""};
+let characterFilter = {'ifFilter': false, charactersToShow : new Set()};
+let episodeFilter = {'ifFilter': false, episodesToShow : new Set()};
+// let set_filteredOutCharacters = new Set();
+// let set_filteredOutEpisodes = new Set();
 
 class tempClass {
     constructor(_data, _ALLDATA) {
@@ -410,15 +412,11 @@ function filterData(workingData) {
     if (barFilter.ifFilter === true)
         placeholderClass.data = placeholderClass.data.filter(d => (barFilter.arcToShow === d.Arc));
 
-    // if (filteredOutCharacters.length !== 0) {
-    placeholderClass.data = placeholderClass.data.filter(d => !set_filteredOutCharacters.has(d.Speaker));
-    // }
-    // if (filteredOutEpisodes.length !== 0) {
-    placeholderClass.data = placeholderClass.data.filter(d => !set_filteredOutEpisodes.has(d.Episode));
-    // }
+    if (characterFilter.ifFilter === true)
+        placeholderClass.data = placeholderClass.data.filter(d => characterFilter.charactersToShow.has(d.Speaker));
 
-    // console.log(placeholderClass.data)
-
+    if (episodeFilter.ifFilter === true)
+        placeholderClass.data = placeholderClass.data.filter(d => episodeFilter.episodesToShow.has(d.Episode));
         
     placeholderClass.hdata = getHeatmapData(placeholderClass.data);
 

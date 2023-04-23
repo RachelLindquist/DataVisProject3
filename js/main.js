@@ -128,6 +128,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'containerWidth': parseInt(colWidth * 12),
     }, data);
 
+    findInput();
+
 
 });
 
@@ -185,6 +187,19 @@ function getPhrases() {
     });
     // console.log(phrases);
     return phrases;//.slice(0, 2000);
+}
+
+function findInput(){
+    let input = document.getElementById("input").value;
+    let locations = [];
+    data.forEach(c => {
+        if (c.Line.includes(input)){
+            locations.push({ Speaker: c["Speaker"], Episode: c["Episode"], Arc: c["Arc"]});
+        }
+    })
+    //console.log(input);
+    //console.log(locations);
+    //return locations;
 }
 
 

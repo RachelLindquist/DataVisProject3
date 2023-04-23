@@ -66,8 +66,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     let widthitem = (5 / 12) * window.innerWidth  - 15;
     const colWidth = parseInt(window.innerWidth / 12);
-    console.log("innerwidth colwidth:", window.innerWidth, colWidth);
-    console.log(colWidth * (4));
+    // console.log("innerwidth colwidth:", window.innerWidth, colWidth);
+    // console.log(colWidth * (4));
     let heightitem = window.innerHeight / 2.5;
     // let heightitem = window.innerHeight / 1.5;
 
@@ -92,7 +92,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
 
     // stacked chart
-    characterLinesChart = new StackedBarChart({
+    characterBarChart = new StackedBarChart({
         'parentElement': '#stackedBarChart',
         'containerHeight': heightitem,
         'containerWidth': parseInt(colWidth * 5),
@@ -101,7 +101,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'colors': ['#00ff00', '#0000ff']
     }, getBarData(data), "Characters Lines by Arc", true, "Character", "Number of Lines", data);
 
-    characterLinesChart.updateVis();
+    characterBarChart.updateVis();
    
     // line chart
     lineChart = new LineChart({
@@ -303,7 +303,7 @@ function getHeatmapData(data) {
     let characterSet = new Set();
 
 
-    console.log("characters:", characters);
+    // console.log("characters:", characters);
     // add an object for each (character, ep) pair. This will map to indivudual cells in the heatmap
     characters.forEach(function (d) {
         characterLinesVsEp[d] = {};
@@ -354,9 +354,9 @@ function getLineChartData(data) {
     let characterSet = new Set();
     let characters = [...new Set(data.map(d => d["Speaker"]))];
     let epidodes = [...new Set(data.map(d => d["Episode"]))];
-    console.log("chars and episodes", characters, episodes)
+    // console.log("chars and episodes", characters, episodes)
 
-    console.log("characters:", characters);
+    // console.log("characters:", characters);
     // add an object for each (character, ep) pair. This will map to indivudual cells in the heatmap
     characters.forEach(function (d) {
         characterLinesVsEp[d] = {};
@@ -420,14 +420,14 @@ function filterData(workingData) {
         
     placeholderClass.hdata = getHeatmapData(placeholderClass.data);
 
-    characterLinesChart.data = getBarData(placeholderClass.data);
+    characterBarChart.data = getBarData(placeholderClass.data);
     arc.data = placeholderClass.data;
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 
 
     //lineChart.data = placeholderClass.hdata[0];
-    console.log("lineChartData", getLineChartData(placeholderClass.data));
+    // console.log("lineChartData", getLineChartData(placeholderClass.data));
     lineChart.data = getLineChartData(placeholderClass.data)[0];
 
     heatMapObj.data = placeholderClass.hdata[0];
@@ -436,7 +436,7 @@ function filterData(workingData) {
 
 
 
-    characterLinesChart.updateVis();
+    characterBarChart.updateVis();
     phraseCloud.updateVis();
     wordCloud.updateVis();
     lineChart.updateVis();

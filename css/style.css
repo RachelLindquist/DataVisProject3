@@ -159,4 +159,220 @@ text.axis-title {
     border-radius: 10px;
     display: flex; 
     flex-direction: column;
+}/* Dropdown Button */
+.dropbtn {
+    background-color: #ec8ce4;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
 }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
+.Arc1 rect {
+    fill: #6080b5;
+}
+.Arc2 rect {
+    fill: #d4c32d;
+}
+.Arc3 rect {
+    fill: #96e82a;
+}
+.Arc4 rect {
+    fill: #d42d6a;
+}
+
+.Arc1Square {
+    height: 20px;
+    width: 20px;
+    background-color: #6080b5;   
+    margin: 20px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.Arc2Square {
+    height: 20px;
+    width: 20px;
+    background-color: #d4c32d;  
+    margin: 20px;
+    margin-right: 5px;
+    border-radius: 4px; 
+}
+
+.Arc3Square {
+    height: 20px;
+    width: 20px;
+    background-color: #96e82a;  
+    margin: 20px;
+    margin-right: 5px;
+    border-radius: 4px; 
+}
+
+.Arc4Square {
+    height: 20px;
+    width: 20px;
+    background-color: #d42d6a;  
+    margin: 20px;
+    margin-right: 5px;
+    border-radius: 4px; 
+}
+
+#tooltip {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 2px 2px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+}
+
+#tooltip_heatmap {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 2px 2px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 600;
+    color: #460f22;
+    padding: 2px 8px;
+}
+
+.tooltip-label {
+    font-weight: 500;
+    font-size: 16px;
+    /* color: #888; */
+}
+
+div.tooltip-character-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Lobster Two', cursive;
+}
+.axis {
+    color: #460f22;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+    font-size: 14px;
+}
+
+.hovered-label {
+    font-size: 15px;
+    cursor: default;
+}
+
+text.axis-title {
+    color: #460f22;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.embossed-text {
+    filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
+    /* box-shadow: 0 -3px 5px #777 inset; */
+}
+
+.section {
+    display: flex; 
+    flex-direction: row;
+}
+
+
+.graph {
+    background-color:whitesmoke;
+    border-radius: 2px;
+    border-color: darkkhaki;
+    margin: 5px;
+    width: 33%;
+}
+
+.graphlong {
+    background-color:whitesmoke;
+    border-radius: 2px;
+    border-color: darkkhaki;
+    margin: 5px;
+    /* width: 33%; */
+    
+}
+
+.topbar {
+    padding: 5px;
+    padding-bottom: 5px;
+    color: darkslategrey;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.topbarlong {
+    padding: 5px;
+    padding-bottom: 5px;
+    color: darkslategrey;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background:#b7b7b7;
+    color: rgb(40, 67, 67);
+    font-size: 30px;
+  }
+
+  
+.mynodes {
+    background-color: #3e8e41; 
+    /* Just for show shouldent do anything */
+}
+
+
+

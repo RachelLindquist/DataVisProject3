@@ -59,7 +59,7 @@ class heatmap {
 
         vis.chart.append('text')
             .attr('class', 'axis-title')
-            .attr("y", vis.height + vis.config.margin.bottom - 10)
+            .attr("y", vis.height + vis.config.margin.bottom - 45)
             .attr("x", (vis.width / 2))
             .style("text-anchor", "middle")
             .text(vis.xlabel);
@@ -67,7 +67,7 @@ class heatmap {
         let ylabels = vis.chart.append('text')
             .attr('class', 'axis-title')
             .attr("transform", "rotate(-90)")
-            .attr("y", 0 - vis.config.margin.left)
+            .attr("y", 25 - vis.config.margin.left)
             .attr("x", 0 - (vis.height / 2))
             .attr("dy", "1em")
             .style("text-anchor", "middle")

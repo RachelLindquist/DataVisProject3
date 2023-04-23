@@ -81,9 +81,10 @@ class LineChart {
             .data(sumstat)
             .join("path")
             .attr("fill", "none")
-            .attr("stroke", function(d){ 
-                console.log(d)
-                return vis.getColor(d[1][0]) })
+            .attr("stroke", function(d) { 
+                // console.log(d);
+                return vis.getColor(d[1][0]);
+            })
             .attr("stroke-width", 1.5)
             .attr("d", function(d){
         return d3.line()

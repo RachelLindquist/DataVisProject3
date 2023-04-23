@@ -60,8 +60,6 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
 
-
-
     // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
 
     let widthitem = (5 / 12) * window.innerWidth  - 15;
@@ -407,7 +405,6 @@ function filterData(workingData) {
     // console.log(placeholderClass.data);
     // console.log(set_filteredOutCharacters);
 
-
     // dayChart filtering
     if (barFilter.ifFilter === true)
         placeholderClass.data = placeholderClass.data.filter(d => (barFilter.arcToShow === d.Arc));
@@ -418,6 +415,8 @@ function filterData(workingData) {
     if (episodeFilter.ifFilter === true)
         placeholderClass.data = placeholderClass.data.filter(d => episodeFilter.episodesToShow.has(d.Episode));
         
+    console.log("after ch/ep filter:", placeholderClass.data);
+
     placeholderClass.hdata = getHeatmapData(placeholderClass.data);
 
     characterBarChart.data = getBarData(placeholderClass.data);
@@ -425,8 +424,6 @@ function filterData(workingData) {
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 
-
-    //lineChart.data = placeholderClass.hdata[0];
     // console.log("lineChartData", getLineChartData(placeholderClass.data));
     lineChart.data = getLineChartData(placeholderClass.data)[0];
 

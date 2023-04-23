@@ -197,14 +197,24 @@ class heatmap {
         const heatZones = vis.chart.selectAll('rect')
             .data(vis.data.filter(function (d) {
 
-                if (characterFilter.ifFilter === false || episodeFilter.ifFilter === false)
-                    return true;
+                // return true;
+                let ifCharacterFilter, ifEpisodeFilter;
 
-                if (!characterFilter.charactersToShow.has(d.character) ||
-                    !episodeFilter.episodesToShow.has(d.episode))
-                    return false;
-                else
-                    return true;
+                ifCharacterFilter = (!characterFilter.ifFilter) || characterFilter.charactersToShow.has(d.character);
+                ifEpisodeFilter = (!episodeFilter.ifFilter) || episodeFilter.episodesToShow.has(d.epNum);
+
+                return ifCharacterFilter && ifEpisodeFilter;
+                // if (characterFilter.ifFilter === false && episodeFilter.ifFilter === false)
+                //     return true;
+
+                // if (characterFilter.charactersToShow.has(d.character) &&
+                //     episodeFilter.episodesToShow.has(d.episode)) {
+                //     console.log("h1");
+                //     return false;
+                // } else {
+                //     console.log("h2");
+                //     return true;
+                // }
 
             }))
             // .data(Object.entries(heatmapZoneMap), function(d) {console.log("data is: ", d);})

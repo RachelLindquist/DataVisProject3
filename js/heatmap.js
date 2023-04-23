@@ -12,15 +12,21 @@ class heatmap {
         if (typeof _data === 'object')
             dataLength = Object.keys(_data).length * _config.barWidth;
 
-        this.config.contentWidth = _config.contentWidth || dataLength || 600;
-        this.config.contentHeight = _config.contentHeight || 400;
-        this.config.containerWidth = this.config.contentWidth + this.config.margin.left 
-            + this.config.margin.right;
-        this.config.containerHeight = this.config.contentHeight + this.config.margin.top
-            + this.config.margin.bottom;
+        // this.config.contentWidth = _config.contentWidth || dataLength || 600;
+        // this.config.contentHeight = _config.contentHeight || 400;
+        // this.config.containerWidth = this.config.contentWidth + this.config.margin.left 
+        //     + this.config.margin.right;
+        // this.config.containerHeight = this.config.contentHeight + this.config.margin.top
+        //     + this.config.margin.bottom;
 
+        this.config.containerWidth = _config.containerWidth;
+        this.config.containerHeight = _config.containerHeight;
+
+        this.config.contentWidth = _config.containerWidth - this.config.margin.left - this.config.margin.right;
+        this.config.contentHeight = _config.containerHeight - this.config.margin.top - this.config.margin.bottom;
         // Call a class function
 
+        // console.log("width/h:", this.config.con
         this.data = _data;
         this.epList = epList;
         this.characterList = characterList;

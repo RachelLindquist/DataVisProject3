@@ -5,6 +5,8 @@
     <title>I'm a Graph Now Too</title>
     <link rel="icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8NVwyBaC3ugf4DNizgNGXFimeOcvvtj4Zw&usqp=CAU">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Roboto+Mono:wght@500&display=swap"
@@ -12,7 +14,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body>   
+
+<!--     <div class="container2"> -->
+<!--         <div class="columns"> -->
+<!--             <div class="column col-4">div 1</div> -->
+<!--             <div class="column col-4">div 2</div> -->
+<!--         </div> -->
+<!--     </div> -->
+
     <div class="header">
         <h1 style="background-color: #b7b7b7; font-size: 30px">This is a header</h1>
         <p>By Josh Zack, Rachel Lindquist, Nishidha Koneru, and ______________</p>
@@ -20,57 +30,62 @@
                 target="_blank">https://exoplanetarchive.ipac.caltech.edu</a>/</p>
     </div>
 
-    <div style="display: flex; flex-direction: column;">
-        <div class="section">
-            
-            <div>
-                <div class="graphlong">
-                    <div class="topbar">
-                        <h1>
-                            Heatmap of Character vs Ep
-                        </h1>
-                        <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
-                        <p>Colored by the amount of lines they have</p>
-                    </div>
-                    <svg id="dateheatmap"></svg>
+    <!-- <div style="display: flex; flex-direction: column;"> -->
+    <div class="container">
+        <div class="columns">
+            <div class="column col-7">
+                <div class="">
+                    <h1>
+                        Heatmap of Character vs Ep
+                    </h1>
+                    <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
+                    <p>Colored by the amount of lines they have</p>
                 </div>
+                <svg id="dateheatmap"></svg>
             </div>
 
-            <div>
-                <div class="graphlong">
-                    <div class="topbar">
-                        <h1>
-                            Heatmap of Character vs Lines
-                        </h1>
-                        <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
-                        <p>Layered by Arc</p>
-                    </div>
-                    <svg id="stackedBarChart"></svg>
+            <div class="column col-5">
+                <div class="">
+                    <h1>
+                        Heatmap of Character vs Lines
+                    </h1>
+                    <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
+                    <p>Layered by Arc</p>
                 </div>
-                
-
-                <div class="graphlong">
-                    <div class="topbar">
-                        <h1>
-                            Idk what this linechart is
-                        </h1>
-                        <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
-                        <p>Colored by Character</p>
-                    </div>
-                    <svg id="linechart"></svg>
-                </div>
-                
+                <svg id="stackedBarChart"></svg>
             </div>
-        </div>
 
-        <div class="section">
-            <div id="wordCloud"></div>
-            <div id="phraseCloud"></div>
-        </div>
-    </div>
-    <div>
+            <div class="column col-2">
+            </div>
+
+            <div class="column col-8">
+                <div class="">
+                    <h1>
+                        Idk what this linechart is
+                    </h1>
+                    <!-- <a href="http://en.wikipedia.org/wiki/Stellar_classification">Wiki on Stellar Classification</a> -->
+                    <p>Colored by Character</p>
+                </div>
+                <svg id="linechart"></svg>
+            </div>
+
+            <div class="column col-2">
+            </div>
+
+
+            <div id="wordCloud" class="column col-6"></div>
+            <div id="phraseCloud" class="column col-6"></div>
+    <div class="column col-12">
         <div id="arc"></div>
     </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="section"> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
 
     <script src="js/d3.v6.min.js"></script>
     <!-- Load d3-cloud -->

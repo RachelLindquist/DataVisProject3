@@ -62,8 +62,12 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
 
-    let widthitem = (4 / 12) * window.innerWidth  - 15;
+    let widthitem = (5 / 12) * window.innerWidth  - 15;
+    const colWidth = parseInt(window.innerWidth / 12);
+    console.log("innerwidth colwidth:", window.innerWidth, colWidth);
+    console.log(colWidth * (4));
     let heightitem = window.innerHeight / 2.5;
+    // let heightitem = window.innerHeight / 1.5;
 
     // placeholder to help sort through all the garbage
     placeholderClass = new tempClass(data, data);  // this is a placeholder for heatmap
@@ -75,8 +79,8 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     heatMapObj = new heatmap({
         'parentElement': '#dateheatmap',
         'containerHeight': heightitem,
-        // 'containerWidth': widthitem,
-        'containerWidth': 300,
+        'containerWidth': parseInt(colWidth * 7),
+        // 'containerWidth': colWidth * (4/12) - 15,
     }, placeholderClass.hdata[0],
         placeholderClass.hdata[1],
         placeholderClass.hdata[2],
@@ -89,41 +93,40 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     characterLinesChart = new StackedBarChart({
         'parentElement': '#stackedBarChart',
         'containerHeight': heightitem,
-        'containerWidth': widthitem,
+        'containerWidth': parseInt(colWidth * 5),
         'reverseOrder': true,
         // 'yScaleLog': false
         'colors': ['#00ff00', '#0000ff']
     }, getBarData(data), "Characters Lines by Arc", true, "Character", "Number of Lines", data);
 
     characterLinesChart.updateVis();
+   
+    // line chart
+    lineChart = new LineChart({
+        'parentElement': '#linechart',
+        'containerHeight': heightitem,
+        'containerWidth': parseInt(colWidth * 8),
+    }, placeholderClass.hdata[0]);
 
     // Wordcloud
     wordCloud = new WordCloud({
         'parentElement': '#wordCloud',
         'containerHeight': widthitem,
-        'containerWidth': widthitem,
+        'containerWidth': parseInt(colWidth * 6),
     }, getWords(data));
 
     //phraseCloud
     phraseCloud = new WordCloud({
         'parentElement': '#phraseCloud',
         'containerHeight': widthitem,
-        'containerWidth': widthitem,
+        'containerWidth': parseInt(colWidth * 6),
     }, getPhrases(data));
 
     arc = new Arc({
         'parentElement': '#arc',
         'containerHeight': 1000,
-        'containerWidth': 1000,
+        'containerWidth': parseInt(colWidth * 12),
     }, data);
-
-    // line chart
-    lineChart = new LineChart({
-        'parentElement': '#linechart',
-        'containerHeight': heightitem,
-        'containerWidth': widthitem,
-    }, placeholderClass.hdata[0]);
-
 
 
 });

@@ -1,15 +1,14 @@
 let data, characters, episodes;
 let arc;
 let barFilter = [];
-let set_filteredOutCharacters = new Set(["Akio"]);
+let set_filteredOutCharacters = new Set();
 let set_filteredOutEpisodes = new Set();
-
 
 class tempClass {
     constructor(_data, _ALLDATA) {
         this.data = _data;
         this.ALLDATA = _ALLDATA;
-        this.heatmapData = [];
+        this.hist = [];
     }
 }
 
@@ -41,11 +40,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
             || d["Speaker"].includes("Tokiko") || d["Speaker"].includes("Dios") || d["Speaker"].includes("Ruka")
             || d["Speaker"].includes("Akio");
     });
-    console.log("data:", data);
-
-
-    let widthitem = window.innerWidth / 2 - 15;
-    let heightitem = window.innerHeight / 2.5;
+    // console.log("data:", data);
 
     // TODO convert to lowercase ?
     characters = [...new Set(data.map(d => d["Speaker"]))];
@@ -64,11 +59,18 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
 
+
+
+    // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
+
+    let widthitem = window.innerWidth / 2 - 15;
+    let heightitem = window.innerHeight / 2.5;
+
     // placeholder to help sort through all the garbage
     placeholderClass = new tempClass(data, data);  // this is a placeholder for heatmap
 
 
-    placeholderClass.heatmapData = getHeatmapData(data);
+    placeholderClass.hist = histo(data);
 
 
     // stacked chart
@@ -85,15 +87,15 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     // Wordcloud
     wordCloud = new WordCloud({
         'parentElement': '#wordCloud',
-        'containerHeight': 500,
-        'containerWidth': 500,
+        'containerHeight': widthitem,
+        'containerWidth': widthitem,
     }, getWords(data));
 
     //phraseCloud
     phraseCloud = new WordCloud({
         'parentElement': '#phraseCloud',
-        'containerHeight': 1000,
-        'containerWidth': 1000,
+        'containerHeight': widthitem,
+        'containerWidth': widthitem,
     }, getPhrases(data));
 
     arc = new Arc({
@@ -105,20 +107,21 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     // line chart
     lineChart = new LineChart({
         'parentElement': '#linechart',
-        'containerWidth': 640,
-        'containerHeight': 300,
-    }, placeholderClass.heatmapData[0]);
+        'containerHeight': heightitem,
+        'containerWidth': widthitem,
+    }, placeholderClass.hist[0]);
 
     // heatmap
     heatMapObj = new heatmap({
         'parentElement': '#dateheatmap',
-        'contentWidth': 600,
-        'contentHeight': 400,
-    }, placeholderClass.heatmapData[0],
-        placeholderClass.heatmapData[1],
-        placeholderClass.heatmapData[2],
+        'containerHeight': heightitem,
+        'containerWidth': widthitem,
+    }, placeholderClass.hist[0],
+        placeholderClass.hist[1],
+        placeholderClass.hist[2],
         "Episodes",
-        "Characters");
+        "Characters",
+        data);
 
 });
 
@@ -258,7 +261,7 @@ function dicToArr2(totalp) {
     return (data1);
 }
 
-function getHeatmapData(data) {
+function histo(data) {
     // heatmap
     let characterLinesVsEp = {};
 
@@ -317,6 +320,8 @@ function getHeatmapData(data) {
 function filterData(workingData) {
     // console.log(barFilter)
     placeholderClass.data = workingData;
+    // console.log(placeholderClass.data);
+    // console.log(set_filteredOutCharacters);
 
 
     // dayChart filtering
@@ -324,29 +329,40 @@ function filterData(workingData) {
         placeholderClass.data = placeholderClass.data.filter(d => barFilter.includes(d.Arc));
     }
 
+    if (set_filteredOutCharacters.length !== 0) {
+        placeholderClass.data = placeholderClass.data.filter(d => set_filteredOutCharacters.includes(d.Speaker));
+    }
+    if (set_filteredOutEpisodes.length !== 0) {
+        placeholderClass.data = placeholderClass.data.filter(d => set_filteredOutEpisodes.includes(d.Episode));
+    }
+
+    // console.log(placeholderClass.data)
+
 
     
 
         
-    placeholderClass.hist = getHeatmapData(placeholderClass.data);
+    placeholderClass.hist = histo(placeholderClass.data);
 
     characterLinesChart.data = getBarData(placeholderClass.data);
+    arc.data = placeholderClass.data;
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 
 
-    lineChart.data = placeholderClass.heatmapData[0];
+    lineChart.data = placeholderClass.hist[0];
 
-    heatMapObj.data = placeholderClass.heatmapData[0];
-    heatMapObj.epList = placeholderClass.heatmapData[1];
-    heatMapObj.characterList = placeholderClass.heatmapData[2];
+    heatMapObj.data = placeholderClass.hist[0];
+    heatMapObj.epList = placeholderClass.hist[1];
+    heatMapObj.characterList = placeholderClass.hist[2];
 
 
-    
+
     characterLinesChart.updateVis();
     phraseCloud.updateVis();
     wordCloud.updateVis();
     lineChart.updateVis();
     heatMapObj.updateVis();
+    arc.updateVis();
 
 }

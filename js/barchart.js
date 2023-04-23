@@ -73,7 +73,24 @@ class StackedBarChart {
 
         // Initialize stack generator and specify the categories or layers
         // that we want to show in the chart
-        vis.stack = d3.stack().keys(["milk", "water"]);
+        // vis.stack = d3.stack().keys(["milk", "water"]);
+
+        vis.chart.append('text')
+            .attr('class', 'axis-title')
+            .attr("y", vis.height + vis.config.margin.bottom - 10)
+            .attr("x", (vis.width / 2))
+            .style("text-anchor", "middle")
+            .text(vis.xlabel);
+
+        vis.chart.append('text')
+            .attr('class', 'axis-title')
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - vis.config.margin.left)
+            .attr("x", 0 - (vis.height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text(vis.ylabel);
+
 
         vis.updateVis();
     }
@@ -167,11 +184,11 @@ class StackedBarChart {
                 if (isActive) {
                     //weekday.findIndex(d[0])
                     barFilter = barFilter.filter(f => f !== getArcFromVals(d).slice(-1)); // Remove from filter
-                    d3.select(event.currentTarget).style("stroke", "none");
+                    // d3.select(event.currentTarget).style("stroke", "none");
                     //^CSS, change as we see fit
                 } else {
                     barFilter.push(getArcFromVals(d).slice(-1)); // Add to filter
-                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                    // d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
                     //^CSS, change as we see fit
                 }
             }
@@ -184,22 +201,9 @@ class StackedBarChart {
 
         // Update the axes
         vis.xAxisG.call(vis.xAxis);
-        vis.chart.append('text')
-            .attr('class', 'axis-title')
-            .attr("y", vis.height + vis.config.margin.bottom - 10)
-            .attr("x", (vis.width / 2))
-            .style("text-anchor", "middle")
-            .text(vis.xlabel);
-
+        
         vis.yAxisG.call(vis.yAxis);
-        vis.chart.append('text')
-            .attr('class', 'axis-title')
-            .attr("transform", "rotate(-90)")
-            .attr("y", 0 - vis.config.margin.left)
-            .attr("x", 0 - (vis.height / 2))
-            .attr("dy", "1em")
-            .style("text-anchor", "middle")
-            .text(vis.ylabel);
+        
     }
 }
 

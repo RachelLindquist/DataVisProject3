@@ -1,5 +1,5 @@
 class heatmap {
-    constructor(_config, _data, epList, characterList, _xlabel, _ylabel) {
+    constructor(_config, _data, epList, characterList, _xlabel, _ylabel, _ALLDATA) {
         this.config = {
             parentElement: _config.parentElement,
             margin: { top: 15, bottom: 85, right: 80, left: 100},
@@ -26,6 +26,7 @@ class heatmap {
         this.characterList = characterList;
         this.xlabel = _xlabel;
         this.ylabel = _ylabel;
+        this.ALLDATA = _ALLDATA;
 
         this.initVis();
     }
@@ -70,13 +71,13 @@ class heatmap {
         //         console.log("mouseover:", d);
         //     });
 
-        console.log("eps:", vis.data.map(d => d.epNum));
+        // console.log("eps:", vis.data.map(d => d.epNum));
         vis.xScale = d3.scaleBand()
             .range([0, vis.width])
             .domain(vis.epList)
             .paddingInner(0.2);
 
-        console.log("arr:", [1, d3.max(vis.data, d => parseInt(d.epNum))]);
+        // console.log("arr:", [1, d3.max(vis.data, d => parseInt(d.epNum))]);
 
         vis.yScale = d3.scaleBand()
             .range([0, vis.height])  // TODO why reverse:w
@@ -105,7 +106,7 @@ class heatmap {
         d3.selectAll('.x-axis .tick')
             .on('mouseenter', function (event, d) {
                 event.target.classList.add('hovered-label');
-                console.log("mouseover:", d);
+                // console.log("mouseover:", d);
             })
             .on('mouseleave', (event, d) => {
                 event.target.classList.remove('hovered-label');
@@ -117,7 +118,8 @@ class heatmap {
                     set_filteredOutEpisodes.add(d);
 
                 vis.updateVis();
-                console.log("filtered out episodes:", set_filteredOutEpisodes);
+                // console.log("filtered out episodes:", set_filteredOutEpisodes);
+                filterData(vis.ALLDATA);
             });
 
         vis.yAxisG = vis.chart.append('g')
@@ -132,7 +134,7 @@ class heatmap {
         d3.selectAll('.y-axis .tick')
             .on('mouseenter', function (event, d) {
                 event.target.classList.add('hovered-label');
-                console.log("mouseover:", d);
+                // console.log("mouseover:", d);
             })
             .on('mouseleave', (event, d) => {
                 event.target.classList.remove('hovered-label');
@@ -144,7 +146,8 @@ class heatmap {
                     set_filteredOutCharacters.add(d);
 
                 vis.updateVis();
-                console.log("filtered out characters:", set_filteredOutCharacters);
+                // console.log("filtered out characters:", set_filteredOutCharacters);
+                filterData(vis.ALLDATA);
             });
 
         vis.color = d3.scaleLinear()
@@ -152,10 +155,8 @@ class heatmap {
             // .range(["#ffffff", "#d20424"])
             .domain([0, d3.max(vis.data, d => d.words) / 2, d3.max(vis.data, d => d.words)]);
 
-
         vis.updateVis();
     }
-
 
     clearCells() {
         let vis = this;
@@ -227,8 +228,27 @@ class heatmap {
                 d3.select('#tooltip_heatmap').style('opacity', 0);  // turn off the tooltip
             })
             .on('click', function(event, d) {
-                // console.log("click d:", d);
-                // console.log("event:", event);
+
+                /*
+                // console.log(d)
+                if (set_filteredOutCharacters.includes(d.character)) {
+                    set_filteredOutCharacters = set_filteredOutCharacters.filter(f => f !== d.character);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                } else {
+                    set_filteredOutCharacters.push(d.character);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                }
+
+                if (set_filteredOutEpisodes.includes(d.epNum)) {
+                    set_filteredOutEpisodes = set_filteredOutEpisodes.filter(f => f !== d.epNum);;
+                    d3.select(event.currentTarget).style("stroke", "none");
+                } else {
+                    set_filteredOutEpisodes.push(d.epNum);
+                    d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
+                }
+                */
+
+                filterData(vis.ALLDATA);
             });
 
     }

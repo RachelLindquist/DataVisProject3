@@ -125,11 +125,11 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     arc = new Arc({
         'parentElement': '#arc',
-        'containerHeight': 1000,
+        'containerHeight': 750,
         'containerWidth': parseInt(colWidth * 12),
     }, data);
 
-    findInput();
+
 
 
 });
@@ -195,9 +195,13 @@ function findInput(){
     let locations = [];
     data.forEach(c => {
         if (c.Line.includes(input)){
-            locations.push({ Speaker: c["Speaker"], Episode: c["Episode"], Arc: c["Arc"]});
+            locations.push({ Speaker: c["Speaker"], Line: /*c["Line"]*/ "Said ", Episode: c["Episode"], Arc: c["Arc"]});
         }
     })
+    console.log(input);
+    lineChart.data = getLineChartData(locations)[0];
+    lineChart.updateVis();
+    //inputLine.data = locations;
     //console.log(input);
     //console.log(locations);
     //return locations;

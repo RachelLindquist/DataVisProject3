@@ -180,17 +180,29 @@ class StackedBarChart {
             // "Calls By Zipcode"
             if (vis.title === "Characters Lines by Arc") {
                 //already has wednesday
-                const isActive = barFilter.includes(getArcFromVals(d).slice(-1));
-                if (isActive) {
-                    //weekday.findIndex(d[0])
-                    barFilter = barFilter.filter(f => f !== getArcFromVals(d).slice(-1)); // Remove from filter
+                const arc = getArcFromVals(d).slice(-1);
+
+                if (barFilter.arcToShow === arc) {
+                    barFilter.arcToShow = "";
+                    barFilter.ifFilter = false;
+
                     // d3.select(event.currentTarget).style("stroke", "none");
-                    //^CSS, change as we see fit
+                    // ^CSS, change as we see fit
                 } else {
-                    barFilter.push(getArcFromVals(d).slice(-1)); // Add to filter
+                    barFilter.ifFilter = true;
+                    barFilter.arcToShow = arc;
+
                     // d3.select(event.currentTarget).style("stroke", "#000000").style("stroke-width", 3);
-                    //^CSS, change as we see fit
+                    // ^CSS, change as we see fit
                 }
+
+                //const isActive = set_barFilter.has(getArcFromVals(d).slice(-1));
+                //if (isActive) {
+                //    //weekday.findIndex(d[0])
+                //    set_barFilter = set_barFilter.filter(f => f !== getArcFromVals(d).slice(-1)); // Remove from filter
+                //} else {
+                //    set_barFilter.push(getArcFromVals(d).slice(-1)); // Add to filter
+                //}
             }
 
 
@@ -210,7 +222,10 @@ class StackedBarChart {
 
 
 function getCharacters(data_base) {
-    characters = []
+
+    console.log("getCharacters()...");
+
+    let characters = []
     data_base.forEach(arc => {
         arc.forEach(d => {
             if (!(d['data']['speaker'] in characters)) {

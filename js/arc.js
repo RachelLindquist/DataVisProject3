@@ -30,6 +30,16 @@ class Arc{
                 .attr("transform",
                     "translate(" + vis.config.margin.left + "," + vis.config.margin.top + ")");
 
+
+        vis.circlesG = vis.svg.append('g')
+            .attr('class', 'circlesG');
+
+        vis.labelsG = vis.svg.append('g')
+            .attr('class', 'labelsG');
+
+        vis.linesG = vis.svg.append('g')
+            .attr('class', 'linesG');
+
         vis.updateVis();
     }
 
@@ -137,67 +147,67 @@ class Arc{
         }
     }
 
-    renderVis(){
+    renderVis() {
         let vis = this;
-        // console.log(vis.nodes);
-        vis.circleNodes = vis.svg
-        .selectAll("mynodes")
-        .data(vis.nodes)
-        .enter()
-        .append("circle")
-          .attr("cx", function(d){ return(vis.x(d.name))})
-          .attr("cy", vis.height-60)
-          .attr("r", 8)
-          .style("fill", d => vis.getColor(d))
+        console.log("nodes:", vis.nodes);
+       
+        vis.circleNodes = vis.circlesG
+            .selectAll("circle")
+            .data(vis.nodes)
+            .join('circle')
+            .attr("class", "mynodes")
+            .attr("cx", d => vis.x(d.name))
+            .attr("cy", vis.height - 60)
+            .attr("r", 8)
+            .style("fill", d => vis.getColor(d));
 
-        vis.nodelabels = vis.svg
-          .selectAll("mylabels")
-          .data(vis.nodes)
-          .enter()
-          .append("text")
-            .attr("x", function(d){ return(vis.x(d.name))})
+        vis.nodelabels = vis.labelsG
+            .selectAll("text")
+            .data(vis.nodes)
+            .join('text')
+            .attr("x", d => vis.x(d.name))
             .attr("y", vis.height-40)
             .text(function(d){ return(d.name)})
             .style("text-anchor", "middle")
             .attr('font-size', "10");
 
         var idToNode = {};
-            vis.nodes.forEach(function (n) {
-              idToNode[n.id] = n;
-            });
+
+        vis.nodes.forEach(function (n) {
+            idToNode[n.id] = n;
+        });
         
-        vis.linkLines = vis.svg
-            .selectAll('mylinks')
+        vis.linkLines = vis.linesG
+            .selectAll('path')
             .data(vis.links)
-            .enter()
-            .append('path')
+            .join('path')
             .attr('d', function (d) {
-              let start = vis.x(idToNode[d.source].name)
-              let end = vis.x(idToNode[d.target].name)      
-              return ['M', start, vis.height-60,   
-                'A',                            
-                (start - end)/2, ',', 
-                (start - end)/2, 0, 0, ',',
-                start < end ? 1 : 0, end, ',', vis.height-60] 
-                .join(' ');
+                let start = vis.x(idToNode[d.source].name)
+                let end = vis.x(idToNode[d.target].name)      
+                return ['M', start, vis.height-60,   
+                    'A',                            
+                    (start - end) / 2, ',', 
+                    (start - end) / 2, 0, 0, ',',
+                    start < end ? 1 : 0, end, ',', vis.height - 60] 
+                    .join(' ');
             })
             .style("fill", "none")
-            .style("stroke", d => vis.getColor(idToNode[d.source]))
+            .style("stroke", d => vis.getColor(idToNode[d.source]));
 
         vis.circleNodes.on('mouseover', function (event, d) {
             vis.circleNodes.style('fill', "#B8B8B8")
             d3.select(this).style("fill", d => vis.getColor(d))
             //TODO: fix highlights
             vis.linkLines
-              .style('stroke', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? vis.getColor(d) : '#b8b8b8';})
-              .style('stroke-width', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? 4 : 1;})
-          })
-          .on('mouseout', function (d) {
-            vis.circleNodes.style("fill", d => vis.getColor(d))
-            vis.linkLines
-              .style('stroke', d => vis.getColor(idToNode[d.source]))
-              .style('stroke-width', '1')
-          })
+                .style('stroke', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? vis.getColor(d) : '#b8b8b8';})
+                .style('stroke-width', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? 4 : 1;})
+        })
+            .on('mouseout', function (d) {
+                vis.circleNodes.style("fill", d => vis.getColor(d))
+                vis.linkLines
+                    .style('stroke', d => vis.getColor(idToNode[d.source]))
+                    .style('stroke-width', '1')
+            })
 
         /*vis.svg
           .append("text")

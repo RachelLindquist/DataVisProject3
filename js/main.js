@@ -1,6 +1,6 @@
 let data, characters, episodes;
 let arc;
-let barFilter = [];
+let barFilter = {'ifFilter' : false, arcToShow : ""};
 let set_filteredOutCharacters = new Set();
 let set_filteredOutEpisodes = new Set();
 
@@ -46,11 +46,10 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
     characters = [...new Set(data.map(d => d["Speaker"]))];
     episodes = [...new Set(data.map(d => d["Episode"]))];
     
-    // console.log("characters:", characters);
+    console.log("characters set:", characters);
     //lineCount = countLines();
     //episodeCount = countEpisodes();
     characterLines = getCharLines();
-
 
 
     //I will fix this later to match character's actual colors depending on how many characters we want to display
@@ -63,14 +62,27 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
 
     // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
 
-    let widthitem = window.innerWidth / 2 - 15;
+    let widthitem = (4 / 12) * window.innerWidth  - 15;
     let heightitem = window.innerHeight / 2.5;
 
     // placeholder to help sort through all the garbage
     placeholderClass = new tempClass(data, data);  // this is a placeholder for heatmap
 
 
-    placeholderClass.hist = histo(data);
+    placeholderClass.hdata = getHeatmapData(data);
+
+    // heatmap
+    heatMapObj = new heatmap({
+        'parentElement': '#dateheatmap',
+        'containerHeight': heightitem,
+        // 'containerWidth': widthitem,
+        'containerWidth': 300,
+    }, placeholderClass.hdata[0],
+        placeholderClass.hdata[1],
+        placeholderClass.hdata[2],
+        "Episodes",
+        "Characters",
+        data);
 
 
     // stacked chart
@@ -82,6 +94,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         // 'yScaleLog': false
         'colors': ['#00ff00', '#0000ff']
     }, getBarData(data), "Characters Lines by Arc", true, "Character", "Number of Lines", data);
+
     characterLinesChart.updateVis();
 
     // Wordcloud
@@ -109,19 +122,9 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'parentElement': '#linechart',
         'containerHeight': heightitem,
         'containerWidth': widthitem,
-    }, placeholderClass.hist[0]);
+    }, placeholderClass.hdata[0]);
 
-    // heatmap
-    heatMapObj = new heatmap({
-        'parentElement': '#dateheatmap',
-        'containerHeight': heightitem,
-        'containerWidth': widthitem,
-    }, placeholderClass.hist[0],
-        placeholderClass.hist[1],
-        placeholderClass.hist[2],
-        "Episodes",
-        "Characters",
-        data);
+
 
 });
 
@@ -189,7 +192,13 @@ function clean(line) {
     line = line.replace(/['"]+/g, '');
     line = line.toLowerCase();
     // TODO improve regex
-    var punctuationless = line.replace(/[.,\/#!$%\^&\*;:{}=\_`~()?]/g, "");
+
+    // see https://stackoverflow.com/a/494046
+    // backslash itself needs to be escaped in order for it to be part of the regex pattern
+    const replace = "[.,\\/#!$%\\^&\\*;:{}=\\_`~()?]";
+    let re = new RegExp(replace, "g");
+    var punctuationless = line.replace(re, "");
+
     var cleanedString = punctuationless.replace(/\s{2,}/g, " ");
 
     // convert string to array
@@ -261,13 +270,16 @@ function dicToArr2(totalp) {
     return (data1);
 }
 
-function histo(data) {
+function getHeatmapData(data) {
     // heatmap
     let characterLinesVsEp = {};
 
     let epSet = new Set();
     let characterSet = new Set();
 
+
+    console.log("characters:", characters);
+    // add an object for each (character, ep) pair. This will map to indivudual cells in the heatmap
     characters.forEach(function (d) {
         characterLinesVsEp[d] = {};
 
@@ -283,13 +295,8 @@ function histo(data) {
         epSet.add(epNum);
         characterSet.add(character);
 
-        // if (!characterLinesVsEp.hasOwnProperty(character))
-        //     characterLinesVsEp[character] = {};
-
-        // if (!characterLinesVsEp[character].hasOwnProperty(epNum))
-        //     characterLinesVsEp[character][epNum] = 0;
-
         // not sure how ?.length works. ref https://bobbyhadz.com/blog/javascript-count-spaces-in-string
+        // console.log("character:", character);
         characterLinesVsEp[character][epNum] += (dialogData.Line.match(/(\s+)/g)?.length || 0);
     }
 
@@ -319,30 +326,26 @@ function histo(data) {
 // filter function for each item we plan on filtering
 function filterData(workingData) {
     // console.log(barFilter)
-    placeholderClass.data = workingData;
+    placeholderClass.data = workingData;  // set to ALLDATA ?
     // console.log(placeholderClass.data);
     // console.log(set_filteredOutCharacters);
 
 
     // dayChart filtering
-    if (barFilter.length !== 0) {
-        placeholderClass.data = placeholderClass.data.filter(d => barFilter.includes(d.Arc));
-    }
+    if (barFilter.ifFilter === true)
+        placeholderClass.data = placeholderClass.data.filter(d => (barFilter.arcToShow === d.Arc));
 
-    if (set_filteredOutCharacters.length !== 0) {
-        placeholderClass.data = placeholderClass.data.filter(d => set_filteredOutCharacters.includes(d.Speaker));
-    }
-    if (set_filteredOutEpisodes.length !== 0) {
-        placeholderClass.data = placeholderClass.data.filter(d => set_filteredOutEpisodes.includes(d.Episode));
-    }
+    // if (filteredOutCharacters.length !== 0) {
+    placeholderClass.data = placeholderClass.data.filter(d => !set_filteredOutCharacters.has(d.Speaker));
+    // }
+    // if (filteredOutEpisodes.length !== 0) {
+    placeholderClass.data = placeholderClass.data.filter(d => !set_filteredOutEpisodes.has(d.Episode));
+    // }
 
     // console.log(placeholderClass.data)
 
-
-    
-
         
-    placeholderClass.hist = histo(placeholderClass.data);
+    placeholderClass.hdata = getHeatmapData(placeholderClass.data);
 
     characterLinesChart.data = getBarData(placeholderClass.data);
     arc.data = placeholderClass.data;
@@ -350,11 +353,11 @@ function filterData(workingData) {
     wordCloud.words = getWords(placeholderClass.data);
 
 
-    lineChart.data = placeholderClass.hist[0];
+    lineChart.data = placeholderClass.hdata[0];
 
-    heatMapObj.data = placeholderClass.hist[0];
-    heatMapObj.epList = placeholderClass.hist[1];
-    heatMapObj.characterList = placeholderClass.hist[2];
+    heatMapObj.data = placeholderClass.hdata[0];
+    heatMapObj.epList = placeholderClass.hdata[1];
+    heatMapObj.characterList = placeholderClass.hdata[2];
 
 
 

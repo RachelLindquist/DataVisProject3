@@ -71,6 +71,9 @@ class LineChart {
     updateVis() {
         let vis = this;
 
+        vis.xScale.domain(d3.extent(vis.data, d => +d.epNum ));
+        // vis.yScale.domain([0, getLargest(vis.data)]);
+
         const sumstat = d3.group(vis.data, d => d.character); 
         
         // Draw the line

@@ -1,8 +1,12 @@
 let data, characters, episodes;
 let arc;
-let barFilter = {'ifFilter' : false, arcToShow : ""};
-let set_filteredOutCharacters = new Set();
-let set_filteredOutEpisodes = new Set();
+let barFilter = {'ifFilter' : false, 'arcToShow' : ""};
+let characterFilter = {'ifFilter': false, charactersToShow : new Set()};
+let episodeFilter = {'ifFilter': false, episodesToShow : new Set()};
+
+let wordCound, phraseCloud;
+// let set_filteredOutCharacters = new Set();
+// let set_filteredOutEpisodes = new Set();
 
 class tempClass {
     constructor(_data, _ALLDATA) {
@@ -58,8 +62,6 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         .range(d3.quantize(d3.interpolateHcl("#0000ff", "#f0000f"), characters.length));
 
 
-
-
     // console.log('heatmapdata:', heatmapdata_characterLinesVsEp);
 
     let widthitem = (5 / 12) * window.innerWidth  - 15;
@@ -106,7 +108,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'parentElement': '#linechart',
         'containerHeight': heightitem,
         'containerWidth': parseInt(colWidth * 12),
-    }, getLineChartData(data)[0]);
+    }, getLineChartData(data)[0], getLineChartData(data)[1], getLineChartData(data)[2]);
     // placeholderClass.hdata[0]
 
     // Wordcloud
@@ -165,9 +167,9 @@ function getCharLines() {
     return lines;
 }
 
-function getWords() {
+function getWords(data_base) {
     let words = [];
-    data.forEach(c => {
+    data_base.forEach(c => {
         let line = c["Line"];
         line = clean(line);
         line.forEach(l => {
@@ -179,9 +181,9 @@ function getWords() {
     return words;//.slice(0, 2000);
 }
 
-function getPhrases() {
+function getPhrases(data_base) {
     let phrases = [];
-    data.forEach(c => {
+    data_base.forEach(c => {
         let line = c["Line"];
         //line = cleanLine(line);
         phrases.push({ Speaker: c["Speaker"], Word: line, Episode: c["Episode"], Arc: c["Arc"] });
@@ -239,7 +241,8 @@ function clean(line) {
         'before', 'after', 'above', 'below', 'to', 'from', 'up', 'upon', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once',
         'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not',
         'only', 'own', 'same', 'so', 'than', 'too', 'very', 'say', 'says', 'said', 'shall', "oh", 'o', " ", "go", "ya", "ive", "id", "yes", "no",
-        "youre", "know", "im", "like", "going", "go", "san", "isnt", "ha", "eh", "dont", "sama", "ill", "huh", "youve"];
+        "youre", "know", "im", "like", "going", "go", "san", "isnt", "ha", "eh", "dont", "sama", "ill", "huh", "youve", "hey", "just", "got", "arent", "didnt",
+        "theres", "thats", "well", "cant", "even", "yeah", "okay"];
 
     lineArr = lineArr.filter(item => !remove.includes(item));
     lineArr = lineArr.filter(item => item);
@@ -351,7 +354,7 @@ function getLineChartData(data) {
     let epSet = new Set();
     let characterSet = new Set();
     let characters = [...new Set(data.map(d => d["Speaker"]))];
-    let epidodes = [...new Set(data.map(d => d["Episode"]))];
+    let episodes = [...new Set(data.map(d => d["Episode"]))];
     // console.log("chars and episodes", characters, episodes)
 
     // console.log("characters:", characters);
@@ -405,32 +408,32 @@ function filterData(workingData) {
     // console.log(placeholderClass.data);
     // console.log(set_filteredOutCharacters);
 
-
     // dayChart filtering
     if (barFilter.ifFilter === true)
         placeholderClass.data = placeholderClass.data.filter(d => (barFilter.arcToShow === d.Arc));
 
-    // if (filteredOutCharacters.length !== 0) {
-    placeholderClass.data = placeholderClass.data.filter(d => !set_filteredOutCharacters.has(d.Speaker));
-    // }
-    // if (filteredOutEpisodes.length !== 0) {
-    placeholderClass.data = placeholderClass.data.filter(d => !set_filteredOutEpisodes.has(d.Episode));
-    // }
+    if (characterFilter.ifFilter === true)
+        placeholderClass.data = placeholderClass.data.filter(d => characterFilter.charactersToShow.has(d.Speaker));
 
-    // console.log(placeholderClass.data)
-
+    if (episodeFilter.ifFilter === true)
+        placeholderClass.data = placeholderClass.data.filter(d => episodeFilter.episodesToShow.has(d.Episode));
         
+    console.log("after ch/ep filter:", placeholderClass.data);
+
     placeholderClass.hdata = getHeatmapData(placeholderClass.data);
 
     characterBarChart.data = getBarData(placeholderClass.data);
     arc.data = placeholderClass.data;
+
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 
-
-    //lineChart.data = placeholderClass.hdata[0];
     // console.log("lineChartData", getLineChartData(placeholderClass.data));
-    lineChart.data = getLineChartData(placeholderClass.data)[0];
+    // lineChart.data = getLineChartData(placeholderClass.data)[0];
+    let lineChartData = getLineChartData(placeholderClass.data);
+    lineChart.data = lineChartData[0];
+    lineChart.epSet = lineChartData[1];
+    lineChart.characterSet = lineChartData[2];
 
     heatMapObj.data = placeholderClass.hdata[0];
     heatMapObj.epList = placeholderClass.hdata[1];

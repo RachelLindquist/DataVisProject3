@@ -1,6 +1,6 @@
 class LineChart {
 
-    constructor(_config, _data) {
+    constructor(_config, _data, _epSet, _characterSet) {
       this.config = {
         parentElement: _config.parentElement,
         containerWidth: _config.containerWidth || 600,
@@ -9,6 +9,8 @@ class LineChart {
       }
   
       this.data = _data;
+      this.epSet = _epSet;
+      this.characterSet = _characterSet;
       this.initVis();
     }
 
@@ -55,7 +57,10 @@ class LineChart {
         vis.svg.append("g")
             .attr('class', 'axis y-axis')
             .attr("transform", `translate(0, ${vis.height})`)
-            .call(d3.axisBottom(vis.xScale).ticks(40));
+        //    .call(d3.axisBottom(vis.xScale).ticks(40));
+        
+        vis.xAxis = d3.axisBottom(vis.xScale);
+        vis.xAxis.ticks(vis.epSet.size);
 
         // Add Y axis
         vis.yScale = d3.scaleLinear()
@@ -66,24 +71,68 @@ class LineChart {
             .attr('class', 'axis y-axis')
             .call(d3.axisLeft(vis.yScale));
 
+        // vis.yAxis = d3.axisLeft(vis.yScale);
+
+        vis.chart = vis.svg
+            .append("g")
+            .attr(
+                "transform",
+                `translate(${vis.config.margin.left},${vis.config.margin.top})`
+            );
+        
+        vis.xAxisG = vis.chart
+            .append("g")
+            .attr("class", "axis x-axis")
+            .attr("transform", `translate(0,${vis.height})`);
+
+        vis.yAxisG = vis.chart
+            .append("g")
+            .attr("class", "axis y-axis");
+
+        vis.chart.append('text')
+            .attr('class', 'axis-title')
+            .attr("y", vis.height + vis.config.margin.bottom - 10)
+            .attr("x", (vis.width / 2))
+            .style("text-anchor", "middle")
+            .text("Episode #");
+
+        vis.chart.append('text')
+            .attr('class', 'axis-title')
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - vis.config.margin.left)
+            .attr("x", 0 - (vis.height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("# of Words");
+
         this.updateVis();
     }
     updateVis() {
         let vis = this;
 
+        vis.xAxis.ticks(vis.epSet.size);
+
         vis.xScale.domain(d3.extent(vis.data, d => +d.epNum ));
         // vis.yScale.domain([0, getLargest(vis.data)]);
+
+        vis.xAxisG
+                .call(vis.xAxis)
+                .selectAll('text')
+                .style("text-anchor", "start")
+                .style("font-size", "10px")
+                .attr('transform', "rotate(25)");
 
         const sumstat = d3.group(vis.data, d => d.character); 
         
         // Draw the line
-        vis.svg.selectAll(".line")
+        vis.svg.selectAll("path")
             .data(sumstat)
             .join("path")
             .attr("fill", "none")
-            .attr("stroke", function(d){ 
-                console.log(d)
-                return vis.getColor(d[1][0]) })
+            .attr("stroke", function(d) { 
+                // console.log(d);
+                return vis.getColor(d[1][0]);
+            })
             .attr("stroke-width", 1.5)
             .attr("d", function(d){
         return d3.line()

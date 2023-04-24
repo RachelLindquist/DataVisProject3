@@ -223,19 +223,17 @@ class StackedBarChart {
 
 function getCharacters(data_base) {
 
-    console.log("getCharacters()...");
+    let characters = [];
 
-    let characters = []
     data_base.forEach(arc => {
         arc.forEach(d => {
             if (!(d['data']['speaker'] in characters)) {
-                characters.push(d['data']['speaker'])
+                characters.push(d['data']['speaker']);
             }
         })
-    })
+    });
 
-
-    return (characters)
+    return (characters);
 }
 
 function getLargest(data_base) {

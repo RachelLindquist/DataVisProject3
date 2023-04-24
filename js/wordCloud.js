@@ -76,6 +76,7 @@ class WordCloud{
             });
         }
 
+        let min = 10;
         vis.layout = d3.layout.cloud()
             .size([vis.width, vis.height])
             //.words(vis.words.map( function(d) { return d.Word;}).map(function(d) { return {text: d}; }))
@@ -84,17 +85,25 @@ class WordCloud{
             .padding(5)
             //change fontSize if we add more items
             .fontSize(function(d) { 
-                if (sizing >= 100) { //need to shrink words
-                    return d.size / (sizing/40);
+                if (sizing >= 150) { //need to shrink words
+                    if (d.size / (sizing/30) < min){
+                        return min;
+                    } else {
+                        return d.size / (sizing/30)
+                    }
                 } else { //need to increase words
-                    return d.size * (sizing/25);
-                }
+                    if (d.size * (sizing/25) < min){
+                        return min;
+                    } else {
+                        return d.size * (sizing/25)
+                    }
+                } 
             })
             .on("end", draw);
         vis.layout.start();
 
         function draw(words) {
-            // console.log(words);
+             console.log(words);
             vis.svg.selectAll("text").remove();
             vis.svg
                 .append("g")

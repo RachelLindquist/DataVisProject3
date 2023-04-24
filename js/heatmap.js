@@ -118,11 +118,18 @@ class heatmap {
                 event.target.classList.remove('hovered-label');
             })
             .on('click', function (event, d) {
-                if (set_filteredOutEpisodes.has(d))
-                    set_filteredOutEpisodes.delete(d);
-                else
-                    set_filteredOutEpisodes.add(d);
 
+                if (episodeFilter.episodesToShow.has(d)) {
+                    episodeFilter.episodesToShow.delete(d);
+
+                    if (episodeFilter.episodesToShow.size === 0)
+                        episodeFilter.ifFilter = false;
+                } else {
+                    episodeFilter.episodesToShow.add(d);
+                    episodeFilter.ifFilter = true;
+                }
+
+                console.log("epfilter:", episodeFilter);
                 vis.updateVis();
                 // console.log("filtered out episodes:", set_filteredOutEpisodes);
                 filterData(vis.ALLDATA);
@@ -146,11 +153,18 @@ class heatmap {
                 event.target.classList.remove('hovered-label');
             })
             .on('click', function (event,  d) {
-                if (set_filteredOutCharacters.has(d))
-                    set_filteredOutCharacters.delete(d);
-                else
-                    set_filteredOutCharacters.add(d);
 
+                if (characterFilter.charactersToShow.has(d)) {
+                    characterFilter.charactersToShow.delete(d);
+
+                    if (characterFilter.charactersToShow.size === 0)
+                        characterFilter.ifFilter = false;
+                } else {
+                    characterFilter.charactersToShow.add(d);
+                    characterFilter.ifFilter = true;
+                }
+
+                console.log("chFilter:", characterFilter);
                 vis.updateVis();
                 // console.log("filtered out characters:", set_filteredOutCharacters);
                 filterData(vis.ALLDATA);
@@ -182,11 +196,26 @@ class heatmap {
 
         const heatZones = vis.chart.selectAll('rect')
             .data(vis.data.filter(function (d) {
-                if (set_filteredOutCharacters.has(d.character) ||
-                set_filteredOutEpisodes.has(d.epNum))
-                    return false;
-                else
-                    return true;
+
+                // return true;
+                let ifCharacterFilter, ifEpisodeFilter;
+
+                ifCharacterFilter = (!characterFilter.ifFilter) || characterFilter.charactersToShow.has(d.character);
+                ifEpisodeFilter = (!episodeFilter.ifFilter) || episodeFilter.episodesToShow.has(d.epNum);
+
+                return ifCharacterFilter && ifEpisodeFilter;
+                // if (characterFilter.ifFilter === false && episodeFilter.ifFilter === false)
+                //     return true;
+
+                // if (characterFilter.charactersToShow.has(d.character) &&
+                //     episodeFilter.episodesToShow.has(d.episode)) {
+                //     console.log("h1");
+                //     return false;
+                // } else {
+                //     console.log("h2");
+                //     return true;
+                // }
+
             }))
             // .data(Object.entries(heatmapZoneMap), function(d) {console.log("data is: ", d);})
             .join('rect')

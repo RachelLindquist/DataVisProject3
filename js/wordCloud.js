@@ -86,10 +86,10 @@ class WordCloud{
             //change fontSize if we add more items
             .fontSize(function(d) { 
                 if (sizing >= 150) { //need to shrink words
-                    if (d.size / (sizing/40) < min){
+                    if (d.size / (sizing/30) < min){
                         return min;
                     } else {
-                        return d.size / (sizing/60)
+                        return d.size / (sizing/30)
                     }
                 } else { //need to increase words
                     if (d.size * (sizing/25) < min){

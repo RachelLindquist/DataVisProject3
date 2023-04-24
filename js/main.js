@@ -3,6 +3,8 @@ let arc;
 let barFilter = {'ifFilter' : false, 'arcToShow' : ""};
 let characterFilter = {'ifFilter': false, charactersToShow : new Set()};
 let episodeFilter = {'ifFilter': false, episodesToShow : new Set()};
+
+let wordCound, phraseCloud;
 // let set_filteredOutCharacters = new Set();
 // let set_filteredOutEpisodes = new Set();
 
@@ -165,9 +167,9 @@ function getCharLines() {
     return lines;
 }
 
-function getWords() {
+function getWords(data_base) {
     let words = [];
-    data.forEach(c => {
+    data_base.forEach(c => {
         let line = c["Line"];
         line = clean(line);
         line.forEach(l => {
@@ -179,9 +181,9 @@ function getWords() {
     return words;//.slice(0, 2000);
 }
 
-function getPhrases() {
+function getPhrases(data_base) {
     let phrases = [];
-    data.forEach(c => {
+    data_base.forEach(c => {
         let line = c["Line"];
         //line = cleanLine(line);
         phrases.push({ Speaker: c["Speaker"], Word: line, Episode: c["Episode"], Arc: c["Arc"] });
@@ -239,7 +241,8 @@ function clean(line) {
         'before', 'after', 'above', 'below', 'to', 'from', 'up', 'upon', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once',
         'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not',
         'only', 'own', 'same', 'so', 'than', 'too', 'very', 'say', 'says', 'said', 'shall', "oh", 'o', " ", "go", "ya", "ive", "id", "yes", "no",
-        "youre", "know", "im", "like", "going", "go", "san", "isnt", "ha", "eh", "dont", "sama", "ill", "huh", "youve"];
+        "youre", "know", "im", "like", "going", "go", "san", "isnt", "ha", "eh", "dont", "sama", "ill", "huh", "youve", "hey", "just", "got", "arent", "didnt",
+        "theres", "thats", "well", "cant", "even", "yeah", "okay"];
 
     lineArr = lineArr.filter(item => !remove.includes(item));
     lineArr = lineArr.filter(item => item);
@@ -421,6 +424,7 @@ function filterData(workingData) {
 
     characterBarChart.data = getBarData(placeholderClass.data);
     arc.data = placeholderClass.data;
+
     phraseCloud.words = getPhrases(placeholderClass.data);
     wordCloud.words = getWords(placeholderClass.data);
 

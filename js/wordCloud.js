@@ -88,7 +88,7 @@ class WordCloud{
                     return d.size / (sizing/40);
                 } else { //need to increase words
                     return d.size * (sizing/25);
-                }
+                } 
             })
             .on("end", draw);
         vis.layout.start();

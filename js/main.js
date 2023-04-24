@@ -106,7 +106,7 @@ d3.csv("data/UtFullmEA.csv").then(_data => {
         'parentElement': '#linechart',
         'containerHeight': heightitem,
         'containerWidth': parseInt(colWidth * 12),
-    }, getLineChartData(data)[0]);
+    }, getLineChartData(data)[0], getLineChartData(data)[1], getLineChartData(data)[2]);
     // placeholderClass.hdata[0]
 
     // Wordcloud
@@ -351,7 +351,7 @@ function getLineChartData(data) {
     let epSet = new Set();
     let characterSet = new Set();
     let characters = [...new Set(data.map(d => d["Speaker"]))];
-    let epidodes = [...new Set(data.map(d => d["Episode"]))];
+    let episodes = [...new Set(data.map(d => d["Episode"]))];
     // console.log("chars and episodes", characters, episodes)
 
     // console.log("characters:", characters);
@@ -425,7 +425,11 @@ function filterData(workingData) {
     wordCloud.words = getWords(placeholderClass.data);
 
     // console.log("lineChartData", getLineChartData(placeholderClass.data));
-    lineChart.data = getLineChartData(placeholderClass.data)[0];
+    // lineChart.data = getLineChartData(placeholderClass.data)[0];
+    let lineChartData = getLineChartData(placeholderClass.data);
+    lineChart.data = lineChartData[0];
+    lineChart.epSet = lineChartData[1];
+    lineChart.characterSet = lineChartData[2];
 
     heatMapObj.data = placeholderClass.hdata[0];
     heatMapObj.epList = placeholderClass.hdata[1];
